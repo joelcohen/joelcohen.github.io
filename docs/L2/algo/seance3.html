@@ -1,0 +1,59 @@
+---
+layout: default
+permalink: /docs/L2/algo/seance3
+hidden : True
+---
+
+<div class="home">
+    <h1>Algorithmes de tri</h1>
+    <ol>
+        <li>
+            <p>Programmer une fonction <code>tri_naif(l)</code> qui prend en argument une liste et renvoie une liste contenant les mêmes éléments rangés dans l’ordre croissant. On ne cherchera pas à optimiser la complexité de la fonction.</p>
+        </li>
+        <li>
+            <p>Programmer une fonction <code>fusion(l1, l2)</code> qui prend en argument deux listes triées, et renvoie une liste triée qui est l’union des deux listes. On cherchera à réaliser cette opération en complexité linéaire.</p>
+        </li>
+        <li>
+            <p>En utilisant la fonction <code>fusion</code>, écrire une fonction <code>tri_fusion(l)</code>, qui prend en argument une liste et renvoie une liste contenant les même éléments rangés dans l’ordre croissant. La fonction procèdera de manière récursive en découpant la liste en deux, en triant chaque moitié, puis en fusionnant les deux listes ainsi triées. Quel est la complexité de cet algorithme ?</p>
+        </li>
+        <li>
+            <p>Charger le fichier <a href="popMen.txt">popMen.txt</a> ou <a href="popWomen.txt">popWomen.txt</a>. Pour charger un fichier, on pourra utiliser la fonction <code>open()</code>, et la clause <code>with … as …</code> dont la syntaxe est</p>
+{% highlight python %}
+with open('chemin/vers/popWomen.txt', 'r') as file:
+    # instruction(s)
+    # …
+{% endhighlight %}
+            <p>où <code>'chemin/vers/popWomen.txt'</code> doit remplacé par l’adresse du fichier dans votre ordinateur. Le ficher est alors accessible via la variable file.</p>
+        </li>
+        <li>
+           <p>Convertir le contenu du fichier en une liste de nombres flottants. On pourra utiliser les méthodes ou fonctions Python suivantes : <code>read</code>, <code>split</code>, <code>map</code> et <code>float</code>. </p>
+        </li>
+        <li>
+            <p>Comparer les temps d’exécution de la fonction <code>tri_naif</code> et <code>tri_fusion</code> sur la liste de nombre obtenue. Pour mesure le temps d’exécution, on pourra utiliser le package <code>time</code>. Par exemple dans le code suivant :</p>
+
+{% highlight python %}
+import time
+
+debut = time.time()
+# instruction(s)
+# …
+fin = time.time()
+duree = fin - debut
+{% endhighlight %}
+                
+            <p>La variable <code>duree</code> contient la durée d’exécution en seconde des instructions qui se situent entre les deux appels de la fonction <code>time.time()</code>.</p>
+        </li>
+        <li>
+            <p>Comparer le temps d’exécution de la fonction <code>tri_fusion</code> avec la méthode <code>sort</code> fournie par Python. <strong>Attention :</strong> l’appel de la méthode <code>l.sort()</code> modifie la liste <code>l</code> elle-même (on parle de modification en place), et non une copie de la liste.</p>
+        </li>
+    </ol>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
