@@ -1,0 +1,11 @@
+---
+layout: page
+---
+
+Je suis actuellement enseignant de mathématiques et informatique à [l'Institut Villebon Georges Charpak](http://www.villebon-charpak.fr). Dans la section [enseignement](/ens/), j'ai entreposé en vrac divers supports d'enseignement. 
+
+Je partage également ma passion pour les mathématiques et les sciences avec le grand public. C'est ce qui m'a conduit avec quelques [amis](http://www.aiezzi.it) totalement transcendants à fonder l'[Association Pi Day](www.piday.fr), pour la diffusion des mathématiques.
+
+Mes travaux de thèse portent sur les représentations des groupes réductifs et leurs liens avec la théorie des nombres. En particulier, sur les représentations des groupes reductifs $p$-adiques non connexes, et l'endoscopie tordue.
+
+
