@@ -49,7 +49,7 @@ permalink: /ens/
 
 * [Complexité algorithmique](../docs/L2/algo/complexite.pdf)
 * [Code du jeu sur la dichotomie](../docs/L2/algo/guess.py)
-* [TP Algorithmes de tri](../docs/L2/algo/seance3.pdf), [code Python](../docs/L2/algo/seance3_squelette.py) et fichiers [popMen.txt](../docs/L2/algo/popMen.txt), [popWomen.txt](../docs/L2/algo/popWomen.txt)
+* [TP Algorithmes de tri](../docs/L2/algo/seance3.html), [code Python](../docs/L2/algo/seance3_squelette.py) et fichiers [popMen.txt](../docs/L2/algo/popMen.txt), [popWomen.txt](../docs/L2/algo/popWomen.txt)
 * [Interrogation 2](../docs/L2/algo/interro2.pdf)
 
 ### Introduction aux probabilités (UE Populations)
@@ -63,4 +63,5 @@ permalink: /ens/
 
 * [Introduction du cours](../docs/L1/info/intro.pdf)
 * [TP Boucles imbriquées](../docs/L1/info/boucles2.pdf)
+* [Interrogation](../docs/L1/info/eval1.pdf)
 * Examen : [Sujet Type](../docs/L1/info/sujet_type.pdf), [Type 1](../docs/L1/info/type1.pdf)
