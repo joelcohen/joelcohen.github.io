@@ -30,6 +30,9 @@ permalink: /ens/
 * [Feuille d'exercice 1](../docs/L3/analyse2/td1.pdf)
 * [Feuille d'exercice 2](../docs/L3/analyse2/td2.pdf)
 * [Feuille d'exercice 3](../docs/L3/analyse2/td3.pdf)
+* [Interrogation 1](../docs/L3/analyse2/interro1.pdf)
+* [Interrogation 2](../docs/L3/analyse2/interro2.pdf)
+* [Mini QCM](../docs/L3/analyse2/quiz.pdf)
 
 
 ### Cryptographie
