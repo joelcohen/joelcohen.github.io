@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /docs/L2/algo/seance3
-root : False
+hidden : True
 ---
 
 # Algorithmes de tri
