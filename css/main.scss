@@ -36,12 +36,14 @@ $on-laptop:        800px;
 //     }
 // }
 
-code.inline {
+
+
+// Import partials from the `minima` theme.
+@import "minima";
+
+code.highlighter-rouge {
     background-color : $background-color;
     border : 0;
     font-size : 1.05em;
     color : $code-color;
 }
-
-// Import partials from the `minima` theme.
-@import "minima";
