@@ -19,7 +19,7 @@ with open('chemin/vers/popWomen.txt', 'r') as file:
     # ...
    {% endhighlight %}
    
-   où `'chemin/vers/popWomen.txt'` doit remplacé par l’adresse du fichier dans votre ordinateur. Le ficher est alors accessible via la variable file.
+   où `'chemin/vers/popWomen.txt'` doit remplacé par l’adresse du fichier dans votre ordinateur. Le ficher est alors accessible via la variable `file`.
 
 5. Convertir le contenu du fichier en une liste de nombres flottants. On pourra utiliser les méthodes ou procédures Python suivantes : `read`, `split`, `map` et `float`.
 
