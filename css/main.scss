@@ -5,6 +5,8 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif : "Baskerville", "Libre Baskerville", Times, serif;
+$serif-title : "Georgia", Times, serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -48,6 +50,59 @@ code.highlighter-rouge {
     color : $code-color;
 }
 
+
+.exobox {
+    //border : 1px solid #ccc;
+    //font-family : $serif;
+    //border-radius : .5em;
+    //background-color : #f6f9ff;
+    padding : .2em 1em;
+    margin-top : 0;
+    margin-bottom : 1em;
+}
+.exo {
+    
+    li {
+        margin : 0;
+    }
+    li + li {
+        margin : 3em 0;
+    }
+    h2 {
+        //font-family: "Baskerville", serif;
+        font-size : 1.5em;
+        font-weight: 300;
+        margin-top : 1em;
+        margin-bottom: .3em;
+        //font-family: $serif;
+    }
+    .inlineblock {
+        display : inline-block;
+        padding : 1em 2em;
+    }
+}
+
+
+.titlebox {
+    text-align : center;
+    margin-top : 7em;
+    margin-bottom : 5em;
+    h1 {
+        font-family : $serif;
+        font-weight : normal;
+        line-height : 1em;
+        margin : 0;
+    }
+}
+.exomath {
+    font-family : $serif;
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family : $serif-title;
+        //font-size : 110%;
+    }  
+}
+
 @media print {
     h1 {
         text-align : center;
@@ -66,4 +121,9 @@ code.highlighter-rouge {
         border : none;
         color : $code-color;
     }
+    .exomath {
+        font-size : 11px;
+        margin : 0 5em;
+    }
+    
 }
