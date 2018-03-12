@@ -78,7 +78,10 @@ code.highlighter-rouge {
     }
     .inlineblock {
         display : inline-block;
-        padding : 1em 2em;
+        margin : 1em 2em;
+    }
+    .inlineblock + .inlineblock {
+        //margin : 1em;
     }
 }
 
