@@ -1,0 +1,171 @@
+---
+layout: default
+permalink: /docs/L2/probas/td1
+hidden : True
+---
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var elt = document.getElementById(id);
+       if(elt.style.display == 'block')
+          elt.style.display = 'none';
+       else
+          elt.style.display = 'block';
+    }
+//-->
+</script>
+    
+<div class="exomath">
+    <div class="titlebox">
+        <h1>Probabilités</h1>
+        <h2>Feuille d'exercices 1</h2>
+    </div>
+    <ol>
+        <li class="exo" id="univers">
+            <h2>Univers</h2>
+            <article class="exobox">
+                <p>Quel univers choisiriez-vous pour les expériences aléatoires suivantes ? Quel est le cardinal de votre univers ?</p>
+                <ol>
+                    <li onclick="toggle_visibility('1.1');">
+                        On lance un dé à 4 faces.
+                        <span id="1.1" class="sol">On prend $\Omega = \{1,2,3,4\}$, donc $|\Omega| = 4$.</span>
+                    </li>
+                    <li onclick="toggle_visibility('1.2');">
+                        On lance deux dés à 6 faces.
+                        <span id="1.2" class="sol">On prend $\Omega = \{1,2,3,4,5,6\}^2$, donc $|\Omega| = 6^2 = 36$.</span>
+                    </li>
+                    <li onclick="toggle_visibility('1.3');">
+                        On lance un dé à 6 faces, et une pièce de monnaie.
+                        <span id="1.3" class="sol">On prend $\Omega = \{1,2,3,4,5,6\} \times \{\text{pile}, \text{face}\}$, donc $|\Omega| = 6 \times 2 = 12$.</span>
+                    </li>
+                    <li onclick="toggle_visibility('1.4');">
+                        On lance en même temps une pièce de 1€ et de 2€.
+                        <span id="1.4" class="sol">On prend $\Omega = \{\text{pile}, \text{face}\}^2$, donc $|\Omega| = 4$.</span>
+                    </li>
+                    <li onclick="toggle_visibility('1.5');">
+                        On lance en même temps deux pièces indentiques (qu'on ne distingue pas).
+                        <span id="1.5" class="sol" ><p>Ici, l'énoncé nous indique qu'on ne peut pas distinguer les deux pièces donc on prend</p>
+                            <p>$$\Omega = \{(\text{pile}, \text{pile}), (\text{pile}, \text{face}), (\text{face}, \text{face})\}$$</p>
+                            <p>C'est-à-dire qu'on réunit $(\text{pile}, \text{face})$ et $(\text{face}, \text{pile})$ ensemble. On a donc $|\Omega| = 3$. Mais dans ce modèle, les événements ne sont pas équiprobables. En effet, physiquement la situation est la même que dans l'exemple précédent et si on tire dés pièces, on s'aperçoit que l'événement que les deux pièces sont différentes se produit avec probabilité $\frac{1}{4} + \frac{1}{4} = \frac{1}{2}$.</p></span>
+                    </li>
+                    <li onclick="toggle_visibility('1.6');">
+                        On pense à un entier aléatoire entre 1 et 10 inclus. 
+                        <span id="1.6" class="sol" >On prend $\Omega = \{1,2,3,4,5,6,7,8,9,10\} = [\!|1,10|\!]$, donc $|\Omega| = 10$.</span>
+                    </li>
+                    <li onclick="toggle_visibility('1.7');">
+                        On choisit un point au hasard sur l'axe réel.
+                        <span id="1.7" class="sol" >On prend $\Omega = \mathbb{R}$. Ici, l'ensemble $\Omega$ est infini.</span>
+                    </li>
+                </ol>
+            </article>
+        </li>
+        <li class="exo" id="evenements">
+            <h2>Événements</h2>
+            <article class="exobox">
+                <p>Traduire en termes ensemblistes les événements suivants et calculer leur probabilité.</p>
+                <ol>
+                    <li onclick="toggle_visibility('2.1');">On lance un dé à 20 faces (un <a href="https://fr.wikipedia.org/wiki/Icosaèdre">icosaèdre</a>) :
+                        $$A_1 = \text{"Le résultat est un multiple de 6."}$$
+                    <span id="2.1" class="sol">On a $A_1 = \{6,12,18\}$, et donc $\mathbb{P}(A_1) = \frac{3}{20}$.</span>  
+                    </li>
+                    <li onclick="toggle_visibility('2.2');">On tire 2 fois de suite à pile ou face :
+                    $$A_2 = \text{"On obtient 2 fois le même résultat."}$$
+                    <span id="2.2" class="sol">On a $A_2 = \{(\text{pile}, \text{pile}), (\text{face}, \text{face})\}$ et donc $\mathbb{P}(A_2) = \frac{2}{4} = \frac{1}{2}$.</span>
+                    </li>
+                    <li onclick="toggle_visibility('2.3');">On tire au dé (à 6 faces) :
+                        $$A_3 = \text{"On fait au moins 4."}$$
+                        <span id="2.3" class="sol">On a $A_3 = \{4,5,6\}$ et donc $\mathbb{P}(A_3) = \frac{3}{6} = \frac{1}{2}$.</span>
+                    </li>
+                    <li>On lance deux dés (à 6 faces) :
+                        <p>
+                            <p onclick="toggle_visibility('2.4.1');">$$A_4 = \text{"La somme des valeurs affichées par les dés est 5."}$$</p>
+                            <span id="2.4.1" class="sol" onclick="toggle_visibility('2.4.1');">
+                                <p>Il faut lister toutes les façons de faire un total de 5 avec deux dés (on distingue les dés).</p>
+                                
+                                <p>
+                                    $$
+                                    \begin{align*}
+                                        A_4 & = \{(x,y) \in [\!|1,6|\!]^2, x+y = 5\}\\
+                                            & = \{(1,4), (2,3), (3,2), (4,1)\}
+                                    \end{align*}
+                                    $$
+                                </p>
+                                <p>et donc $\mathbb{P}(A_4) = \frac{4}{36} = \frac{1}{9}$.</p>
+                            </span>
+                            <p onclick="toggle_visibility('2.4.2');" >$$B_4 = \text{"La somme des valeurs affichées par les dés est 7."}$$</p>
+                        </p>
+                         <span id="2.4.2" class="sol" onclick="toggle_visibility('2.4.2');">
+                             <p>De même pour $B_4$, on a </p>
+                            
+                            <p>
+                                $$
+                                \begin{align*}
+                                    B_4 & = \{(x,y) \in [\!|1,6|\!]^2, x+y = 7\}\\
+                                        & = \{(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\}
+                                \end{align*}
+                                $$
+                            </p>
+                            
+                            <p>et donc $\mathbb{P}(B_4) = \frac{6}{36} = \frac{1}{6}$. On constate donc qu'il est plus probable de faire un 7 qu'un 5.</p>
+                            <p>Remarquons qu'il existe une autre façon de calculer la probabilité de $B_4$ : quelque soit le résultat du premier dé, il est possible de faire 7 au total, mais il y a une seule valeur possible pour le second dé, et on a 1 chance sur 6 de tomber sur cette valeur précise. D'où $\mathbb{P}(B_4) = \frac{1}{6}$. Pouvez-vous trouver un raisonnement similaire pour la probabilité de $A_4$ ?</p>
+                        </span>
+                    </li>
+                </ol>
+            </article>
+        </li>
+        <li class="exo">
+            <h2>Indépendance</h2>
+            <article class="exobox">
+                On lance deux fois de suite un dé à 6 faces. On considère les événements suivants
+                <span class="inlineblock">$$A = \text{"On fait 6 au premier lancer."}$$</span>
+                <span class="inlineblock">$$B = \text{"On fait 6 au second lancer."}$$</span>
+                <span class="inlineblock">$$C = \text{"Le total des deux lancer fait 7."}$$</span>
+                <ol class="exo">
+                    <li onclick="toggle_visibility('3.1');">
+                        Décrire explicitement les ensembles $A$, $B$ et $C$. Quel est leur cardinal ?
+                    <span id="3.1" class="sol">
+                        On a
+                        $$A = \{(6,y), y \in [\!|1,6|\!]\} = \{(6,1), (6,2), (6,3), (6,4), (6,5), (6,6) \}$$
+                        et de même
+                        $$B = \{(x,6), x \in [\!|1,6|\!]\} = \{(1,6), (2,6), (3,6), (4,6), (5,6), (6,6) \}$$
+                        et enfin
+                        $$C = \{(x,y) \in [\!|1,6|\!]^2, x+y = 7\} = \{(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\}$$
+                        On a $|A| = |B| = |C| = 6$.
+                    </span>
+                </li>
+                    <li onclick="toggle_visibility('3.2');">Étudier l'indépendance deux à deux des événements entre eux.
+                     <span id="3.2" class="sol">
+                         On a $A \cap B = \{(6,6)\}$, donc on a
+                         $$
+                         \begin{align*}
+                         \mathbb{P}(A \cap B) &= \frac{1}{36} \\
+                         &= \frac{1}{6} \times \frac{1}{6} \\
+                         &= \mathbb{P}(A) \times \mathbb{P}(B)
+                         \end{align*}
+                         $$
+                         donc $A$ et $B$ sont indépendants. Par ailleurs, on a $A \cap C = \{(6,1)\}$, donc on a
+                         $$
+                         \begin{align*}
+                         \mathbb{P}(A \cap C) &= \frac{1}{36} \\
+                         &= \frac{1}{6} \times \frac{1}{6} \\
+                         &= \mathbb{P}(A) \times \mathbb{P}(C)
+                         \end{align*}
+                         $$
+                         donc $A$ et $C$ sont indépendants. Et de même, $B \cap C = \{(1,6)\}$ donc $B$ et $C$ sont indépendants par un calcul similaire.
+                     </span>
+                    </li>
+                    <li onclick="toggle_visibility('3.3');">
+                        Les trois événements sont-ils mutuellement indépendants ?
+                        <span id="3.3" class="sol">
+                            On a $A \cap B \cap C = \emptyset$ donc
+                            $$\mathbb{P}(A \cap B \cap C) = 0$$
+                            mais par ailleurs,
+                            $$\mathbb{P}(A) \times \mathbb{P}(B) \times \mathbb{P}(C) = \frac{1}{6^3} \ne 0$$
+                            donc les 3 événements ne sont pas mutuellement indépendants. Cela peut se comprendre intuitivement : si on connait le statut de deux d'entre eux, on a de l'information sur le troisième (par exemple, si on sait que le premier lancer est un 6 et que le second lancer est un 6, on peut affirmer avec certitude que la somme n'est pas 7).
+                        </span>
+                    </li>
+                </ol>
+            </article>
+        </li>
+    </ol>
+</div>   

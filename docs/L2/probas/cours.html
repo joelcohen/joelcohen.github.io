@@ -1,0 +1,164 @@
+---
+layout: default
+permalink: /docs/L2/probas/cours
+hidden : True
+---
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var elt = document.getElementById(id);
+       if(elt.style.display == 'block')
+          elt.style.display = 'none';
+       else
+          elt.style.display = 'block';
+    }
+//-->
+</script>
+    
+<div class="exomath">
+    <div class="titlebox">
+        <h1>Probabilités</h1>
+        <h2>Éléments de cours</h2>
+    </div>
+    <section>
+       <h2>Univers et événements</h2>
+       <p>On parlera d'une <strong class="new">expérience aléatoire</strong> pour une expérience dont on ne connaît pas le résultat avec certitude a priori. À une expérience aléatoire, on associe l'ensemble des issues possibles, qu'on appelle l'<strong class="new">univers</strong> de cette expérience aléatoire et qui est le plus souvent noté par la lettre $\Omega$ majuscule. Un élément de l'ensemble $\Omega$ (que l'on note souvent $\omega$ minuscule) est un des résultats possibles de l'expérience.</p>
+       <article class="exemple">
+           <p>Si on lance une pièce de monnaie, l'univers sera l'ensemble $\Omega = \{\text{pile}, \text{face}\}$, et $\omega = \text{face}$ est un résultat possible.</p>
+       </article>
+       <article class="exemple">
+           <p>Si on lance un dé à 6 faces, l'univers sera l'ensemble $\Omega = \{1,2,3,4,5,6\}$ des valeurs possibles du dé, et $\omega = 5$ est un résultat possible.</p>
+       </article>
+       <article class="exemple">
+           <p>Si on lance une pièce de monnaie deux fois, l'univers sera l'ensemble des couples de résultat $\Omega = \{\text{pile}, \text{face}\}^2 = \{(\text{pile},\text{pile}), (\text{pile},\text{face}), (\text{face},\text{pile}), (\text{face},\text{face})\}$, et $\omega = (\text{face}, \text{pile})$ est un résultat possible.</p>
+       </article>
+       <p>Pour d'autres exemples et pour s'exercer sur la notion d'univers, voir la <a href="td1#univers">feuille 1 exercice 1</a>.</p>
+       <article class="definition">
+           <p>Étant donnée une expérience aléatoire ayant pour univers $\Omega$, un <strong class="new">événement aléatoire</strong> (ou juste événement) $E$ est un ensemble de résultats possibles de l'expérience, c'est-à-dire une partie de l'univers : $E \subset \Omega$.</p>
+           <p>On dit qu'un événement $E$ se <strong class="new">réalise</strong> si le résultat $\omega$ de l'expérience appartient à l'ensemble $E$ : $\omega \in E$</p>
+           <p>L'ensemble $\mathcal{A}$ de tous les événements est appelé une <strong class="new">tribu</strong>. Le couple $(\Omega, \mathcal{A})$ est appelé un <strong class="new">espace probabilisable</strong>.</p>
+       </article>
+       <p>Pour s'exercer sur la notion d'événement aléatoire, voir la <a href="td1#evenements">feuille 1 exercice 2</a>.</p>
+    </section>
+    <section>
+        <h2>Probabilité</h2>
+        <h3>Définition</h3>
+        <p>On donne la définition axiomatique d'une probabilité.</p>
+        <article class="definition">
+            <p>Étant donné un univers $\Omega$ et une tribu $\mathcal{A}$ (c'est-à-dire un espace probabilisable), une <strong class="new">probabilité</strong> est une fonction qui à chaque événement associe une valeur numérique :</p>
+            <p>
+                $$\begin{align*}
+                \mathbb{P} : \mathcal{A}    & \longrightarrow [0,1] \\
+                                        A   & \longmapsto \mathbb{P}(A)
+                \end{align*}$$
+            </p>
+            <p>satisfaisant les propriétés</p>
+            <ol>
+                <li>$\mathbb{P}(\Omega) = 1$</li>
+                <li>Si $(A_n)_{n \ge 0}$ sont des événéments 2 à 2 disjoints (c'est-à-dire que $A_i \cap A_j = \emptyset$ pour tous $i \ne j$), alors
+                $$\mathbb{P}\left(\bigcup_{i = 0}^{+\infty} A_i \right) = \sum_{i = 0}^{+\infty} \mathbb{P}(A_i)$$
+                </li>
+            </ol>
+            <p>On dit que le triplet $(\Omega, \mathcal{A}, \mathbb{P})$ forme un <strong class="new">espace probabilisé</strong>.</p>
+        </article>
+        <p>Pour un espace probabilisable $(\Omega, \mathcal{A})$ donné, il y plusieurs façons de choisir une probabilité pour en faire un espace probabilisé. Décider laquelle on prend relève d'un choix de modélisation.</p>
+        <article class="exemple">
+             <p>Pour le lancer d'une pièce de monnaie, on prend $\Omega = \{\text{pile}, \text{face}\}$ pour univers, et pour tribu l'ensemnle des parties de $\Omega$:</p>
+             <p>$$\mathcal{A} = \mathcal{P}(\Omega) = \{\emptyset, \{ \text{pile} \}, \{ \text{face} \}, \{ \text{pile}, \text{face} \} \} $$</p>
+             <p>On peut définir une probabilité sur $\mathcal{A}$ par</p>
+             <p>
+                 $$
+                 \begin{align*}
+                 \mathbb{P} :  \qquad \qquad \emptyset & \longmapsto 0 \\
+                 \{ \text{pile} \} & \longmapsto \frac{1}{2} \\
+                 \{ \text{face} \} & \longmapsto \frac{1}{2} \\
+                 \{ \text{pile}, \text{face} \} & \longmapsto 1
+                 \end{align*}
+                 $$
+             </p>
+             <p>On vérifie que cette fonction est effectivement une probabilité selon notre définition, car on a bien</p>
+             <p>
+                 $$
+                 \begin{align*}
+                 \mathbb{P}(\{ \text{pile} \} \cup \{ \text{face} \}) &= \mathbb{P}(\{ \text{pile}, \text{face} \}) \\
+                 &= 1 \\
+                 &= \frac{1}{2} + \frac{1}{2} \\
+                 &= \mathbb{P}(\{ \text{pile} \}) + \mathbb{P}(\{ \text{face} \})
+                 \end{align*}
+                 $$
+             </p>
+        </article>
+        <article class="exemple">
+            <p>Pour le lancer d'un dé à 6 faces, on prend $\Omega = \{1,2,3,4,5,6\}$. On peut alors définir une fonction de probabilité, dite probabilité uniforme, en posant pour tout $A \subset \Omega$,</p>
+            <p>$$\mathbb{P}(A) = \frac{|A|}{6}$$</p>
+        </article>
+        <h3>Univers fini équiprobable</h3>
+        <p>Dans le cas où l'univers $\Omega$ est fini, le modèle le plus raisonnable est bien souvent d'attribuer une probabilité égale à tous les singletons s'il n'y a pas de raison de penser qu'un résultat est plus probable qu'un autre. C'est-à-dire que pour tout $\omega \in \Omega$, on pose</p>
+        <p>$$\mathbb{P}(\{\omega\}) = \frac{1}{|\Omega|}$$</p>
+        <p>et pour un événement $A \subset \Omega$, on a</p>
+        <p>$$
+            \begin{align*}
+                 \mathbb{P}(A) = \frac{|A|}{|\Omega|}
+            \end{align*}
+            $$
+        </p>
+        <p>Ce que l'on retient souvent sous la forme : la probabilité d'un événement est le "nombre de cas favorables" divisé par le "nombre de cas total".</p>
+        <h3>Propriétés générales</h3>
+        <p>En conséquence de la définition générale d'une fonction de probabilité, nous avons les propriétes suivantes :</p>
+        <article class="prop">
+            Soient $A, B \subset \Omega$ deux événements. On a
+            <ol class="exo">
+                <li>$\mathbb{P}(\Omega) = 1$ et $\mathbb{P}(\emptyset) = 0$</li>
+                <li>$\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$</li>
+                <li>Si $A \subset B$, alors $\mathbb{P}(A) \le \mathbb{P}(B)$</li>
+                <li>$\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$</li>
+            </ol>
+        </article>
+        <p>La propriété $\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$ peut se révéler très pratique dans certains cas pour lesquels il est plus facile de calculer la probabilité du complémentaire.</p>
+    </section>
+    <section>
+        <h2>Événements indépendants</h2>
+        <article class="definition">
+            <p>Étant donné un espace probabilisé $(\Omega, \mathcal{A}, \mathbb{P})$, on dit que deux événements $A, B \subset \Omega$ sont <strong class="new">indépendants</strong> si</p>
+            <p>$$\mathbb{P}(A \cap B) = \mathbb{P}(A) \times \mathbb{P}(A)$$</p>
+        </article>
+        <p>Moralement deux événements sont indépendants si savoir que l'un a été réalisé (ou pas) ne donne aucune information sur la réalisation de l'autre.</p>
+        <article class="exemple">
+            On lance un dé deux fois de suite. On prend $\Omega = [\!|1,6|\!]^2$, on considère les événements
+            $$A = \text{"on fait 6 au premier lancer"} = \{(6,y), y \in [\!|1,6|\!]\}$$
+            et
+            $$B = \text{"on fait 6 au second lancer"} = \{(x,6), x \in [\!|1,6|\!]\}$$
+            Alors l'intersection de ces deux événements est
+            $$A \cap B = \text{"on fait deux fois 6"} = \{(6,6)\}$$
+            On a
+            $$
+            \begin{align*}
+            \mathbb{P}(A \cap B) &= \frac{1}{36} \\
+            &= \frac{1}{6} \times \frac{1}{6} \\
+            &= \mathbb{P}(A) \times \mathbb{P}(B)
+            \end{align*}
+            $$
+            Donc les événements $A$ et $B$ sont indépendants. On peut le comprendre intuitivement : connaître le résultat du premier lancer ne nous donne aucune information sur le résultat du second lancer. Maintenant considérons un troisième événement
+            $$C = \text{"La somme des résultats des deux lancers fait 7"} = \{(x,y)\in [\!|1,6|\!]^2, x+y = 7\}$$
+            En énumérant tous les éléments de $C$, on trouve $\mathbb{P}(C) = \frac{6}{36} = \frac{1}{6}$. Par ailleurs, on a
+            $$A \cap C = \{(6,1)\}$$
+            et donc on a
+            $$
+            \begin{align*}
+            \mathbb{P}(A \cap C) &= \frac{1}{36} \\
+            &= \frac{1}{6} \times \frac{1}{6} \\
+            &= \mathbb{P}(A) \times \mathbb{P}(C)
+            \end{align*}
+            $$
+            donc $A$ et $C$ sont indépendants.
+        </article>
+    </section>
+    <section>
+        <h2>Probabilité conditionnelle</h2>
+        <article class="definition">
+            Soit $(\Omega, \mathcal{A}, \mathbb{P})$ un espace probabilisé, et $A \in \mathcal{A}$ un événement de probabilité non nulle, alors l'application $\mathbb{P}_{A} : \mathcal{A} \to [0,1]$ définie pour tout $B \in \mathcal{A}$ par
+            $$\mathbb{P}_{A}(B) = \mathbb{P}(B | A) = \frac{\mathbb{P}(B)}{\mathbb{P}(A \cap B)}$$
+            est une probabilité, appelé <strong class="new">probabilité conditionnellement à $A$</strong>, ou probabilité sachant $A$.
+        </article>
+    </section>
+</div>   

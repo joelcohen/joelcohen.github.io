@@ -8,28 +8,28 @@ permalink: /ens/
 
 ### Outils calculatoires
 
-* [Feuille d'exercice 1](../docs/L3/outils_calc/td1), [Corrigé](../docs/L3/outils-calc/td1_corrige.pdf)
-* [Feuille d'exercice 2](../docs/L3/outils_calc/td2.pdf), [Corrigé](../docs/L3/outils_calc/td2_corrige.pdf)
-* [Feuille d'exercice 3](../docs/L3/outils_calc/td3.pdf) 
-* [Feuille d'exercice 4](../docs/L3/outils_calc/td4.pdf) 
-* [Feuille d'exercice 5](../docs/L3/outils_calc/td5.pdf)
+* [Feuille d'exercices 1](../docs/L3/outils_calc/td1), [Corrigé](../docs/L3/outils-calc/td1_corrige.pdf)
+* [Feuille d'exercices 2](../docs/L3/outils_calc/td2.pdf), [Corrigé](../docs/L3/outils_calc/td2_corrige.pdf)
+* [Feuille d'exercices 3](../docs/L3/outils_calc/td3.pdf) 
+* [Feuille d'exercices 4](../docs/L3/outils_calc/td4.pdf) 
+* [Feuille d'exercices 5](../docs/L3/outils_calc/td5.pdf)
 * [Corrigé du devoir maison](../docs/L3/outils_calc/dm1_corrige.pdf) (manuscrit)
 * [Examen](../docs/L3/outils_calc/examen.pdf)
 
 ### Mathématiques Générales
 
-* [Feuille d'exercice 1](../docs/L3/maths_G/td1.pdf)
-* [Feuille d'exercice 2](../docs/L3/maths_G/td2.pdf)
-* [Feuille d'exercice 3](../docs/L3/maths_G/td3.pdf)
+* [Feuille d'exercices 1](../docs/L3/maths_G/td1.pdf)
+* [Feuille d'exercices 2](../docs/L3/maths_G/td2.pdf)
+* [Feuille d'exercices 3](../docs/L3/maths_G/td3.pdf)
 * [Devoir Maison 1](../docs/L3/maths_G/dm1.pdf), [Corrigé](../docs/L3/maths_G/dm1_corrige.pdf)
 * [Devoir Maison 2](../docs/L3/maths_G/dm2.pdf)
 
 ### Analyse 2
 
 * [Cours sur les séries de Fourier](../docs/L3/analyse2/fourier.pdf)
-* [Feuille d'exercice 1](../docs/L3/analyse2/td1.pdf)
-* [Feuille d'exercice 2](../docs/L3/analyse2/td2.pdf)
-* [Feuille d'exercice 3](../docs/L3/analyse2/td3.pdf)
+* [Feuille d'exercices 1](../docs/L3/analyse2/td1.pdf)
+* [Feuille d'exercices 2](../docs/L3/analyse2/td2.pdf)
+* [Feuille d'exercices 3](../docs/L3/analyse2/td3.pdf)
 * [Interrogation 1](../docs/L3/analyse2/interro1.pdf)
 * [Interrogation 2](../docs/L3/analyse2/interro2.pdf)
 * [Mini QCM](../docs/L3/analyse2/quiz.pdf)
@@ -55,6 +55,8 @@ permalink: /ens/
 ### Introduction aux probabilités (UE Populations)
 
 * [Diapositives du cours 1](../docs/L2/probas/slides/)
+* [Éléments de cours](../docs/L2/probas/cours)
+* [Feuille d'exercices 1](../docs/L2/probas/td1)
 
 ## L1
 

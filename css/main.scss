@@ -17,7 +17,10 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+$accent-color: #26f;
 $code-color :      #06c;
+$sol-color : #333;
+
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -66,7 +69,7 @@ code.highlighter-rouge {
         margin : 0;
     }
     li + li {
-        margin : 3em 0;
+        margin : 1em 0;
     }
     h2 {
         //font-family: "Baskerville", serif;
@@ -91,19 +94,41 @@ code.highlighter-rouge {
     margin-top : 7em;
     margin-bottom : 5em;
     h1 {
-        font-family : $serif;
-        font-weight : normal;
+        //font-family : $serif;
+        font-size : 2em;
+        font-weight : bold;
         line-height : 1em;
         margin : 0;
     }
+    h2 {
+        font-size : 1.5em;
+        color : $brand-color;
+        line-height : 1em;
+        margin: 0;
+        font-weight : lighter;
+        //letter-spacing : .02em;
+    }
 }
 .exomath {
-    font-family : $serif;
-    
+    //font-family : $serif;
+    line-height: 1.6em;
     h1, h2, h3, h4, h5, h6 {
-        font-family : $serif-title;
-        //font-size : 110%;
-    }  
+        font-weight : bold;
+        //letter-spacing : -.05em;
+        //font-family : $serif-title;
+    }
+    .sol {
+        display: none;
+        background-color : #f9f9f9;
+        border : 1px solid #f0f0f0;
+        border-radius: .5em;
+        padding : 1.5em 2em;
+        margin : 1em 0;
+        //color: $sol-color;
+    } 
+}
+.new {
+    color : $brand-color;
 }
 
 @media print {
@@ -129,4 +154,71 @@ code.highlighter-rouge {
         margin : 0 5em;
     }
     
+}
+
+
+body {
+	counter-reset: section;
+    counter-reset: article;
+}
+section {
+	counter-increment: section;
+}
+
+section h2 {
+    margin-top : 2em;
+}
+section h2::before {
+    content : counter(section) ". ";
+    margin-left : -1em;
+}
+
+article.definition {
+    border : 1px solid #ccc;
+    background-color : #f9f9f9;
+    padding : 1em;
+    margin: 1em;
+    border-radius : .5em;
+}
+article.prop {
+    border : 1px solid #69f;
+    background-color : #f6f9ff;
+    padding : 1em;
+    margin: 1em;
+    border-radius : .5em;
+}
+
+article.lemma::before, article.prop::before, article.theorem::before, article.cor::before, article.proof::before, article.definition::before, article.exemple::before {
+	font-style : normal;
+	font-size : 1em;
+	font-weight : bold;
+    //font-family: $sans-serif;
+	//color : $highlight;
+}
+article.lemma::before, article.prop::before, article.theorem::before, article.cor::before, article.definition::before, article.exemple::before {
+	counter-increment: article;
+}
+.definition::before {
+	content : "Définition " counter(section) "." counter(article) " : ";
+}
+.lemma::before {
+	content : "Lemme " counter(section) "." counter(article) " : ";
+}
+.proof::before {
+	content : "Preuve : ";
+}
+.proof::after {
+	content : " —◼︎";
+}
+.prop::before {
+	content : "Proposition " counter(section) "." counter(article) " : ";
+}
+.theorem::before {
+	content : "Théorème " counter(section) "." counter(article) " : ";
+}
+.cor::before {
+	content : "Corollaire " counter(section) "." counter(article) " : ";
+}
+.exemple::before {
+	content : "Exemple " counter(section) "." counter(article) " : ";
 }
