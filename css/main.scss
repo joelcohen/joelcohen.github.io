@@ -163,14 +163,16 @@ body {
 }
 section {
 	counter-increment: section;
-}
-
-section h2 {
-    margin-top : 2em;
-}
-section h2::before {
-    content : counter(section) ". ";
-    margin-left : -1em;
+    counter-reset: article;
+    h2, h3 {
+        margin-top : 2em;
+    }
+    h2::before {
+        content : counter(section) ". ";
+        @media (min-width: 800px){
+            margin-left : -1em;
+        }
+    }
 }
 
 article.definition {

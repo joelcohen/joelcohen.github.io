@@ -43,7 +43,7 @@ hidden : True
                         <span id="1.4" class="sol">On prend $\Omega = \{\text{pile}, \text{face}\}^2$, donc $|\Omega| = 4$.</span>
                     </li>
                     <li onclick="toggle_visibility('1.5');">
-                        On lance en même temps deux pièces indentiques (qu'on ne distingue pas).
+                        On lance en même temps deux pièces identiques (qu'on ne distingue pas).
                         <span id="1.5" class="sol" ><p>Ici, l'énoncé nous indique qu'on ne peut pas distinguer les deux pièces donc on prend</p>
                             <p>$$\Omega = \{(\text{pile}, \text{pile}), (\text{pile}, \text{face}), (\text{face}, \text{face})\}$$</p>
                             <p>C'est-à-dire qu'on réunit $(\text{pile}, \text{face})$ et $(\text{face}, \text{pile})$ ensemble. On a donc $|\Omega| = 3$. Mais dans ce modèle, les événements ne sont pas équiprobables. En effet, physiquement la situation est la même que dans l'exemple précédent et si on tire dés pièces, on s'aperçoit que l'événement que les deux pièces sont différentes se produit avec probabilité $\frac{1}{4} + \frac{1}{4} = \frac{1}{2}$.</p></span>
@@ -119,7 +119,7 @@ hidden : True
                 On lance deux fois de suite un dé à 6 faces. On considère les événements suivants
                 <span class="inlineblock">$$A = \text{"On fait 6 au premier lancer."}$$</span>
                 <span class="inlineblock">$$B = \text{"On fait 6 au second lancer."}$$</span>
-                <span class="inlineblock">$$C = \text{"Le total des deux lancer fait 7."}$$</span>
+                <span class="inlineblock">$$C = \text{"Le total des deux lancers fait 7."}$$</span>
                 <ol class="exo">
                     <li onclick="toggle_visibility('3.1');">
                         Décrire explicitement les ensembles $A$, $B$ et $C$. Quel est leur cardinal ?
@@ -165,6 +165,58 @@ hidden : True
                         </span>
                     </li>
                 </ol>
+            </article>
+        </li>
+        <li class="exo">
+            <h2>Probabilité conditionnelle</h2>
+            <article class="exobox">
+                On lance $10$ fois un dé à 6 faces. Pour $1 \le n \le 10$, on considère l'événement
+                $$A_n = \text{"La première fois qu'on obtient 6 est au }n^{\text{ième}} \text{ lancer"}$$
+                Et on note
+                $$A_{11} = \text{"On ne fait pas de 6."}$$
+                et
+                $$B = \text{"On fait au moins un 6."}$$
+                <ol>
+                    <li>Que vaut le cardinal de $A_n$ ?</li>
+                    <li>Montrer que les événements $(A_n)_{1 \le n \le 11}$ forment une partition de l'univers.</li>
+                    <li>Calculer la probabilité de $B$ en appliquant la formule de probabilités totales. Pouvez-vous calculer cette probabilité autrement ?</li>
+                </ol>
+            </article>
+        </li>
+        <li class="exo" id="examen">
+            <h2>L'examen de probabilités</h2>
+            <article class="exobox">
+                Une classe passe un examen de probabilités. En se basant sur les statistiques des années précédentes, vous savez que les trois quarts de la classe ont revisé l'examen, et que 80% de la classe a validé l'UE. Vous savez également que les étudiants qui avaient révisé avaient 9 chances sur 10 de valider.
+                <ol>
+                    <li onclick="toggle_visibility('5.1');">
+                        <p>Parmi les étudiants qui ont validé, quelle proportion n'avait en fait pas révisé l'examen ?</p>
+                        <span id="5.1" class="sol">
+                            <p>Posons les événements suivants</p>
+                            <p>$$A = \text{"l'étudiant a validé."}$$
+                            $$B = \text{"l'étudiant à révisé l'examen."}$$</p>
+                            <p>Traduits en termes de probabilités, l'énoncé nous dit que</p>
+                            <p>
+                                <span class="inlineblock">$$\mathbb{P}(A) = \frac{80}{100} = \frac{4}{5}$$</span>
+                                <span class="inlineblock">$$\mathbb{P}(B) = \frac{3}{4}$$</span>
+                                <span class="inlineblock">$$\mathbb{P}(A | B) = \frac{9}{10}$$</span>    
+                            </p>
+                            <p>La question nous demande de calculer $\mathbb{P}(\overline{B} | A)$. On peut calculer $\mathbb{P}(B | A)$ par la formule de Bayes :</p>
+                            <p>$$\mathbb{P}(B | A) = \frac{\mathbb{P}(A | B) \cdot \mathbb{P}(B)}{\mathbb{P}(A)} = \frac{\frac{9}{10} \cdot \frac{3}{4}}{\frac{4}{5}} = \frac{27}{50}$$</p>
+                            et donc pour le complémentaire, on obtient
+                            $$\mathbb{P}(\overline{B} | A) = 1 - \mathbb{P}(B | A) = \frac{23}{50}$$
+                            Donc 46% des étudiants qui ont validé n'avaient pas révisé.
+                        </span>
+                    </li>
+                    <li onclick="toggle_visibility('5.2');">
+                        <p>Quelle est la probabilité de valider la matière sachant que vous n'avez pas révisé ?</p>
+                        <span id="5.2" class="sol">
+                            La question nous demande de calculer $\mathbb{P}(A | \overline{B})$. Nous pouvons déduire cette probabilité en appliquant la formule de Bayes :
+                            $$\mathbb{P}(A| \overline{B}) = \frac{\mathbb{P}(\overline{B} | A) \cdot \mathbb{P}(A)}{\mathbb{P}(\overline{B})} = \frac{23}{250} = 0,092 $$
+                            Donc il y a moins d'une chance sur 10 de valider si on n'a pas révisé.
+                        </span>
+                    </li>
+                </ol>
+                
             </article>
         </li>
     </ol>
