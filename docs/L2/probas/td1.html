@@ -177,9 +177,48 @@ hidden : True
                 et
                 $$B = \text{"On fait au moins un 6."}$$
                 <ol>
-                    <li>Que vaut le cardinal de $A_n$ ?</li>
-                    <li>Montrer que les événements $(A_n)_{1 \le n \le 11}$ forment une partition de l'univers.</li>
-                    <li>Calculer la probabilité de $B$ en appliquant la formule de probabilités totales. Pouvez-vous calculer cette probabilité autrement ?</li>
+                    <li onclick="toggle_visibility('4.1');">Que vaut le cardinal de $A_n$ ?
+                    <span id="4.1" class="sol">
+                        <p>Pour notre expérience, l'univers est $\Omega = [\!|1,6|\!]^{10}$ donc $|\Omega| = 6^{10}$. Commençons par calculer le cardinal de $A_1$. On a</p>
+                        <p>$$A_1 = \{(x_1, x_2, \ldots,x_{10}) \in \Omega, x_1 = 6\}$$</p>
+                        <p>Pour choisir un élement $(x_1, x_2, \ldots,x_{10})$ dans $A_1$, on peut choisir les valeurs des $x_i$ indépendamment les unes des autres, sachant qu'on a une seule possibilité pour $x_1$, et $6$ possibilités pour tous les autres. Au final, on trouve</p>
+                        <p>$$|A_1| = 1 \times \underbrace{6 \times 6 \times \ldots \times 6}_{9 \text{ fois}} = 6^9$$. Pour $A_2$, on a</p>
+                        <p>$$A_2 = \{(x_1, x_2, \ldots,x_{10}) \in \Omega, x_1 \ne 6, x_2 = 6\}$$</p>
+                        <p>Il y a donc $5$ possibilités pour le choix de $x_1$ (tout sauf 6), une possibilité pour $x_2$, et $6$ possibilités pour les autres $x_i$. On a donc</p>
+                        <p>$$|A_2| = 5 \times 1 \times \underbrace{6 \times 6 \times \ldots \times 6}_{8 \text{ fois}} = 5 \cdot 6^8$$</p>
+                        <p>On fait ensuite de même pour les suivants, et on trouve en fin de compte que pour tout $1 \le n \le 11$</p>
+                        <p>$$|A_n| = 5^{n-1} \cdot 6^{10-n}$$</p>
+                        <p>En divisant par $|\Omega|$, on peut en déduire la probabilité de $A_n$ (qui nous servira dans la suite) : $\mathbb{P}(A_n) = \frac{1}{6}\left(\frac{5}{6}\right)^{n-1}$</p>
+                    </span>
+                    </li>
+                    <li onclick="toggle_visibility('4.2');">Montrer que les événements $(A_n)_{1 \le n \le 11}$ forment une partition de l'univers.
+                    <span id="4.2" class="sol">
+                        <p>On doit montrer d'une part que les événements sont deux à deux disjoints (c'est-à-dire qu'on a $A_i \cap A_j = \emptyset$ pour tous les couples $i \ne j$ entre 1 et 11) et d'autre part qu'il recouvrent l'univers $\Omega$ tout entier (c'est-à-dire que $A_1 \cup A_2 \cup \ldots \cup A_{11} = \Omega$).</p>
+                        <p>Commençons par le fait que les évéments sont disjoints. On se donne deux entiers distincts $1 \le i < j \le 11$ entre $1$ et $11$. Supposons par l'absurde que l'intersection n'est pas vide, on se donne alors $\omega = (x_1, x_2, \ldots,x_{10}) \in A_i \cap A_j$. Comme $\omega \in A_i$, alors $x_i = 6$. Mais par ailleurs, comme  $\omega \in A_j$ alors $x_i \ne j$ ($\omega \in A_j$ implique qu'on ne peut pas avoir fait un $6$ avant le $j^{\text{ème}}$ lancer). Et donc c'est absurde, et $A_i \cap A_j$.</p>
+                        <p>Montront que l'union fait $\Omega$. On se donne $\omega = (x_1, x_2, \ldots,x_{10}) \in \Omega$ et on cherche à monrer que $\omega$ est dans l'un des $A_i$. De deux choses l'une soit au moins l'un des $x_i$ vaut $6$, soit aucune coordonnée ne vaut $6$. Si aucune coordonnée ne vaut $6$, alors $\omega \in A_{11}$. Sinon, au moins une coordonnée vaut $6$. Si on note $i_0$ le premier indice tel que $x_{i_0} = 6$ alors $\omega \in A_i$. Donc dans tous les cas, $\omega$ est bien dans l'un des $A_i$. En conclusion, les $(A_n)_{1 \le n \le 11}$ forment une partition de l'univers.</p>
+                    </span>
+                    </li>
+                    <li onclick="toggle_visibility('4.3');">Calculer la probabilité de $B$ en appliquant la formule de probabilités totales. Pouvez-vous calculer cette probabilité autrement ?
+                    <span id="4.3" class="sol">
+                        <p>D'après la question précédente, la formule des probabilités totales nous donne</p>
+                        <p>
+                            $$
+                            \begin{align*}
+                            \mathbb{P}(B) &= \sum_{n = 1}^{11} \mathbb{P}(B | A_n) P(A_n) \\
+                            &= \sum_{n = 1}^{11} \mathbb{P}(B | A_n) \cdot P(A_n) \\
+                            &= \sum_{n = 1}^{10} 1 \cdot \frac{1}{6}\left(\frac{5}{6}\right)^{n-1} \\
+                            &= \frac{1}{6} \sum_{k = 0}^{9} \left(\frac{5}{6}\right)^{k} \\
+                            \ \\
+                            &= \frac{1}{6^n} \frac{1- \left(\frac{5}{6}\right)^{10}}{1 - \frac{5}{6}} \\
+                            \ \\
+                            &= 1 - \left(\frac{5}{6}\right)^{10}
+                            \end{align*}
+                            $$
+                        </p>
+                        <p>On aurait pu trouver ce résulat en constatant que $\overline{B} = A_{11}$, donc</p>
+                        <p>$$\mathbb{P}(B) = 1 - \mathbb{P}(A_{11}) = 1 - \left(\frac{5}{6}\right)^{10}$$</p>
+                    </span>
+                    </li>
                 </ol>
             </article>
         </li>
