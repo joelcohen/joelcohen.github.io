@@ -15,5 +15,36 @@ MathJax.Hub.Config({
 	tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
   </script>
-  
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: {
+          Macros: {
+            N: "\\mathbb{N}",
+            Z: "\\mathbb{Z}",
+            Q: "\\mathbb{Q}",
+            R: "\\mathbb{R}",
+            C: "\\mathbb{C}}",
+            F: "\\mathbb{F}}",
+            P: "\\mathbb{P}",
+            pile: "\\text{pile}",
+            face: "\\text{face}",
+            pars: ["\\left(#1\\right)", 1],
+            set: ["\\left\\{#1\\right\\}", 1],
+            scal: ["\\left \\langle #1 \\right \\rangle", 1],
+            ints: ["\\left[\\!\\left[ #1 \\right]\\!\right]", 1],
+            re: "\\operatorname{Re}",
+            im: "\\operatorname{Im}",
+            ch: "\\operatorname{ch}",
+            sh: "\\operatorname{sh}",
+            Vect: "\\operatorname{Vect}",
+            End: "\\operatorname{End}",
+            Aut: "\\operatorname{Aut}",
+            Isom: "\\operatorname{Isom}",
+            Hom: "\\operatorname{Hom}",
+            GL: "\\operatorname{GL}",
+            SL: "\\operatorname{SL}"
+          }
+        }
+      });
+  </script>
 </head>

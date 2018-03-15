@@ -14,7 +14,6 @@ hidden : True
     }
 //-->
 </script>
-    
 <div class="exomath">
     <div class="titlebox">
         <h1>Probabilités</h1>
@@ -24,13 +23,13 @@ hidden : True
        <h2>Univers et événements</h2>
        <p>On parlera d'une <strong class="new">expérience aléatoire</strong> pour une expérience dont on ne connaît pas le résultat avec certitude a priori. À une expérience aléatoire, on associe l'ensemble des issues possibles, qu'on appelle l'<strong class="new">univers</strong> de cette expérience aléatoire et qui est le plus souvent noté par la lettre $\Omega$ majuscule (on parle parfois aussi de population pour l'ensemble $\Omega$, notamment en statistiques). Un élément de l'ensemble $\Omega$ (que l'on note souvent $\omega$ minuscule) est un des résultats possibles de l'expérience.</p>
        <article class="exemple">
-           <p>Si on lance une pièce de monnaie, l'univers sera l'ensemble $\Omega = \{\text{pile}, \text{face}\}$, et $\omega = \text{face}$ est un résultat possible.</p>
+           <p>Si on lance une pièce de monnaie, l'univers sera l'ensemble $\Omega = \{\pile, \face\}$, et $\omega = \face$ est un résultat possible.</p>
        </article>
        <article class="exemple">
            <p>Si on lance un dé à 6 faces, l'univers sera l'ensemble $\Omega = \{1,2,3,4,5,6\}$ des valeurs possibles du dé, et $\omega = 5$ est un résultat possible.</p>
        </article>
        <article class="exemple">
-           <p>Si on lance une pièce de monnaie deux fois, l'univers sera l'ensemble des couples de résultats $\Omega = \{\text{pile}, \text{face}\}^2 = \{(\text{pile},\text{pile}), (\text{pile},\text{face}), (\text{face},\text{pile}), (\text{face},\text{face})\}$, et $\omega = (\text{face}, \text{pile})$ est un résultat possible.</p>
+           <p>Si on lance une pièce de monnaie deux fois, l'univers sera l'ensemble des couples de résultats $\Omega = \{\pile, \face\}^2 = \{(\pile,\pile), (\pile,\face), (\face,\pile), (\face,\face)\}$, et $\omega = (\face, \pile)$ est un résultat possible.</p>
        </article>
        <p>Pour d'autres exemples et pour s'exercer sur la notion d'univers, voir la <a href="td1#univers">feuille 1 exercice 1</a>.</p>
        <article class="definition">
@@ -48,31 +47,31 @@ hidden : True
             <p>Étant donné un univers $\Omega$ et une tribu $\mathcal{A}$ (c'est-à-dire un espace probabilisable), une <strong class="new">probabilité</strong> est une fonction qui à chaque événement associe une valeur numérique :</p>
             <p>
                 $$\begin{align*}
-                \mathbb{P} : \mathcal{A}    & \longrightarrow [0,1] \\
-                                        A   & \longmapsto \mathbb{P}(A)
+                \P : \mathcal{A}    & \longrightarrow [0,1] \\
+                                        A   & \longmapsto \P(A)
                 \end{align*}$$
             </p>
             <p>satisfaisant les propriétés</p>
             <ol>
-                <li>$\mathbb{P}(\Omega) = 1$</li>
+                <li>$\P(\Omega) = 1$</li>
                 <li>Si $(A_n)_{n \ge 0}$ sont des événéments 2 à 2 disjoints (c'est-à-dire que $A_i \cap A_j = \emptyset$ pour tous $i \ne j$), alors
-                $$\mathbb{P}\left(\bigcup_{i = 0}^{+\infty} A_i \right) = \sum_{i = 0}^{+\infty} \mathbb{P}(A_i)$$
+                $$\P\left(\bigcup_{i = 0}^{+\infty} A_i \right) = \sum_{i = 0}^{+\infty} \P(A_i)$$
                 </li>
             </ol>
-            <p>On dit que le triplet $(\Omega, \mathcal{A}, \mathbb{P})$ forme un <strong class="new">espace probabilisé</strong>.</p>
+            <p>On dit que le triplet $(\Omega, \mathcal{A}, \P)$ forme un <strong class="new">espace probabilisé</strong>.</p>
         </article>
         <p>Pour un espace probabilisable $(\Omega, \mathcal{A})$ donné, il y plusieurs façons de choisir une probabilité pour en faire un espace probabilisé. Décider laquelle on prend relève d'un choix de modélisation.</p>
         <article class="exemple">
-             <p>Pour le lancer d'une pièce de monnaie, on prend $\Omega = \{\text{pile}, \text{face}\}$ pour univers, et pour tribu l'ensemble des parties de $\Omega$:</p>
-             <p>$$\mathcal{A} = \mathcal{P}(\Omega) = \{\emptyset, \{ \text{pile} \}, \{ \text{face} \}, \{ \text{pile}, \text{face} \} \} $$</p>
+             <p>Pour le lancer d'une pièce de monnaie, on prend $\Omega = \{\pile, \face\}$ pour univers, et pour tribu l'ensemble des parties de $\Omega$:</p>
+             <p>$$\mathcal{A} = \mathcal{P}(\Omega) = \{\emptyset, \{ \pile \}, \{ \face \}, \{ \pile, \face \} \} $$</p>
              <p>On peut définir une probabilité sur $\mathcal{A}$ par</p>
              <p>
                  $$
                  \begin{align*}
-                 \mathbb{P} :  \qquad \qquad \emptyset & \longmapsto 0 \\
-                 \{ \text{pile} \} & \longmapsto \frac{1}{2} \\
-                 \{ \text{face} \} & \longmapsto \frac{1}{2} \\
-                 \{ \text{pile}, \text{face} \} & \longmapsto 1
+                 \P :  \qquad \qquad \emptyset & \longmapsto 0 \\
+                 \{ \pile \} & \longmapsto \frac{1}{2} \\
+                 \{ \face \} & \longmapsto \frac{1}{2} \\
+                 \{ \pile, \face \} & \longmapsto 1
                  \end{align*}
                  $$
              </p>
@@ -80,25 +79,25 @@ hidden : True
              <p>
                  $$
                  \begin{align*}
-                 \mathbb{P}(\{ \text{pile} \} \cup \{ \text{face} \}) &= \mathbb{P}(\{ \text{pile}, \text{face} \}) \\
+                 \P(\{ \pile \} \cup \{ \face \}) &= \P(\{ \pile, \face \}) \\
                  &= 1 \\
                  &= \frac{1}{2} + \frac{1}{2} \\
-                 &= \mathbb{P}(\{ \text{pile} \}) + \mathbb{P}(\{ \text{face} \})
+                 &= \P(\{ \pile \}) + \P(\{ \face \})
                  \end{align*}
                  $$
              </p>
         </article>
         <article class="exemple">
             <p>Pour le lancer d'un dé à 6 faces, on prend $\Omega = \{1,2,3,4,5,6\}$. On peut alors définir une fonction de probabilité, dite probabilité uniforme, en posant pour tout $A \subset \Omega$,</p>
-            <p>$$\mathbb{P}(A) = \frac{|A|}{6}$$</p>
+            <p>$$\P(A) = \frac{|A|}{6}$$</p>
         </article>
         <h3>Univers fini équiprobable</h3>
         <p>Dans le cas où l'univers $\Omega$ est fini, le modèle le plus raisonnable est bien souvent d'attribuer une probabilité égale à tous les singletons s'il n'y a pas de raison de penser qu'un résultat est plus probable qu'un autre. C'est-à-dire que pour tout $\omega \in \Omega$, on pose</p>
-        <p>$$\mathbb{P}(\{\omega\}) = \frac{1}{|\Omega|}$$</p>
+        <p>$$\P(\{\omega\}) = \frac{1}{|\Omega|}$$</p>
         <p>et pour un événement $A \subset \Omega$, on a</p>
         <p>$$
             \begin{align*}
-                 \mathbb{P}(A) = \frac{|A|}{|\Omega|}
+                 \P(A) = \frac{|A|}{|\Omega|}
             \end{align*}
             $$
         </p>
@@ -108,19 +107,19 @@ hidden : True
         <article class="prop">
             Soient $A, B \in \mathcal{A}$ deux événements. On a
             <ol class="exo">
-                <li>$\mathbb{P}(\Omega) = 1$ et $\mathbb{P}(\emptyset) = 0$</li>
-                <li>$\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$</li>
-                <li>Si $A \subset B$, alors $\mathbb{P}(A) \le \mathbb{P}(B)$</li>
-                <li>$\mathbb{P}(A \cup B) = \mathbb{P}(A) + \mathbb{P}(B) - \mathbb{P}(A \cap B)$</li>
+                <li>$\P(\Omega) = 1$ et $\P(\emptyset) = 0$</li>
+                <li>$\P(\overline{A}) = 1 - \P(A)$</li>
+                <li>Si $A \subset B$, alors $\P(A) \le \P(B)$</li>
+                <li>$\P(A \cup B) = \P(A) + \P(B) - \P(A \cap B)$</li>
             </ol>
         </article>
-        <p>Ici, $\overline{A}$ désigne le complémentaire de $A$. La propriété $\mathbb{P}(\overline{A}) = 1 - \mathbb{P}(A)$ peut se révéler très pratique dans certains cas pour lesquels il est plus facile de calculer la probabilité du complémentaire.</p>
+        <p>Ici, $\overline{A}$ désigne le complémentaire de $A$. La propriété $\P(\overline{A}) = 1 - \P(A)$ peut se révéler très pratique dans certains cas pour lesquels il est plus facile de calculer la probabilité du complémentaire.</p>
     </section>
     <section>
         <h2>Événements indépendants</h2>
         <article class="definition"><strong>Indépendance de deux événements</strong>
-            <p>Étant donné un espace probabilisé $(\Omega, \mathcal{A}, \mathbb{P})$, on dit que deux événements $A, B \in \mathcal{A}$ sont <strong class="new">indépendants</strong> si</p>
-            <p>$$\mathbb{P}(A \cap B) = \mathbb{P}(A) \times \mathbb{P}(A)$$</p>
+            <p>Étant donné un espace probabilisé $(\Omega, \mathcal{A}, \P)$, on dit que deux événements $A, B \in \mathcal{A}$ sont <strong class="new">indépendants</strong> si</p>
+            <p>$$\P(A \cap B) = \P(A) \times \P(A)$$</p>
         </article>
         <p>Moralement deux événements sont indépendants si savoir que l'un a été réalisé (ou pas) ne donne aucune information sur la réalisation de l'autre. Il faut faire attention au fait que l'indépendance d'événements est une notion qui dépend du choix de la probabilité (c'est pour cela que notre définition commence par se donner un espace probabilisé).</p>
         
@@ -134,21 +133,21 @@ hidden : True
             On a
             $$
             \begin{align*}
-            \mathbb{P}(A \cap B) &= \frac{1}{36} \\
+            \P(A \cap B) &= \frac{1}{36} \\
             &= \frac{1}{6} \times \frac{1}{6} \\
-            &= \mathbb{P}(A) \times \mathbb{P}(B)
+            &= \P(A) \times \P(B)
             \end{align*}
             $$
             Donc les événements $A$ et $B$ sont indépendants. On peut le comprendre intuitivement : connaître le résultat du premier lancer ne nous donne aucune information sur le résultat du second lancer. Maintenant considérons un troisième événement
             $$C = \text{"La somme des résultats des deux lancers fait 7"} = \{(x,y)\in [\!|1,6|\!]^2, x+y = 7\}$$
-            En énumérant tous les éléments de $C$, on trouve $\mathbb{P}(C) = \frac{6}{36} = \frac{1}{6}$. Par ailleurs, on a
+            En énumérant tous les éléments de $C$, on trouve $\P(C) = \frac{6}{36} = \frac{1}{6}$. Par ailleurs, on a
             $$A \cap C = \{(6,1)\}$$
             et donc on a
             $$
             \begin{align*}
-            \mathbb{P}(A \cap C) &= \frac{1}{36} \\
+            \P(A \cap C) &= \frac{1}{36} \\
             &= \frac{1}{6} \times \frac{1}{6} \\
-            &= \mathbb{P}(A) \times \mathbb{P}(C)
+            &= \P(A) \times \P(C)
             \end{align*}
             $$
             donc $A$ et $C$ sont indépendants.
@@ -156,21 +155,21 @@ hidden : True
         <h3>Indépendance pour plus de 2 événements</h3>
         <p>On peut étendre la notion d'indépendance à une famille de plusieurs événements mais il faudra alors distinguer deux notions : indépendants deux à deux, et indépendants mutuellement (ce qui est plus fort). Donnons la définition</p>
         <article class="definition"><strong>Indépendance 2 à 2, mutuelle</strong>
-            <p>Étant donné un espace probabilisé $(\Omega, \mathcal{A}, \mathbb{P})$, et une famille d'événements $(A_i)_{i \in I} \in \mathcal{A}^I$, on dira que les événements $A_i$ sont</p>
+            <p>Étant donné un espace probabilisé $(\Omega, \mathcal{A}, \P)$, et une famille d'événements $(A_i)_{i \in I} \in \mathcal{A}^I$, on dira que les événements $A_i$ sont</p>
             <ul>
                 <li><strong class="new">deux à deux indépendants</strong> si pour tous $i,j \in I$ avec $i \ne j$, les événements $A_i$ et $A_j$ sont indépendants, c'est-à-dire
-                $$\mathbb{P}(A_i \cap A_j) = \mathbb{P}(A_i) \times \mathbb{P}(A_j)$$
+                $$\P(A_i \cap A_j) = \P(A_i) \times \P(A_j)$$
                 </li>
                 <li><strong class="new">mutuellement indépendants</strong> si pour toute partie finie $J \subset I$, on a
-                $$\mathbb{P}\left( \bigcap_{j \in J} A_j\right) = \prod_{j \in J} \mathbb{P}\left(A_j\right)$$
+                $$\P\left( \bigcap_{j \in J} A_j\right) = \prod_{j \in J} \P\left(A_j\right)$$
                 </li>
             </ul>
         </article>
         <p>Par exemple pour trois événements $A$, $B$ et $C$, on dira qu'il sont deux à deux indépendants si on les trois égalités :
-            $$\mathbb{P}(A \cap B) = \mathbb{P}(A) \times \mathbb{P}(B), \qquad \mathbb{P}(B \cap C) = \mathbb{P}(B) \times \mathbb{P}(C), \qquad \mathbb{P}(C \cap A) = \mathbb{P}(C) \times \mathbb{P}(A)$$
+            $$\P(A \cap B) = \P(A) \times \P(B), \qquad \P(B \cap C) = \P(B) \times \P(C), \qquad \P(C \cap A) = \P(C) \times \P(A)$$
         </p>
         <p>Pour que les événements soient mutuellement indépendants, il faut également vérifier une égalité supplémentaire :
-            $$\mathbb{P}(A \cap B \cap C) = \mathbb{P}(A) \times \mathbb{P}(B) \times \mathbb{P}(C)$$
+            $$\P(A \cap B \cap C) = \P(A) \times \P(B) \times \P(C)$$
         </p>
         <p>La notion d'indépendance mutuelle est plus forte que celle d'indépendance deux à deux. En effet, des événements qui sont mutuellement indépendants sont aussi 2 à 2 indépendants, mais il est possible pour des événements 2 à 2 indépendants de ne pas être mutuellement indépendants (c'est par exemple le cas des événements $A$, $B$ et $C$ de l'exemple précédent qui sont 2 à 2 indépdendants, mais pas mutuellement indépendants).</p>
         
@@ -181,31 +180,31 @@ hidden : True
         <h2>Probabilité conditionnelle</h2>
         <p>La probabilité conditionnelle prend en compte comment la probabilité d'un événement est modifiée par une nouvelle information. Par exemple, imaginons que je prenne mon parapluie dès qu'il pleut. Si la probabilité qu'il pleuve est de $1/2$, alors la probabilité que je prenne mon parapluie est donc aussi $1/2$, mais la probabilité que je prenne mon parapluie sachant qu'il pleuve est de $1$ !</p>
         <article class="definition"><strong>Probabilité conditionnelle</strong>
-            <p>Soit $(\Omega, \mathcal{A}, \mathbb{P})$ un espace probabilisé, et $A \in \mathcal{A}$ un événement de probabilité non nulle, alors l'application $\mathbb{P}_{A} : \mathcal{A} \to [0,1]$ définie pour tout $B \in \mathcal{A}$ par</p>
-            <p>$$\mathbb{P}_{A}(B) = \mathbb{P}(B | A) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(A)}$$</p>
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $A \in \mathcal{A}$ un événement de probabilité non nulle, alors l'application $\P_{A} : \mathcal{A} \to [0,1]$ définie pour tout $B \in \mathcal{A}$ par</p>
+            <p>$$\P_{A}(B) = \P(B | A) = \frac{\P(A \cap B)}{\P(A)}$$</p>
             <p>est une probabilité, appelé <strong class="new">probabilité conditionnellement à $A$</strong>, ou probabilité sachant $A$.</p>
         </article>
-        <p>On peut interprêter $\mathbb{P}(B | A)$ comme la probabilité de l'événement $B$ dès lors qu'on sait que l'évenement $A$ s'est produit. La formule de la probabilité conditionnelle est parfois utilisée sous la forme</p>
-        <p>$$\mathbb{P}(A \cap B) = \mathbb{P}(B | A) \mathbb{P}(A)$$</p>
+        <p>On peut interprêter $\P(B | A)$ comme la probabilité de l'événement $B$ dès lors qu'on sait que l'évenement $A$ s'est produit. La formule de la probabilité conditionnelle est parfois utilisée sous la forme</p>
+        <p>$$\P(A \cap B) = \P(B | A) \P(A)$$</p>
         <p>Ce qui fournit bien souvent un moyen de calculer la probabilité d'une intersection d'événements.</p>
         <article class="exemple">On lance un dé équilibré à 12 faces, c'est-à-dire que l'on prend $\Omega = [\!|1,12|\!]$ et la probabilité uniforme. Considérons les événements
             $$A = \text{"la valeur du dé est un multiple de 3"} = \{3,6,9,12\}$$
             $$B =\text{"la valeur du dé est au moins 4"} = [\!|4,12|\!]$$
             On a $A \cap B = \{6,9, 12\}$ et
-            $$\mathbb{P}(B | A) = \frac{\mathbb{P}(A \cap B)}{\mathbb{P}(A)} = \frac{\ \frac{3}{12}\ }{\frac{4}{12}} = \frac{3}{4}$$
+            $$\P(B | A) = \frac{\P(A \cap B)}{\P(A)} = \frac{\ \frac{3}{12}\ }{\frac{4}{12}} = \frac{3}{4}$$
             On peut interpréter le résultat ainsi : Si on a tiré un multiple de 3 (événement $A$), c'est que l'on a tiré un 3, un 6, un 9 ou un 12. Parmi ces 4 possibilités équiprobables, 3 sont supérieures ou égales à 4. Donc si l'événement $A$ se réalise, on a une probabilité de $\frac{3}{4}$ pour que l'événement $B$ se réalise.
         </article>
         <h3>Probabilité conditionnelle et indépendance</h3>
         <p>On peut caractériser l'indépendance de deux événements en termes de probabilité conditionelle. On a en effet la proposition suivante.</p>
         <article class="prop">
-            <p>Soit $(\Omega, \mathcal{A}, \mathbb{P})$ un espace probabilisé, et $A, B \in \mathcal{A}$ deux événements. On suppose que $\mathbb{P}(A) \ne 0$. Alors $A$ et $B$ sont indépendant si et seulement si</p>
-            <p>$$\mathbb{P}(B | A) = \mathbb{P}(B)$$</p>
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $A, B \in \mathcal{A}$ deux événements. On suppose que $\P(A) \ne 0$. Alors $A$ et $B$ sont indépendant si et seulement si</p>
+            <p>$$\P(B | A) = \P(B)$$</p>
         </article>
-        <p>On peut interpréter l'égalité $\mathbb{P}(B | A) = \mathbb{P}(B)$ de la façon suivante : connaître $A$ n'apporte aucune nouvelle information sur $B$, donc la probabilité de $B$ est inchangée.</p>
-        <h3>Formule de Bayes</h3>
+        <p>On peut interpréter l'égalité $\P(B | A) = \P(B)$ de la façon suivante : connaître $A$ n'apporte aucune nouvelle information sur $B$, donc la probabilité de $B$ est inchangée.</p>
+        <h3 id="bayes">Formule de Bayes</h3>
         <article class="prop"><strong>Formule de Bayes</strong>
-            <p>Soit $(\Omega, \mathcal{A}, \mathbb{P})$ un espace probabilisé, et $A, B \in \mathcal{A}$ deux événements de probabilité non nulle. Alors on a</p>
-            <p>$$\mathbb{P}(A | B) = \frac{\mathbb{P}(B | A) \cdot \mathbb{P}(A)}{\mathbb{P}(B)}$$</p>
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $A, B \in \mathcal{A}$ deux événements de probabilité non nulle. Alors on a</p>
+            <p>$$\P(A | B) = \frac{\P(B | A) \cdot \P(A)}{\P(B)}$$</p>
         </article>
         <p>Voir <a href="td1#examen">Feuille 1</a> pour un exemple d'application de la formule.</p>
         <!-- <article class="exemple">
@@ -213,13 +212,13 @@ hidden : True
             <p>$$A = \text{"l'étudiant a validé."}$$
             $$B = \text{"l'étudiant à révisé l'examen."}$$</p>
             <p>On peut alors traduire les affirmations précédentes en termes de probabilités. Nous avons</p>
-            $$\mathbb{P}(A) = \frac{80}{100} = \frac{4}{5}$$
-            $$\mathbb{P}(B) = \frac{3}{4}$$
-            $$\mathbb{P}(A | B) = \frac{9}{10}$$
+            $$\P(A) = \frac{80}{100} = \frac{4}{5}$$
+            $$\P(B) = \frac{3}{4}$$
+            $$\P(A | B) = \frac{9}{10}$$
             donc
-            $$\mathbb{P}(A | \overline{B})$$
+            $$\P(A | \overline{B})$$
 
         </article> -->
-        <p>La preuve de la formule de Bayes n'est pas compliquée, mais cette égalité est étonnemment profonde dans l'interpretation qu'on peut lui donner. Si on interprète les probabilités d'un événement comme une mesure de sa plausibilité, alors on peut voir la formule ainsi : $\mathbb{P}(A)$ et $\mathbb{P}(B)$ sont les plausibilités des événements $A$ et $B$ en l'absence d'information supplémentaire (on parle de probabilité a priori). Mais si on sait que $B$ s'est réalisé, on peut ajuster la plausibilité de $B$, en fonction de la valeur précédente, et de $\mathbb{P}(B | A)$ qui mesure à quel point il est vraisemblable d'avoir observé $B$ sachant que $A$ est vrai.</p>
+        <p>La preuve de la formule de Bayes n'est pas compliquée, mais cette égalité est étonnemment profonde dans l'interpretation qu'on peut lui donner. Si on interprète les probabilités d'un événement comme une mesure de sa plausibilité, alors on peut voir la formule ainsi : $\P(A)$ et $\P(B)$ sont les plausibilités des événements $A$ et $B$ en l'absence d'information supplémentaire (on parle de probabilité a priori). Mais si on sait que $B$ s'est réalisé, on peut ajuster la plausibilité de $B$, en fonction de la valeur précédente, et de $\P(B | A)$ qui mesure à quel point il est vraisemblable d'avoir observé $B$ sachant que $A$ est vrai.</p>
     </section>
 </div>   
