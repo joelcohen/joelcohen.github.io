@@ -8,7 +8,7 @@ permalink: /ens/
 
 ### Outils calculatoires
 
-* [Feuille d'exercices 1](../docs/L3/outils_calc/td1), [Corrigé](../docs/L3/outils-calc/td1_corrige.pdf)
+* [Feuille d'exercices 1](../docs/L3/outils_calc/td1), [Corrigé](../docs/L3/outils_calc/td1_corrige.pdf)
 * [Feuille d'exercices 2](../docs/L3/outils_calc/td2.pdf), [Corrigé](../docs/L3/outils_calc/td2_corrige.pdf)
 * [Feuille d'exercices 3](../docs/L3/outils_calc/td3.pdf) 
 * [Feuille d'exercices 4](../docs/L3/outils_calc/td4.pdf) 
