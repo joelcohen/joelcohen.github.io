@@ -42,6 +42,7 @@ permalink: /ens/
 * [Message 3](../docs/L3/crypto/message3.txt)
 * [Message 4](../docs/L3/crypto/message4.txt)
 * [Message 5](../docs/L3/crypto/message5.txt)
+* [Message 6](../docs/L3/crypto/message6.txt)
 
 ## L2
 
