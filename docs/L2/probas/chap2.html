@@ -27,7 +27,7 @@ hidden : True
         <h3>Définition</h3>
         <p>Jusqu'ici nous avons parlé d'ensembles (univers, événements). Il est donc naturel de construire des fonctions entre espaces probabilisables, c'est la notion de variable aléatoire. Cela est notamment utile quand on calcule une quantité qui dépend du résultat d'une expérience aléatoire (vos gains à un jeu de pile de face, somme des valeurs deux dés, etc).</p>
         
-        <article class="definition"><strong>Variable aléatoire</strong>
+        <article class="definition" id="def_variable"><strong>Variable aléatoire</strong>
             <p>Soient $(\Omega, \mathcal{A})$ et $(E, \mathcal{E})$ des espaces probabilisables. Une <strong class="new">variable aléatoire</strong> sur $\Omega$ à valeurs dans $E$ est une fonction $X : \Omega \longmapsto E$ telle que pour tout événement $B \in \mathcal{E}$, on a</p>
             <p>$$X^{-1}(B) = \set{\omega \in \Omega, \ X(\omega) \in B} \in \mathcal{A}$$</p>
             Pour alléger les notations, l'événement $X^{-1}(B)$ sera noté $\set{X \in B}$. Dans le cas où $B = \set{b}$, on notera même $X^{-1}(\{b\}) = \set{X = b}$.
@@ -59,7 +59,7 @@ hidden : True
     <section>
         <h2>Loi d'une variable aléatoire</h2>
         
-        <article class="prop"><strong>Loi d'une variable aléatoire</strong>
+        <article class="prop" id="loi_variable"><strong>Loi d'une variable aléatoire</strong>
             <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, $(E, \mathcal{E})$ un espace probabilisable, et $X : \Omega \to E$ une variable aléatoire sur $\Omega$ à valeurs dans $E$. Alors la fonction</p>
             $$\begin{align*}
             \P_X : \mathcal{E} & \longmapsto [0,1] \\
@@ -76,8 +76,11 @@ hidden : True
         <p>donc $X$ et $Y$ ont la même loi.</p>
         <h3>Loi d'une variable aléatoire discrète</h3>
         <p>Dans le cas d'une variable aléatoire discrète, la loi de $X$ est entièrement déterminée par les valeurs $\P(X = e)$ pour $e \in E$. En effet, si $B \in \mathcal{E}$, alors on peut calculer $\P(X \in B)$ avec la formule :</p>
-        $$\P(X \in B) = \sum_{b \in B} \P(X = b)$$
-        
+        <p>$$\P(X \in B) = \sum_{b \in B} \P(X = b)$$</p>
+        <p>Remarquons que si $X : \Omega \to E$ est une variable aléatoire sur l'espace probabilisé $(\Omega, \mathcal{A}, \P)$, alors la famille d'événements $(\set{X = e})_{e \in E}$ forme une <a href="chap1#partition">partition</a> de $\Omega$. Alors d'après la <a href="chap1#probas_totales">formule des probabilités totales</a>, pour tout événement $A \in \mathcal{A}$, on a</p>
+        <p>$$\P(A) = \sum_{e \in E, \ \P(X = e) \ne 0} \P(A | X = e) \cdot \P(X = e)$$</p>
+        <p>Par exemple, on peut réinterpréter le calcul fait dans <a href="td1#proba_conditionelle">cet exercice</a> en termes de variables aléatoires. On lance un dé dix fois de suite. Si on note $N$ l'indice du premier lancer auquel on obtient un $6$, en prenant $N = 11$ si on ne fait jamais 6 (notons d'ailleurs que si la variable aléatoire $X_i$ désigne le résultat du $i^{\text{ème}}$ lancer de dé, alors $N = \min \set{i \in \ints{1,10}, X_i = 6}$). Alors les événements $(\set{N = n})_{1 \le n \le 11}$ forment une partition de l'univers $\Omega$. Si $B$ désigne l'événement "faire au moins un 6", d'après la formule des probabilités totales, on a</p>
+        <p>$$\P(B) = \sum_{n = 1}^{11} \P(B | N = n) \cdot \P(N = n) = \sum_{n = 1}^{10} \pars{\frac{5}{6}}^{n-1} \cdot \frac{1}{6} = 1 - \pars{\frac{5}{6}}^{10}$$</p>
         <article class="exemple"><strong>Les déplacements au Monopoly</strong>
             <p>On joue (sans tricher) au Monopoly. On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés. Au chapitre précédent, on a calculé $\P(X = 7) = \frac{1}{6}$ et $\P(X = 5) = \frac{1}{9}$. Plus généralement, on peut calculer que pour $2 \le k \le 12$, on a</p>
             <p>$$\P(S = k) = \frac{6 - |k-7|}{36}$$</p>
@@ -182,10 +185,28 @@ hidden : True
         <h2>Indépendance de variables aléatoires</h2>
         <p>On dira que deux variables aléatoires $X$ et $Y$ sont indépendantes si les événements $\set{X \in B}$ $\set{Y \in C}$ sont <a href="chap1#independant">indépdendants</a> pour tous événements $B$ et $C$, ce qui revient à demander que la loi jointe de la variable $(X,Y)$ soit le produit des lois de $X$ et $Y$.</p>
         <article class="definition" id="independance_variables"><strong>Indépendance de variables aléatoires</strong>
-            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé et $(X_i)_{i \in I}$ une famille de variables aléatoires sur $\Omega$. On dira que les $X_i$ sont <strong class="new">indépendantes</strong> si pour toute partie finie $J \subset I$ on a</p>
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé et $(X_i)_{i \in I}$ une famille de variables aléatoires toute définies sur $\Omega$. On dira que les $X_i$ sont <strong class="new">indépendantes</strong> si pour toute partie finie $J \subset I$ on a</p>
             <p>$$\P \pars{\forall j \in J, X_j \in A_j} = \prod_{j \in J} \P(A_j)$$</p>
             <p>En particulier, deux variables aléatoires discrètes $X : \Omega \to E_1$ et $Y : \Omega \to E_2$ sont indépendantes si pour tout $(x,y) \in E_1 \times E_2$, on a</p>
             <p>$$\P(X = x, Y = y) = \P(X = x) \times \P(Y = y)$$</p>
+        </article>
+        <p>L'indépendance des variables aléatoires correspond à la notion intuitive que la valeur de l'une ne dépend pas des autres.</p>
+        <article class="exemple"><strong>Lancers successifs de dés</strong>
+            <p>On lance un dés deux fois de suite. Soit $X_1$ la valeur obtenue au premier lancer, et $X_2$ la valeur obtenue second lancer. On comprend intuitivement que $X_1$ et $X_2$ sont indépendants : la valeur du premier lancer n'a a priori aucune influence sur celle du second lancer. Mais pour se familiariser avec la définition, donnons la preuve formelle. Alors pour $i \in \ints{1,6}$ fixé, on a</p>
+            <p>$$\set{X_1 = i} = \set{(i, y), y \in \ints{1,6}}$$</p>
+            <p>et de même, pour $j \in \ints{1,6}$ fixé, on a</p>
+            <p>$$\set{X_1 = j} = \set{(x, j), x \in \ints{1,6}}$$</p>
+            <p>Donc pour tous $i, j \in \ints{1,6}$, on a</p>
+            <p>$$\P(X_1 = i) = \P(X_2 = j) = \frac{6}{36} = \frac{1}{6}$$</p>
+            <p>et par ailleurs</p>
+            <p>$$
+                \begin{align*}
+                    \P(X_1 = i, X_2 = j) &= \P(\set{(i,j)})\\
+                    &= \frac{1}{36}\\
+                    &= \P(X_1 = i) \times \P(X_2 = j)
+                \end{align*}
+                $$</p>
+                donc les variables $X_1$ et $X_2$ sont indépendantes. Plus généralement, si on lance un dé successivement $n$ fois et qu'on note $X_i$ le résultat du $i^{\text{ème}}$ lancer, alors les variables $(X_{i})_{1 \le i \le n}$ sont idépendantes.
         </article>
     </section>
     <nav>
