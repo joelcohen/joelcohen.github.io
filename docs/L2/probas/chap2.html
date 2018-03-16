@@ -1,0 +1,171 @@
+---
+layout: default
+permalink: /docs/L2/probas/chap2
+title: Probabilités - Éléments de cours (2)
+hidden : True
+---
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var elt = document.getElementById(id);
+       if(elt.style.display == 'block')
+          elt.style.display = 'none';
+       else
+          elt.style.display = 'block';
+    }
+//-->
+</script>
+<div class="exomath">
+    <div class="titlebox">
+        <h1>Probabilités</h1>
+        <h2>Éléments de cours</h2>
+        <h3>Chapitre 2 : Variables aléatoires</h3>
+    </div>
+    <section>
+        <h2>Variable aléatoire</h2>
+        
+        <h3>Définition</h3>
+        <p>Jusqu'ici nous avons parlé d'ensembles (univers, événements). Il est donc naturel de construire des fonctions entre espaces probabilisables, c'est la notion de variable aléatoire. Cela est notamment utile quand on calcule une quantité qui dépend du résultat d'une expérience aléatoire (vos gains à un jeu de pile de face, somme des valeurs deux dés, etc).</p>
+        
+        <article class="definition"><strong>Variable aléatoire</strong>
+            <p>Soient $(\Omega, \mathcal{A})$ et $(E, \mathcal{E})$ des espaces probabilisables. Une <strong class="new">variable aléatoire</strong> sur $\Omega$ à valeurs dans $E$ est une fonction $X : \Omega \longmapsto E$ telle que pour tout événement $B \in \mathcal{E}$, on a</p>
+            <p>$$X^{-1}(B) = \set{\omega \in \Omega, \ X(\omega) \in B} \in \mathcal{A}$$</p>
+            Pour alléger les notations, l'événement $X^{-1}(B)$ sera noté $\set{X \in B}$. Dans le cas où $B = \set{b}$, on notera même $X^{-1}(\{b\}) = \set{X = b}$.
+        </article>
+        
+        <p>Moralement, on peut penser à $X$ comme un nombre qui est tiré au hasard. Dans la plupart des exemples que l'on considère dans ce cours, l'ensemble $\Omega$ est fini, et la tribu $\mathcal{A}$ est l'ensemble $\mathcal{P}(\Omega)$ de toutes les partie de $\Omega$. Dans ce cas, on peut oublier la condition $X^{-1}(B) \in \mathcal{A}$, qui sera automatiquement vérifiée.</p>
+        
+        <article class="exemple"><strong>Pile je gagne, face tu perds</strong>
+            <p>On joue à pile ou face, le joueur lance une pièce de monnnaie, si elle tombe sur pile, il gagne 1€, sinon il perd 1€. L'univers associé à cette expérience aléatoire est $\Omega = \set{\pile, \face}$. On peut définit sur $\Omega$ la variable aléatoire $X : \Omega \to \set{-1,1}$ qui représente les gains du joueur, en posant</p>
+            $$X(\pile) = 1, \qquad X(\face) = -1$$
+        </article>
+        <article class="exemple"><strong>Somme de deux dés</strong>
+            <p>On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés.</p>
+            
+            <p>Formellement, l'univers de notre expérience est $\Omega = \ints{1,6}^2$ Cela veut dire qu'on considère la fonction $S : \Omega \to \N$ définie pour $\omega = (x,y) \in \Omega$ par</p>
+            $$S(\omega) = x + y$$
+        </article>
+        <article class="exemple"><strong>Le Scrabble</strong>
+            <p>On joue au scrabble, on tire une lettre au sort dans le sachet. On note $V$ la variable aléatoire qui représente la valeur en point de la lettre (en français).</p>
+            <p>Formellement, on a donc $\Omega = \set{A, B, C, \ldots, Y, Z, \text{joker}}$, et $V(A) = 1$, $V(B) = 3$, $V(C) = 3$, $V(D) = 2$, …, $V(Z) = 10$ et $V(\text{joker}) = 0$ (voir <a href="https://www.regles-de-jeux.com/regle-du-scrabble/" target="new">ici</a> pour la liste complète).</p>
+        </article>
+        <article class="exemple"><strong>Temps d'arrêt</strong>
+            <p>On lance une pièce jusqu'à ce qu'on fasse pile. On note $N$ la variable aléatoire qui représente le nombre de lancers qu'on a fait (et on pose $N = +\infty$ dans l'éventualité où on ne tombe jamais sur pile).</p>
+        </article>
+        
+        <h3>Variable discrète, réelle</h3>
+        <p>Si l'ensemble $E$ des valeurs d'une variable aléatoire est fini ou dénombrable, on dira que la variable est <strong class="new">discrète</strong>. Si $E = \R$ on parlera d'une <strong class="new">variable aléatoire réelle</strong>. Pour des raisons de simplicité, on étudiera principalement les variables aléatoires discrètes.</p>
+    </section>
+    <section>
+        <h2>Loi d'une variable aléatoire</h2>
+        
+        <article class="prop"><strong>Loi d'une variable aléatoire</strong>
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, $(E, \mathcal{E})$ un espace probabilisable, et $X : \Omega \to E$ une variable aléatoire sur $\Omega$ à valeurs dans $E$. Alors la fonction</p>
+            $$\begin{align*}
+            \P_X : \mathcal{E} & \longmapsto [0,1] \\
+            \qquad B & \longmapsto \P(X \in B)
+            \end{align*}$$
+            <p>est une probabilité sur l'espace probabilisable $(E, \mathcal{E})$, appelée <strong class="new">loi de la variable</strong> $X$.</p>
+        </article>
+        
+        <h3>Loi d'une variable aléatoire discrète</h3>
+        <p>Dans le cas d'une variable aléatoire discrète, la loi de $X$ est entièrement déterminée par les valeurs $\P(X = e)$ pour $e \in E$. En effet, si $B \in \mathcal{E}$, alors on peut calculer $\P(X \in B)$ avec la formule :</p>
+        $$\P(X \in B) = \sum_{b \in B} \P(X = b)$$
+        
+        <article class="exemple"><strong>Les déplacements au Monopoly</strong>
+            <p>On joue (sans tricher) au Monopoly. On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés. Au chapitre précédent, on a calculé $\P(X = 7) = \frac{1}{6}$ et $\P(X = 5) = \frac{1}{9}$. Plus généralement, on peut calculer que pour $2 \le k \le 12$, on a</p>
+            <p>$$\P(S = k) = \frac{6 - |k-7|}{36}$$</p>
+            <p>On peut mettre résumer dans un tableau</p>
+            <table class="dist">
+                <tr>
+                    <th>$k$</th>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>$\P(S = k)$</th>
+                    <td>$\frac{1}{36}$</td>
+                    <td>$\frac{2}{36}$</td>
+                    <td>$\frac{3}{36}$</td>
+                    <td>$\frac{4}{36}$</td>
+                    <td>$\frac{5}{36}$</td>
+                    <td>$\frac{6}{36}$</td>
+                    <td>$\frac{5}{36}$</td>
+                    <td>$\frac{4}{36}$</td>
+                    <td>$\frac{3}{36}$</td>
+                    <td>$\frac{2}{36}$</td>
+                    <td>$\frac{1}{36}$</td>
+                </tr>
+            </table>
+            <p>On peut visualiser le résultat par un histogramme</p>
+            <figure class="fig">
+                <img src="somme_des.png" alt="Histogramme représentant la loi de la somme de deux dés">
+                <div class="caption">Histogramme représentant la loi de la somme de deux dés</caption>
+            </figure>
+            
+        </article>
+        <article class="exemple"><strong>Score au Scrabble</strong>
+            <p>On reprend l'exemple du jeu de Scrabble et du tirage d'une lettre dans le sachet. On considère la variable aléatoire $V$ qui désigne sa valeur en points. On a $\set{V = 0} = \set{\text{joker}}$, donc $\P(V = 0) = \frac{1}{27}$. On a $\set{V = 1} = \set{A, E, I, L, N, O, R, S, T, U}$, donc $\P(V = 1) = \frac{10}{27}$ … $\P(V = 10) = \frac{5}{27}$</p>
+            <table class="dist">
+                <tr>
+                    <th>$k$</th>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>$P(V = k)$</th>
+                    <td>$\frac{1}{27}$</td>
+                    <td>$\frac{10}{27}$</td>
+                    <td>$\frac{3}{27}$</td>
+                    <td>$\frac{3}{27}$</td>
+                    <td>$\frac{3}{27}$</td>
+                    <td>$0$</td>
+                    <td>$0$</td>
+                    <td>$0$</td>
+                    <td>$\frac{2}{27}$</td>
+                    <td>$0$</td>
+                    <td>$\frac{5}{27}$</td>
+                </tr>
+            </table>
+            <p>Ce qui ne semble suivre aucune règle claire, il y a fort à parier que les concepteurs du jeu ont choisi ces scores de manière un peu arbitraire.</p>
+        </article>
+        <article class="exemple"><strong>Temps nécessaire pour faire un 6</strong></article>
+        <p>On lance un dé. Tant qu'on ne fait pas 6, on recommence. On considère la variable aléatoire $N$ qui désigne le nombre de lancers qu'on fait (et on considère que $N = +\infty$ si on ne fait jamais $6$). On calcule alors pour tout $k \in \N$,</p>
+        $$\P(N = k) = \pars{\frac{5}{6}}^{k-1} \cdot \frac{1}{6}$$
+        et on a $\P(N = +\infty) = 0$.
+        <h3>Loi d'une variable réelle</h3>
+        <p>Dans le cas d'une variable aléatoire réelle $X$, la loi de $X$ peut être caractérisée par la fonction $F_X : x \mapsto \P(X \le x)$, qu'on appelle la <strong class="new">fonction de répartition</strong> de $X$.</p>
+        <article class="definition"><strong>Fonction de répartition, densité</strong>
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé et $X : \Omega \to \R$ une variable aléatoire réelle. On appelle <strong class="new">fonction de répartition</strong> de $X$, la fonction réelle $F_X : \R \to [0,1]$ définie pour $x \in \R$ par</p>
+            $$F_X(x) = \P(X \le x)$$
+            <p>Si la fonction $F_X$ est $\mathcal{C}^1$, on dit que la variable $X$ admet une densité. On appelle alors <strong>densité de probabilité</strong> la fonction $p_x : \R \to \R$ dérivée de $F_X$ :</p>
+            $$p_X = F_X'$$
+            
+        </article>
+        
+        <p>Si $X$ admet une densité $p_X$, alors on a</p>
+        <p>$$\P(a \le X \le b) = \int_a^b p_X(u) \, du$$</p>
+        
+    </section>
+    <nav>
+        <a href="chap1"><< Chapitre précédent : Événements</a>
+    </nav>
+</div>   

@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /docs/L2/probas/cours
-title: Probabilités - Éléments de cours
+permalink: /docs/L2/probas/chap1
+title: Probabilités - Éléments de cours (1)
 hidden : True
 ---
 <script type="text/javascript">
@@ -19,6 +19,7 @@ hidden : True
     <div class="titlebox">
         <h1>Probabilités</h1>
         <h2>Éléments de cours</h2>
+        <h3>Chapitre 1 : Événements</h3>
     </div>
     <section>
        <h2>Univers et événements</h2>
@@ -33,12 +34,28 @@ hidden : True
            <p>Si on lance une pièce de monnaie deux fois, l'univers sera l'ensemble des couples de résultats $\Omega = \{\pile, \face\}^2 = \{(\pile,\pile), (\pile,\face), (\face,\pile), (\face,\face)\}$, et $\omega = (\face, \pile)$ est un résultat possible.</p>
        </article>
        <p>Pour d'autres exemples et pour s'exercer sur la notion d'univers, voir la <a href="td1#univers">feuille 1 exercice 1</a>.</p>
+       
        <article class="definition">
            <p>Étant donnée une expérience aléatoire ayant pour univers $\Omega$, un <strong class="new">événement aléatoire</strong> (ou juste événement) $E$ est un ensemble de résultats possibles de l'expérience, c'est-à-dire une partie de l'univers : $E \subset \Omega$.</p>
            <p>On dit qu'un événement $E$ se <strong class="new">réalise</strong> si le résultat $\omega$ de l'expérience appartient à l'ensemble $E$ : $\omega \in E$</p>
            <p>L'ensemble $\mathcal{A}$ de tous les événements est appelé une <strong class="new">tribu</strong>. Le couple $(\Omega, \mathcal{A})$ est appelé un <strong class="new">espace probabilisable</strong>.</p>
        </article>
-       <p>Pour s'exercer sur la notion d'événement aléatoire, voir la <a href="td1#evenements">feuille 1 exercice 2</a>.</p>
+       <p>La définition ci-dessus de tribu est délibérément vague pour cacher la complexité sous-jacente et dont les subtilités dépassent la portée de ce cours. À titre culturel, nous donnons quand même la définition rigoureuse.</p>
+       
+       <article class="definition" id="tribu"><strong>Tribu</strong>
+           <p>Soit $\Omega$ un ensemble et $\mathcal{A} \subset \Omega$ un ensemble de parties de $\Omega$. On dit que $\mathcal{A}$ est une <strong class="new">tribu</strong> sur $\Omega$ si</p>
+           <ol>
+               <li><strong>Stable par complémentaire :</strong> Pour toute partie $A \in \mathcal{A}$, le complémentaire est encore dans $\mathcal{A}$ :
+                   $$\overline{A} \in \mathcal{A}$$
+               </li>
+               <li><strong>Stable par union (dénombrable):</strong> Pour toute suite $(A_n)_{n \in \N} \in \mathcal{A}^{\N}$ de partie de $\mathcal{A}$, l'union est encore dans $\mathcal{A}$ :
+               $$\bigcap_{n \in \N} A_n \in \mathcal{A}$$
+               </li>
+           </ol>
+           <p>Si $\mathcal{A}$ est une tribu sur $\Omega$, le couple $(\Omega, \mathcal{A})$ est appelé un <strong class="new">espace probabilisable</strong>.</p>
+       </article>
+       
+       <p>Dans ce cours, l'univers $\Omega$ sera fini le plus souvent, et la tribu $\mathcal{A}$ sera pratiquement toujours l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. On peut donc se permettre de ne pas trop se soucier de la question. Quand l'univers $\Omega$ est infini, des subtilités apparaissent et on peut être amenés à considérer des tribus plus petites, ne contenant pas toutes les parties de $\Omega$. Pour s'exercer sur la notion d'événement aléatoire, voir la <a href="td1#evenements">feuille 1 exercice 2</a>.</p>
     </section>
     <section>
         <h2>Probabilité</h2>
@@ -209,8 +226,9 @@ hidden : True
         </article>
         <p>Voir <a href="td1#examen">Feuille 1</a> pour un exemple d'application de la formule.</p>
         <p>La preuve de la formule de Bayes n'est pas compliquée, mais cette égalité est étonnemment profonde dans l'interpretation qu'on peut lui donner, c'est notamment la base des statistiques inférentielles.</p>
-        <h3 id="probas_totales">Formule des probabilites totales</h3>
+        <h3>Formule des probabilites totales</h3>
         <p>Il est parfois intéressant de découper l'univers en plusieurs parties disjointes pour étudier les choses séparément dans chaque cas. Cela nous amène à poser la définition suivante.</p>
+        
         <article class="definition" id="partition"><strong>Partition</strong>
             <p>Soit $(\Omega, \mathcal{A})$ un espace probabilisable, et $(A_i)_{i \in I}$ une famille d'événements de $\mathcal{A}$. On dit que la famille d'événements $(A_i)_{i \in I}$ <strong class="new">forme une partition</strong> de l'univers $\Omega$ (on parle également de <strong class="new">système exhaustif</strong>) si</p>
             <ol>
@@ -221,6 +239,7 @@ hidden : True
                 </li>
             </ol>
         </article>
+        
         <p>Un façon de le comprendre est que les événements $(A_i)_{i \in I}$ forment une partition de $\Omega$ si tout élément $\omega \in \Omega$ se trouve dans un et un seul des ensembles $A_i$.</p>
         <article class="exemple">Si $A \in \mathcal{A}$ est un événement quelconque, alors la famille $(A, \overline{A})$ forme une partition de $\Omega$. C'est un exemple simple mais relativement utile de partition.</article>
         <article class="exemple"><p>On lance deux dés à 6 faces. On prend donc $\Omega = [\![1,6]\!]^2$. Et pour $n \in [\![2,12]\!]$ on considère l'événement</p>
@@ -234,13 +253,25 @@ hidden : True
             </p>
             <p>Alors la famille $(A_n)_{1 \le n \le 12}$ constitue une partition de $\Omega$ : en effet, si $\omega = (x,y) \in A_i \cap A_j$, alors $x +y = i = j$ donc $i = j$. Donc les $A_i$ sont deux à deux disjoints. Et si $\omega = (x,y) \in \Omega$, alors $\omega \in A_{x+y}$, donc les $A_i$ recouvrent bien tout $\Omega$.</p>
         </article>
-        <article class="prop"><p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $(A_i)_{i \in I}$ une partition de $\Omega$, avec $I$ un ensemble fini ou dénombrable. Pour tout événement $B \in \mathcal{A}$, on a</p>
+        
+        <article class="prop" id="probas_totales"><strong>Formule des probabilités totales</strong>
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $(A_i)_{i \in I}$ une partition de $\Omega$, avec $I$ un ensemble fini ou dénombrable. Pour tout événement $B \in \mathcal{A}$, on a</p>
         $$ \P(B) = \sum_{i \in I} \P(B \cap A_i)$$
         <p>Et si de plus on suppose que $P(A_i) \ne 0$ pour tout $i \in I$, alors on peut écrire</p>
         $$ \P(B) = \sum_{i \in I} \P(B | A_i) \cdot \P(A_i)$$
         </article>
+        
         <article class="exemple">Si $A \in \mathcal{A}$ est un événement de probabilité différente de $0$ et de $1$, alors on a pour tout événement $B \in \mathcal{A}$ la formule
         $$\P(B) = \P(B | A) \cdot \P(A) + \P(B | \overline{A}) \cdot \P(\overline{A})$$
         </article>
+        
+        <p>En combinant la formule de Bayes avec celle des probabilités totales, on obtient une formule assez utile que nous donnons dans la proposition suivante.</p>
+        <article class="prop">
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $(A_i)_{i \in I}$ une partition de $\Omega$ par des ensembles de probabilité non nulle, avec $I$ un ensemble fini ou dénombrable. Pour tout événement $B \in \mathcal{A}$ de probabilité non nulle, on a</p>
+            <p>$$\P(A_i | B) = \frac{\P(B | A_i) \cdot \P(A_i)}{\sum_{j \in I} \P(B | A_j) \cdot \P(A_j)}$$</p>
+        </article>
     </section>
+    <nav>
+        <a href="chap2">Chapitre suivant : Variables aléatoires >></a>
+    </nav>
 </div>   

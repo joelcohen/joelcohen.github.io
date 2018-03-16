@@ -20,6 +20,7 @@ hidden : True
         <h1>Probabilités</h1>
         <h2>Feuille d'exercices 1</h2>
     </div>
+    <p>Cette feuille d'exercice se rapporte au <a href="chap1">chapitre 1</a> du cours.</p>
     <ol>
         <li class="exo" id="univers">
             <h2>Univers</h2>
@@ -191,16 +192,16 @@ hidden : True
                         <p>En divisant par $|\Omega|$, on peut en déduire la probabilité de $A_n$ (qui nous servira dans la suite) : $\P(A_n) = \frac{1}{6}\left(\frac{5}{6}\right)^{n-1}$</p>
                     </span>
                     </li>
-                    <li onclick="toggle_visibility('4.2');">Montrer que les événements $(A_n)_{1 \le n \le 11}$ forment une partition de l'univers.
+                    <li onclick="toggle_visibility('4.2');">Montrer que les événements $(A_n)_{1 \le n \le 11}$ forment une <a href="chap1#partition">partition</a> de l'univers.
                     <span id="4.2" class="sol">
                         <p>On doit montrer d'une part que les événements sont deux à deux disjoints (c'est-à-dire qu'on a $A_i \cap A_j = \emptyset$ pour tous les couples $i \ne j$ entre 1 et 11) et d'autre part qu'il recouvrent l'univers $\Omega$ tout entier (c'est-à-dire que $A_1 \cup A_2 \cup \ldots \cup A_{11} = \Omega$).</p>
                         <p>Commençons par le fait que les évéments sont disjoints. On se donne deux entiers distincts $1 \le i < j \le 11$ entre $1$ et $11$. Supposons par l'absurde que l'intersection n'est pas vide, on se donne alors $\omega = (x_1, x_2, \ldots,x_{10}) \in A_i \cap A_j$. Comme $\omega \in A_i$, alors $x_i = 6$. Mais par ailleurs, comme  $\omega \in A_j$ alors $x_i \ne j$ ($\omega \in A_j$ implique qu'on ne peut pas avoir fait un $6$ avant le $j^{\text{ème}}$ lancer). Et donc c'est absurde, et $A_i \cap A_j$.</p>
                         <p>Montront que l'union fait $\Omega$. On se donne $\omega = (x_1, x_2, \ldots,x_{10}) \in \Omega$ et on cherche à monrer que $\omega$ est dans l'un des $A_i$. De deux choses l'une soit au moins l'un des $x_i$ vaut $6$, soit aucune coordonnée ne vaut $6$. Si aucune coordonnée ne vaut $6$, alors $\omega \in A_{11}$. Sinon, au moins une coordonnée vaut $6$. Si on note $i_0$ le premier indice tel que $x_{i_0} = 6$ alors $\omega \in A_i$. Donc dans tous les cas, $\omega$ est bien dans l'un des $A_i$. En conclusion, les $(A_n)_{1 \le n \le 11}$ forment une partition de l'univers.</p>
                     </span>
                     </li>
-                    <li onclick="toggle_visibility('4.3');">Calculer la probabilité de $B$ en appliquant la formule de probabilités totales. Pouvez-vous calculer cette probabilité autrement ?
+                    <li onclick="toggle_visibility('4.3');">Calculer la probabilité de $B$ en appliquant <a href="chap1#probas_totales">la formule des probabilités totales</a>. Pouvez-vous calculer cette probabilité autrement ?
                     <span id="4.3" class="sol">
-                        <p>D'après la question précédente, la formule des probabilités totales nous donne</p>
+                        <p>D'après la question précédente, <a href="chap1#probas_totales">la formule des probabilités totales</a> nous donne</p>
                         <p>
                             $$
                             \begin{align*}
@@ -239,7 +240,7 @@ hidden : True
                                 <span class="inlineblock">$$\P(B) = \frac{3}{4}$$</span>
                                 <span class="inlineblock">$$\P(A | B) = \frac{9}{10}$$</span>    
                             </p>
-                            <p>La question nous demande de calculer $\P(\overline{B} | A)$. On peut calculer $\P(B | A)$ par la <a href="cours#bayes">formule de Bayes</a> :</p>
+                            <p>La question nous demande de calculer $\P(\overline{B} | A)$. On peut calculer $\P(B | A)$ par la <a href="chap1#bayes">formule de Bayes</a> :</p>
                             <p>$$\P(B | A) = \frac{\P(A | B) \cdot \P(B)}{\P(A)} = \frac{\frac{9}{10} \cdot \frac{3}{4}}{\frac{4}{5}} = \frac{27}{32}$$</p>
                             et donc pour le complémentaire, on obtient
                             $$\P(\overline{B} | A) = 1 - \P(B | A) = \frac{5}{32} = 0,15625 $$
@@ -249,7 +250,7 @@ hidden : True
                     <li onclick="toggle_visibility('5.2');">
                         <p>Quelle est la probabilité de valider la matière sachant que vous n'avez pas révisé ?</p>
                         <span id="5.2" class="sol">
-                            La question nous demande de calculer $\P(A | \overline{B})$. Nous pouvons déduire cette probabilité en appliquant la <a href="cours#bayes">formule de Bayes</a> :
+                            La question nous demande de calculer $\P(A | \overline{B})$. Nous pouvons déduire cette probabilité en appliquant la <a href="chap1#bayes">formule de Bayes</a> :
                             $$\P(A| \overline{B}) = \frac{\P(\overline{B} | A) \cdot \P(A)}{\P(\overline{B})} = \frac{23}{250} = 0,092 $$
                             Donc il y a moins d'une chance sur 10 de valider si on n'a pas révisé.
                         </span>

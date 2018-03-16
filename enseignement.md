@@ -55,7 +55,7 @@ permalink: /ens/
 ### Introduction aux probabilités (UE Populations)
 
 * [Diapositives du cours 1](../docs/L2/probas/slides/)
-* [Éléments de cours](../docs/L2/probas/cours)
+* Cours : [Chapitre 1](../docs/L2/probas/chap1), [Chapitre 2](../docs/L2/probas/chap2)
 * [Feuille d'exercices 1](../docs/L2/probas/td1)
 
 ## L1

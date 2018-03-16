@@ -5,7 +5,7 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif : "Baskerville", "Libre Baskerville", Times, serif;
+$serif : "Baskerville", Times, serif;
 $serif-title : "Georgia", Times, serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -15,7 +15,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #fff;
 $brand-color:      #2a7ae2;
 $accent-color: #26f;
 $code-color :      #06c;
@@ -125,7 +125,10 @@ code.highlighter-rouge {
         padding : 1.5em 2em;
         margin : 1em 0;
         //color: $sol-color;
-    } 
+    }
+    nav {
+        margin : 3em 0;
+    }
 }
 .new {
     color : $brand-color;
@@ -179,15 +182,50 @@ article.definition {
     border : 1px solid #ccc;
     background-color : #f9f9f9;
     padding : 1em;
-    margin: 1em;
+    margin: 1em 0;
     border-radius : .5em;
 }
 article.prop {
     border : 1px solid #69f;
     background-color : #f6f9ff;
     padding : 1em;
-    margin: 1em;
+    margin: 1em 0;
     border-radius : .5em;
+}
+article.exemple {
+   margin: 1em;
+}
+
+.dist {
+    text-align: center;
+    border-collapse: collapse;
+    margin : 1em auto;
+    border : 2px solid #333;
+    th {
+        border-right : 2px solid #333;
+    }
+    tr {
+        border-bottom : 1px solid #ccc;
+    }
+    td, th {
+        padding: .5em;
+    }
+    td + td {
+        border-left : 1px solid #ccc;
+    }
+}
+.fig {
+    display : block;
+    text-align : center;
+    .caption {
+        font-size: .9em;
+        color : $grey-color;
+    }
+    img {
+        display : block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 
 article.lemma::before, article.prop::before, article.theorem::before, article.cor::before, article.proof::before, article.definition::before, article.exemple::before {
