@@ -178,6 +178,16 @@ hidden : True
         <h4>Loi binomiale</h4>
         <h4>Loi de Poisson</h4> -->
     </section>
+    <section>
+        <h2>Indépendance de variables aléatoires</h2>
+        <p>On dira que deux variables aléatoires $X$ et $Y$ sont indépendantes si les événements $\set{X \in B}$ $\set{Y \in C}$ sont <a href="chap1#independant">indépdendants</a> pour tous événements $B$ et $C$, ce qui revient à demander que la loi jointe de la variable $(X,Y)$ soit le produit des lois de $X$ et $Y$.</p>
+        <article class="definition" id="independance_variables"><strong>Indépendance de variables aléatoires</strong>
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé et $(X_i)_{i \in I}$ une famille de variables aléatoires sur $\Omega$. On dira que les $X_i$ sont <strong class="new">indépendantes</strong> si pour toute partie finie $J \subset I$ on a</p>
+            <p>$$\P \pars{\forall j \in J, X_j \in A_j} = \prod_{j \in J} \P(A_j)$$</p>
+            <p>En particulier, deux variables aléatoires discrètes $X : \Omega \to E_1$ et $Y : \Omega \to E_2$ sont indépendantes si pour tout $(x,y) \in E_1 \times E_2$, on a</p>
+            <p>$$\P(X = x, Y = y) = \P(X = x) \times \P(Y = y)$$</p>
+        </article>
+    </section>
     <nav>
         <a href="chap1"><< Chapitre précédent : Événements</a>
     </nav>

@@ -55,8 +55,9 @@ hidden : True
            <p>Si $\mathcal{A}$ est une tribu sur $\Omega$, le couple $(\Omega, \mathcal{A})$ est appelé un <strong class="new">espace probabilisable</strong>.</p>
        </article>
        
-       <p>Dans ce cours, l'univers $\Omega$ sera fini le plus souvent, et la tribu $\mathcal{A}$ sera pratiquement toujours l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. On peut donc se permettre de ne pas trop se soucier de la question. Quand l'univers $\Omega$ est infini, des subtilités apparaissent et on peut être amenés à considérer des tribus plus petites, ne contenant pas toutes les parties de $\Omega$. Pour s'exercer sur la notion d'événement aléatoire, voir la <a href="td1#evenements">feuille 1 exercice 2</a>.</p>
+       <p>Dans ce cours, l'univers $\Omega$ sera fini le plus souvent, et la tribu $\mathcal{A}$ sera pratiquement toujours l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. On peut donc se permettre de ne pas trop se soucier de la question. Quand l'univers $\Omega$ est infini, des subtilités apparaissent et on peut être amenés à considérer des tribus plus petites, ne contenant pas toutes les parties de $\Omega$. = \frac{1}{2}Pour s'exercer sur la notion d'événement aléatoire, voir la <a href="td1#evenements">feuille 1 exercice 2</a>.</p>
     </section>
+    
     <section>
         <h2>Probabilité</h2>
         <h3>Définition axiomatique</h3>
@@ -135,7 +136,7 @@ hidden : True
     </section>
     <section>
         <h2>Événements indépendants</h2>
-        <article class="definition"><strong>Indépendance de deux événements</strong>
+        <article class="definition" id="independant"><strong>Indépendance de deux événements</strong>
             <p>Étant donné un espace probabilisé $(\Omega, \mathcal{A}, \P)$, on dit que deux événements $A, B \in \mathcal{A}$ sont <strong class="new">indépendants</strong> si</p>
             <p>$$\P(A \cap B) = \P(A) \times \P(A)$$</p>
         </article>
@@ -183,20 +184,20 @@ hidden : True
                 </li>
             </ul>
         </article>
-        <p>Par exemple pour trois événements $A$, $B$ et $C$, on dira qu'il sont deux à deux indépendants si on les trois égalités :
+        <p>La notion d'indépendance mutuelle est plus forte que celle d'indépendance deux à deux. En effet, des événements qui sont mutuellement indépendants sont aussi 2 à 2 indépendants, mais il est possible pour des événements 2 à 2 indépendants de ne pas être mutuellement indépendants (c'est par exemple le cas des événements $A$, $B$ et $C$ de l'exemple précédent qui sont 2 à 2 indépdendants, mais pas mutuellement indépendants).</p>
+        <p>Pour trois événements $A$, $B$ et $C$, dire qu'ils sont deux à deux indépendants revient à avoir les trois égalités :
             $$\P(A \cap B) = \P(A) \times \P(B), \qquad \P(B \cap C) = \P(B) \times \P(C), \qquad \P(C \cap A) = \P(C) \times \P(A)$$
         </p>
         <p>Pour que les événements soient mutuellement indépendants, il faut également vérifier une égalité supplémentaire :
             $$\P(A \cap B \cap C) = \P(A) \times \P(B) \times \P(C)$$
         </p>
-        <p>La notion d'indépendance mutuelle est plus forte que celle d'indépendance deux à deux. En effet, des événements qui sont mutuellement indépendants sont aussi 2 à 2 indépendants, mais il est possible pour des événements 2 à 2 indépendants de ne pas être mutuellement indépendants (c'est par exemple le cas des événements $A$, $B$ et $C$ de l'exemple précédent qui sont 2 à 2 indépdendants, mais pas mutuellement indépendants).</p>
         
         
         
     </section>
     <section>
         <h2>Probabilité conditionnelle</h2>
-        <p>La probabilité conditionnelle prend en compte comment la probabilité d'un événement est modifiée par une nouvelle information. Par exemple, imaginons que je prenne mon parapluie dès qu'il pleut. Si la probabilité qu'il pleuve est de $1/2$, alors la probabilité que je prenne mon parapluie est donc aussi $1/2$, mais la probabilité que je prenne mon parapluie sachant qu'il pleuve est de $1$ !</p>
+        <p>La probabilité conditionnelle prend en compte comment la probabilité d'un événement est modifiée par une nouvelle information. Par exemple, imaginons que je prenne mon parapluie dès qu'il pleut. Si la probabilité qu'il pleuve est de $1/2$, alors la probabilité que je prenne mon parapluie est donc aussi $1/2$, mais la probabilité que je prenne mon parapluie sachant qu'il pleut est de $1$ !</p>
         <article class="definition"><strong>Probabilité conditionnelle</strong>
             <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $A \in \mathcal{A}$ un événement de probabilité non nulle, alors l'application $\P_{A} : \mathcal{A} \to [0,1]$ définie pour tout $B \in \mathcal{A}$ par</p>
             <p>$$\P_{A}(B) = \P(B | A) = \frac{\P(A \cap B)}{\P(A)}$$</p>
