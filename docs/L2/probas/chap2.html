@@ -67,7 +67,13 @@ hidden : True
             \end{align*}$$
             <p>est une probabilité sur l'espace probabilisable $(E, \mathcal{E})$, appelée <strong class="new">loi de la variable</strong> $X$.</p>
         </article>
-        
+        <p>On fera attention au fait que la loi d'une variable aléatoire est une probabilité sur l'ensemble $E$ des valeurs et pas sur l'espace de départ $\Omega$. C'est d'ailleurs un des grands bénéfices pratiques de la notion de variable aléatoire, elle permet parfois de laisser un flou artistique sur l'ensemble $\Omega$ (potentiellement complexe) et se concentrer sur l'ensemble des valeurs.</p>
+        <p>Bien souvent, on comment l'abus de confondre une variable aléatoire avec sa loi (en toute impunité avouons-le) mais il faut bien comprendre que des variables aléatoires distinctes peuvent avoir la même loi. Par exemple, sur $\Omega = \set{\pile, \face}$ on peut définir les variable aléatoires $X, Y : \Omega \to \set{-1,1}$ par</p>
+        <p>$$X(\pile) = Y(\face) = 1, \qquad X(\face) = Y(\pile) = -1$$</p>
+        <p>Les variables $X$ et $Y$ sont distinctes, et pourtant</p>
+        <p><span class="inlineblock">$$\P(X = 1) = \P(Y = 1) = \frac{1}{2}$$</span>
+                <span class="inlineblock">$$\P(X = -1) = \P(Y = -1) = \frac{1}{2}$$</span></p>
+        <p>donc $X$ et $Y$ ont la même loi.</p>
         <h3>Loi d'une variable aléatoire discrète</h3>
         <p>Dans le cas d'une variable aléatoire discrète, la loi de $X$ est entièrement déterminée par les valeurs $\P(X = e)$ pour $e \in E$. En effet, si $B \in \mathcal{E}$, alors on peut calculer $\P(X \in B)$ avec la formule :</p>
         $$\P(X \in B) = \sum_{b \in B} \P(X = b)$$
@@ -164,6 +170,13 @@ hidden : True
         <p>Si $X$ admet une densité $p_X$, alors on a</p>
         <p>$$\P(a \le X \le b) = \int_a^b p_X(u) \, du$$</p>
         
+        <!-- <h3>Loi usuelles</h3>
+        <p>On liste une série</p>
+        <h4>Loi de Bernouilli</h4>
+        <h4>Loi uniforme</h4>
+        <h4>Loi géométrique</h4>
+        <h4>Loi binomiale</h4>
+        <h4>Loi de Poisson</h4> -->
     </section>
     <nav>
         <a href="chap1"><< Chapitre précédent : Événements</a>
