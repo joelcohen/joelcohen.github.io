@@ -129,6 +129,12 @@ code.highlighter-rouge {
     nav {
         margin : 3em 0;
     }
+    .video {
+        display: block;
+        width : 540px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 .new {
     color : $brand-color;
@@ -156,7 +162,9 @@ code.highlighter-rouge {
         font-size : 11px;
         margin : 0 5em;
     }
-    
+    .video {
+        display: none;
+    }
 }
 
 
@@ -179,15 +187,15 @@ section {
 }
 
 article.definition {
-    border : 1px solid #ccc;
-    background-color : #f9f9f9;
+    border : 1px solid #69f;
+    background-color : #f6f9ff;
     padding : 1em;
     margin: 1em 0;
     border-radius : .5em;
 }
 article.prop {
-    border : 1px solid #69f;
-    background-color : #f6f9ff;
+    border : 1px solid #3c3;
+    background-color : #f6fff6;
     padding : 1em;
     margin: 1em 0;
     border-radius : .5em;
@@ -195,7 +203,18 @@ article.prop {
 article.exemple {
    margin: 1em;
 }
-
+article.culturel {
+    border : 1px solid #ccc;
+    background-color : #f9f9f9;
+    padding : 1em;
+    margin: 2em 0;
+    border-radius : .5em;
+    
+}
+.culturel::before {
+    content : "Complément culturel :";
+    font-weight: bold;
+}
 .dist {
     text-align: center;
     border-collapse: collapse;

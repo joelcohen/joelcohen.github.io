@@ -33,7 +33,11 @@ hidden : True
             Pour alléger les notations, l'événement $X^{-1}(B)$ sera noté $\set{X \in B}$. Dans le cas où $B = \set{b}$, on notera même $X^{-1}(\{b\}) = \set{X = b}$.
         </article>
         
-        <p>Moralement, on peut penser à $X$ comme un nombre qui est tiré au hasard. Dans la plupart des exemples que l'on considère dans ce cours, l'ensemble $\Omega$ est fini, et la tribu $\mathcal{A}$ est l'ensemble $\mathcal{P}(\Omega)$ de toutes les partie de $\Omega$. Dans ce cas, on peut oublier la condition $X^{-1}(B) \in \mathcal{A}$, qui sera automatiquement vérifiée.</p>
+        <p>Moralement, on peut penser à $X$ comme une variable (à valeur dans l'ensemble $E$) qui est tirée au hasard. C'est ce qui explique le nom de variable aléatoire.</p>
+        <article class="culturel">
+            <p>La condition que $X^{-1}(B) \in \mathcal{A}$ pour tout $B \in \mathcal{E}$ signifie que la fonction $X$ est <strong class="new">mesurable</strong>. Dans la plupart des exemples que l'on considère dans ce cours, l'ensemble $\Omega$ est fini, et la tribu $\mathcal{A}$ est l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. Dans ce cas, on peut oublier la condition de mesurabilité, qui sera automatiquement vérifiée. Et dans le cas général, il est assez difficile de fabriquer une fonction $X$ qui ne serait pas mesurable.</p>
+        </article>
+        
         
         <article class="exemple"><strong>Pile je gagne, face tu perds</strong>
             <p>On joue à pile ou face, le joueur lance une pièce de monnnaie, si elle tombe sur pile, il gagne 1€, sinon il perd 1€. L'univers associé à cette expérience aléatoire est $\Omega = \set{\pile, \face}$. On peut définit sur $\Omega$ la variable aléatoire $X : \Omega \to \set{-1,1}$ qui représente les gains du joueur, en posant</p>
@@ -54,7 +58,7 @@ hidden : True
         </article>
         
         <h3>Variable discrète, réelle</h3>
-        <p>Si l'ensemble $E$ des valeurs d'une variable aléatoire est fini ou dénombrable, on dira que la variable est <strong class="new">discrète</strong>. Si $E = \R$ on parlera d'une <strong class="new">variable aléatoire réelle</strong>. Pour des raisons de simplicité, on étudiera principalement les variables aléatoires discrètes.</p>
+        <p>Si l'ensemble $E$ des valeurs d'une variable aléatoire est fini ou dénombrable, on dira que la variable est <strong class="new">discrète</strong>. Si $E = \R$ on parlera d'une <strong class="new">variable aléatoire réelle</strong>. Il est même possible de prendre un espace vectoriel (comme par exemple $E = \R^n$) pour ensemble des valeurs de la variable, on parle alors de <strong class="new">vecteur aléatoire</strong>. Pour des raisons de simplicité, on étudiera principalement les variables aléatoires discrètes dans ce cours.</p>
     </section>
     <section>
         <h2>Loi d'une variable aléatoire</h2>
@@ -82,7 +86,7 @@ hidden : True
         <p>Par exemple, on peut réinterpréter le calcul fait dans <a href="td1#proba_conditionelle">cet exercice</a> en termes de variables aléatoires. On lance un dé dix fois de suite. Si on note $N$ l'indice du premier lancer auquel on obtient un $6$, en prenant $N = 11$ si on ne fait jamais 6 (notons d'ailleurs que si la variable aléatoire $X_i$ désigne le résultat du $i^{\text{ème}}$ lancer de dé, alors $N = \min \set{i \in \ints{1,10}, X_i = 6}$). Alors les événements $(\set{N = n})_{1 \le n \le 11}$ forment une partition de l'univers $\Omega$. Si $B$ désigne l'événement "faire au moins un 6", d'après la formule des probabilités totales, on a</p>
         <p>$$\P(B) = \sum_{n = 1}^{11} \P(B | N = n) \cdot \P(N = n) = \sum_{n = 1}^{10} \pars{\frac{5}{6}}^{n-1} \cdot \frac{1}{6} = 1 - \pars{\frac{5}{6}}^{10}$$</p>
         <article class="exemple"><strong>Les déplacements au Monopoly</strong>
-            <p>On joue (sans tricher) au Monopoly. On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés. Au chapitre précédent, on a calculé $\P(X = 7) = \frac{1}{6}$ et $\P(X = 5) = \frac{1}{9}$. Plus généralement, on peut calculer que pour $2 \le k \le 12$, on a</p>
+            <p>On joue (sans tricher) au Monopoly. On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés. Au chapitre précédent, on a calculé $\P(S = 7) = \frac{1}{6}$ et $\P(S = 5) = \frac{1}{9}$. Plus généralement, on peut calculer que pour $2 \le k \le 12$, on a</p>
             <p>$$\P(S = k) = \frac{6 - |k-7|}{36}$$</p>
             <p>On peut mettre résumer dans un tableau</p>
             <table class="dist">
