@@ -58,6 +58,7 @@ permalink: /ens/
 * [Diapositives du cours 1](../docs/L2/probas/slides/)
 * Cours : [Chapitre 1](../docs/L2/probas/chap1), [Chapitre 2](../docs/L2/probas/chap2)
 * [Feuille d'exercices 1](../docs/L2/probas/td1)
+* [Feuille d'exercices 2](../docs/L2/probas/td2)
 
 ## L1
 

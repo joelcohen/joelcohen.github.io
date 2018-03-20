@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /docs/L2/probas/chap2
-title: Probabilités - Éléments de cours (2)
+title: Probabilités - Chapitre 2
 hidden : True
 ---
 <script type="text/javascript">
@@ -17,9 +17,8 @@ hidden : True
 </script>
 <div class="exomath">
     <div class="titlebox">
-        <h1>Probabilités</h1>
-        <h2>Éléments de cours</h2>
-        <h3>Chapitre 2 : Variables aléatoires</h3>
+        <h2>Chapitre 2</h2>
+        <h1>Variables aléatoires</h1>
     </div>
     <section>
         <h2>Variable aléatoire</h2>
@@ -78,9 +77,13 @@ hidden : True
         <p><span class="inlineblock">$$\P(X = 1) = \P(Y = 1) = \frac{1}{2}$$</span>
                 <span class="inlineblock">$$\P(X = -1) = \P(Y = -1) = \frac{1}{2}$$</span></p>
         <p>donc $X$ et $Y$ ont la même loi.</p>
+        
         <h3>Loi d'une variable aléatoire discrète</h3>
         <p>Dans le cas d'une variable aléatoire discrète, la loi de $X$ est entièrement déterminée par les valeurs $\P(X = e)$ pour $e \in E$. En effet, si $B \in \mathcal{E}$, alors on peut calculer $\P(X \in B)$ avec la formule :</p>
         <p>$$\P(X \in B) = \sum_{b \in B} \P(X = b)$$</p>
+        <p>En particuliers les valeurs $\P(X = e)$ doivent se sommer à $1$ au total :</p>
+        <p>$$\sum_{e \in E} \P(X = e) = \P(\Omega) = 1$$</p>
+        <h4>Variable discrète et probabilités totales</h4>
         <p>Remarquons que si $X : \Omega \to E$ est une variable aléatoire sur l'espace probabilisé $(\Omega, \mathcal{A}, \P)$, alors la famille d'événements $(\set{X = e})_{e \in E}$ forme une <a href="chap1#partition">partition</a> de $\Omega$. Alors d'après la <a href="chap1#probas_totales">formule des probabilités totales</a>, pour tout événement $A \in \mathcal{A}$, on a</p>
         <p>$$\P(A) = \sum_{e \in E, \ \P(X = e) \ne 0} \P(A | X = e) \cdot \P(X = e)$$</p>
         <p>Par exemple, on peut réinterpréter le calcul fait dans <a href="td1#proba_conditionelle">cet exercice</a> en termes de variables aléatoires. On lance un dé dix fois de suite. Si on note $N$ l'indice du premier lancer auquel on obtient un $6$, en prenant $N = 11$ si on ne fait jamais 6 (notons d'ailleurs que si la variable aléatoire $X_i$ désigne le résultat du $i^{\text{ème}}$ lancer de dé, alors $N = \min \set{i \in \ints{1,10}, X_i = 6}$). Alors les événements $(\set{N = n})_{1 \le n \le 11}$ forment une partition de l'univers $\Omega$. Si $B$ désigne l'événement "faire au moins un 6", d'après la formule des probabilités totales, on a</p>
@@ -195,7 +198,7 @@ hidden : True
             <p>$$\P(X = x, Y = y) = \P(X = x) \times \P(Y = y)$$</p>
         </article>
         <p>L'indépendance des variables aléatoires correspond à la notion intuitive que la valeur de l'une ne dépend pas des autres.</p>
-        <article class="exemple"><strong>Lancers successifs de dés</strong>
+        <article class="exemple" id="lancers_successifs"><strong>Lancers successifs de dés</strong>
             <p>On lance un dés deux fois de suite. Soit $X_1$ la valeur obtenue au premier lancer, et $X_2$ la valeur obtenue second lancer. On comprend intuitivement que $X_1$ et $X_2$ sont indépendants : la valeur du premier lancer n'a a priori aucune influence sur celle du second lancer. Mais pour se familiariser avec la définition, donnons la preuve formelle. Alors pour $i \in \ints{1,6}$ fixé, on a</p>
             <p>$$\set{X_1 = i} = \set{(i, y), y \in \ints{1,6}}$$</p>
             <p>et de même, pour $j \in \ints{1,6}$ fixé, on a</p>

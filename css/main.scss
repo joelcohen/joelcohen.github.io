@@ -53,6 +53,13 @@ code.highlighter-rouge {
     color : $code-color;
 }
 
+h2 {
+    font-size: 2em;
+    line-height: 1.1em;
+}
+h3 {
+    font-size: 1.5em;
+}
 
 .exobox {
     //border : 1px solid #ccc;
@@ -90,23 +97,28 @@ code.highlighter-rouge {
 
 
 .titlebox {
-    text-align : center;
-    margin-top : 7em;
-    margin-bottom : 5em;
-    h1 {
+    //text-align : center;
+    margin : 7em auto;
+    
+    width : 25em;
+    max-width: 90%;
+    h2 {
         //font-family : $serif;
         font-size : 2em;
         font-weight : bold;
         line-height : 1em;
         margin : 0;
     }
-    h2 {
-        font-size : 1.5em;
+    h1 {
+        font-size : 3.5em;
         color : $brand-color;
         line-height : 1em;
         margin: 0;
         font-weight : lighter;
-        //letter-spacing : .02em;
+        background: -webkit-linear-gradient(#09c, #069);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing : -.02em;
     }
 }
 .exomath {
@@ -141,13 +153,17 @@ code.highlighter-rouge {
 }
 
 @media print {
+    body
+    {
+      margin: 15mm 10mm;
+    }
     h1 {
         text-align : center;
         margin-top : 1em;
         margin-bottom : 2em;
     }
     
-    header, footer {
+    header, footer, nav {
         display : none;
     }
     .highlight pre {
@@ -164,6 +180,12 @@ code.highlighter-rouge {
     }
     .video {
         display: none;
+    }
+    h2, h3, h4 {
+        page-break-after: avoid;
+    }
+    article {
+        page-break-inside : avoid;
     }
 }
 
@@ -207,9 +229,11 @@ article.culturel {
     border : 1px solid #ccc;
     background-color : #f9f9f9;
     padding : 1em;
-    margin: 2em 1em;
+    margin: 2em 0;
     border-radius : .5em;
-    
+    @media (min-width: 600 px){
+        margin: 2em;
+    }
 }
 .culturel::before {
     content : "Complément culturel :";

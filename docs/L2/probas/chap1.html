@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /docs/L2/probas/chap1
-title: Probabilités - Éléments de cours (1)
+title: Probabilités - Chapitre 1
 hidden : True
 ---
 <script type="text/javascript">
@@ -17,9 +17,8 @@ hidden : True
 </script>
 <div class="exomath">
     <div class="titlebox">
-        <h1>Probabilités</h1>
-        <h2>Éléments de cours</h2>
-        <h3>Chapitre 1 : Événements</h3>
+        <h2>Chapitre 1</h2>
+        <h1>Événements</h1>
     </div>
     <section>
        <h2>Univers et événements</h2>
@@ -58,14 +57,14 @@ hidden : True
            <p>Si $\mathcal{A}$ est une tribu sur $\Omega$, le couple $(\Omega, \mathcal{A})$ est appelé un <strong class="new">espace probabilisable</strong>.</p>
        </article>
        
-       <p>Dans ce cours, l'univers $\Omega$ sera fini le plus souvent, et la tribu $\mathcal{A}$ sera pratiquement toujours l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. On peut donc se permettre de ne pas trop se soucier de la question. Quand l'univers $\Omega$ est infini, des subtilités apparaissent et on peut être amenés à considérer des tribus plus petites, ne contenant pas toutes les parties de $\Omega$. = \frac{1}{2}Pour s'exercer sur la notion d'événement aléatoire, voir la <a href="td1#evenements">feuille 1 exercice 2</a>.</p>
+       <p>Dans ce cours, l'univers $\Omega$ sera fini le plus souvent, et la tribu $\mathcal{A}$ sera pratiquement toujours l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. On peut donc se permettre de ne pas trop se soucier de la question. Quand l'univers $\Omega$ est infini, des subtilités apparaissent et on peut être amenés à considérer des tribus plus petites, ne contenant pas toutes les parties de $\Omega$. Pour s'exercer sur la notion d'événement aléatoire, voir la <a href="td1#evenements">feuille 1 exercice 2</a>.</p>
     </section>
     
     <section>
         <h2>Probabilité</h2>
         <h3>Définition axiomatique</h3>
         <p>On donne la définition axiomatique d'une probabilité.</p>
-        <article class="definition"><strong>Probabilité</strong>
+        <article class="definition" id="probabilité"><strong>Probabilité</strong>
             <p>Étant donné un univers $\Omega$ et une tribu $\mathcal{A}$ (c'est-à-dire un espace probabilisable), une <strong class="new">probabilité</strong> est une fonction qui à chaque événement associe une valeur numérique :</p>
             <p>
                 $$\begin{align*}
@@ -86,7 +85,7 @@ hidden : True
         <article class="exemple">
              <p>Pour le lancer d'une pièce de monnaie, on prend $\Omega = \{\pile, \face\}$ pour univers, et pour tribu l'ensemble des parties de $\Omega$:</p>
              <p>$$\mathcal{A} = \mathcal{P}(\Omega) = \{\emptyset, \{ \pile \}, \{ \face \}, \{ \pile, \face \} \} $$</p>
-             <p>On peut définir une probabilité sur $\mathcal{A}$ par</p>
+             <p>On peut définir une probabilité $ \P : \mathcal{A} \to [0,1]$ par</p>
              <p>
                  $$
                  \begin{align*}
@@ -108,6 +107,7 @@ hidden : True
                  \end{align*}
                  $$
              </p>
+             <p>Si $p \in [0,1]$, on pourrait définir une autre fonction de probabilité $\P_p$ sur $\mathcal{A}$ en posant $\P_p(\set{\pile}) = p$ et $\P_p(\set{\face}) = 1-p$ (pour $p \ne 1/2$, cela correspondrait aux probabilités observées pour une pièce non équilibrée).</p>
         </article>
         <article class="exemple">
             <p>Pour le lancer d'un dé à 6 faces, on prend $\Omega = \{1,2,3,4,5,6\}$. On peut alors définir une fonction de probabilité, dite probabilité uniforme, en posant pour tout $A \subset \Omega$,</p>
