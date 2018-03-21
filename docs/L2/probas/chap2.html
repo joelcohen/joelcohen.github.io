@@ -163,13 +163,17 @@ hidden : True
             </table>
             <p>Ce qui ne semble suivre aucune règle claire, il y a fort à parier que les concepteurs du jeu ont choisi ces scores de manière un peu arbitraire.</p>
         </article>
-        <article class="exemple"><strong>Temps nécessaire pour faire un 6</strong></article>
+        <article class="exemple"><strong>Temps nécessaire pour faire un 6</strong>
         <p>On lance un dé. Tant qu'on ne fait pas 6, on recommence. On considère la variable aléatoire $N$ qui désigne le nombre de lancers qu'on fait (et on considère que $N = +\infty$ si on ne fait jamais $6$). On calcule alors pour tout $k \in \N$,</p>
         $$\P(N = k) = \pars{\frac{5}{6}}^{k-1} \cdot \frac{1}{6}$$
         <p>ce qui décroit géométriquement vers 0 (il est de de plus improbable de faire des longues séquences sans 6), et on a $\P(N = +\infty) = 0$.</p>
+        </article>
+        <p>Pour d'autres exemples de calculs de lois, voir <a href="td2#min_max">la feuille d'exercies 2</a>.</p>
+        
+        
         <h3>Loi d'une variable réelle</h3>
         <p>Dans le cas d'une variable aléatoire réelle $X$, la loi de $X$ peut être caractérisée par la fonction $F_X : x \mapsto \P(X \le x)$, qu'on appelle la <strong class="new">fonction de répartition</strong> de $X$.</p>
-        <article class="definition"><strong>Fonction de répartition, densité</strong>
+     <article class="definition"><strong>Fonction de répartition, densité</strong>
             <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé et $X : \Omega \to \R$ une variable aléatoire réelle. On appelle <strong class="new">fonction de répartition</strong> de $X$, la fonction réelle $F_X : \R \to [0,1]$ définie pour $x \in \R$ par</p>
             $$F_X(x) = \P(X \le x)$$
             <p>Si la fonction $F_X$ est $\mathcal{C}^1$, on dit que la variable $X$ admet une densité. On appelle alors <strong>densité de probabilité</strong> la fonction $p_x : \R \to \R$ dérivée de $F_X$ :</p>
