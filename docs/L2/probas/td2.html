@@ -211,7 +211,7 @@ hidden : True
             
         </li>
         
-        <li class="exo" id="piece_pipee">
+        <li class="exo" id="QCM">
             <h2>QCM au pifomètre</h2>
             <article  class="exobox">
                <p>Un examen comprend 20 questions chacune notée sur 1 point. Chaque question est à choix multiple et propose 4 choix de réponses, dont une seule est correcte. Un étudiant se demande si cela vaut le coup de répondre au hasard. Dans l'hypothèse où il le ferait, on note $N_i$ sa note obtenue à la question $i$ pour $i \in \ints{1,20}$, et $T$ sa note totale pour l'examen :
@@ -235,7 +235,7 @@ hidden : True
                    $$\E(T) = \sum_{i = 1}^{20} \E(N_i) = 0$$
                <p>Donc l'ajout des points négatifs rend inutile la stratégie de réponse au hasard.</p></div> </li>
                    <li onclick="toggle_visibility('5.4');">
-                       Que devient $\E(T)$ si chaque question peut admettre de $0$ à $4$ réponses bonnes (sans les points négatifs) ?
+                       Que devient $\E(T)$ pour chaque question, une, plusieurs ou aucune des propositions peut être juste (on met 1 point si l'étudiant coche exactement toutes les bonnes réponses, et que les bonnes réponses, et on ne mets pas de points négatifs) ?
                    <div class="sol" id="5.4">
                        La variable $N_i$ suit encore une loi de Bernouilli mais dont le paramètre $\frac{1}{2^4} = \frac{1}{16}$. On a donc
                        $$\E(T) = \frac{20}{16} = \frac{5}{4}$$
@@ -245,7 +245,7 @@ hidden : True
             </article>
             
         </li>
-        <li class="exo" id="piece_pipee">
+        <li class="exo" id="badminton">
             <h2>La partie de badminton 🌶🌶</h2>
             <article  class="exobox">
                <p>Alice et Bob s’affrontent dans une partie de badminton. Le premier joueur arrivé à 21 points remporte le match. À chaque échange, Alice a une probabilité $p \in \ints{0,1}$ de remporter le point. On note $A_n$ et $B_n$ le nombre de points qu'Alice et Bob ont marqué respectivement au bout de $n$ échanges. On note $T_A$ le temps (en nombre d'échanges) qui faut à Alice pour marquer 21 points :
