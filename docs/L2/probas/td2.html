@@ -29,17 +29,17 @@ hidden : True
                 <p>On lance un dé à 6 faces deux fois de suite. Les variables aléatoires $D_1$ et $D_2$ désignent le résultat du premier et du deuxième lancer respectivement. On définit également les variables aléatoires $X = \min(D_1,D_2)$ et $Y = \max(D_1, D_2)$.</p>
                 <ol>
                     <li onclick="toggle_visibility('1.1');">
-                        <p>Quelle(s) loi(s) suivent les variables $D_1$ et $D_2$ ? Les variables aléaoires $D_1$ et $D_2$ sont-elles indépendantes ?</p>
+                        <p>Quelle(s) loi(s) suivent les variables $D_1$ et $D_2$ ? Les variables aléatoires $D_1$ et $D_2$ sont-elles indépendantes ?</p>
                         <div id="1.1" class="sol">Les variables $D_i$ ($i = 1, 2$) suivent une loi uniforme sur $\ints{1,6}$. Les variables sont indépendantes car des lancers successifs de dés sont indépendants (voir la preuve dans <a href="chap2#lancers_successifs">le cours</a>).</div>
                     </li>
                     <li onclick="toggle_visibility('1.2');">
-                        <p>Les variables aléaoires $X$ et $Y$ sont-elles indépendantes ?</p>
+                        <p>Les variables aléatoires $X$ et $Y$ sont-elles indépendantes ?</p>
                         <div id="1.2" class="sol">
                             <p>Les variables $X$ et $Y$ ne sont clairement pas indépendantes (puisque $X \le Y$). On a donc notamment que $\P(X = 6, Y = 1) = 0$ mais $P(X = 6) \ne 0$ et $\P(Y = 1) \ne 0$.</p>
                     </div>
                     </li>
                     <li onclick="toggle_visibility('1.3');">
-                        <p>Déterminer les lois des variables aléaoires $X$ et $Y$.</p>
+                        <p>Déterminer les lois des variables aléatoires $X$ et $Y$.</p>
                         <div id="1.3" class="sol">
                             <p>Pour calculer $\P(X = k)$, on peut décrire les événements $\set{X = k}$. On a par exemple</p>
                             <p><span class="inlineblock">$$\set{X = 2} = \set{(2,2), (2,3), (2,4), (2,5), (2, 6), (3,2), (4,2), (5,2), (6,2)}$$</span>
@@ -244,6 +244,89 @@ hidden : True
                
             </article>
             
+        </li>
+        <li class="exo" id="piece_pipee">
+            <h2>La partie de badminton 🌶🌶</h2>
+            <article  class="exobox">
+               <p>Alice et Bob s’affrontent dans une partie de badminton. Le premier joueur arrivé à 21 points remporte le match. À chaque échange, Alice a une probabilité $p \in \ints{0,1}$ de remporter le point. On note $A_n$ et $B_n$ le nombre de points qu'Alice et Bob ont marqué respectivement au bout de $n$ échanges. On note $T_A$ le temps (en nombre d'échanges) qui faut à Alice pour marquer 21 points :
+                   $$T_A = \min \set{n \in \N, A_n \ge 21}$$
+                   et de même, $T_B$ désignera le temps qu'il faut à Bob pour marquer 21 points.
+</p>
+               <ol>
+                   <li onclick="toggle_visibility('6.1');">
+                       Déterminer les lois des variables $A_n$ et $B_n$. Quelle relation simple y a-t-il entre ces deux variables ?
+                   <div class="sol" id="6.1">
+                       Si on note $X_i$ la variable qui vaut $1$ si Alice marque le point à l'échange $i$, et $Y_i$ la même variable pour Bob, alors
+                       <p style="text-align: center">
+                           <span class="inlineblock">$$A_n = \sum_{i = 1}^n X_i$$</span>
+                           <span class="inlineblock">$$B_n = \sum_{i = 1}^n Y_i$$</span>
+                       </p>
+                       <p>Les variables $X_i$ suivent une loi de Bernouilli de paramètre $p$ et sont indépendantes. Les $Y_i$ suivent des lois de Bernouilli de paramètre $q = 1-p$. Donc $A_n$ suit une loi binomiale de paramètres $(n, p)$ et $B_n$ une loi binomiale de paramètre $(n,q)$. Les deux variables sont reliées par le fait que leur somme est le nombre total de points, donc
+                           $$A_n + B_n = n$$</p>
+                   </div></li>
+                   <li onclick="toggle_visibility('6.2');">
+                       Déterminer les lois de $T_A$ et de $T_B$. 
+                   <div class="sol" id="6.2">On a 
+                   $$
+                   \begin{align*}
+                   \P(T_A = n) &= \P(A_n = 21, A_{n-1} = 20)\\
+                   &= \P(A_n = 21 | A_{n-1} = 20) \cdot \P(A_{n-1} = 20) \\
+                   &= p \cdot \binom{n-1}{20} p^{20} q^{n-21} \\
+                   &= \pars{\frac{p}{q}}^{21} \binom{n-1}{20} q^{n}
+                   \end{align*}
+                   $$
+                   de même, en inversant les rôles de $p$ et $q$, on trouve
+                   $$\P(T_B = n) = \pars{\frac{q}{p}}^{21} \binom{n-1}{20} p^{n}$$
+                   <p>Remarquons au passage que comme $\sum_{n = 1}^{+\infty} \P(T_A = n) =1$, on obtient l'égalité</p>
+                   <p>$$\sum_{k = 0}^{+\infty} \binom{k}{20} p^{20} q^{k-20} = \frac{1}{p}$$</p>
+                   <p>en faisant le même raisonnement pour des matchs en $a+1$ points (avec $a \in \N$), on trouverait</p>
+                   <p>$$\sum_{k = 0}^{+\infty} \binom{k}{a} p^{a} q^{k-a} = \frac{1}{p}$$</p>
+                   </div></li>
+                   <li onclick="toggle_visibility('6.3');">
+                        Les variables $T_A$ et $T_B$ sont-elles bornées ? Qu'en est-il de $\min(T_A, T_B)$ ?
+                   <div class="sol" id="6.3">Les variables $T_A$ et $T_B$ ne sont pas bornées, mais $\min(T_A, T_B) < 42$ car au bout de $41 = 2 \times 21 - 1$ échanges, l'un des joueurs a forcément marqué au moins 21 points (si $A_n \le 20$ et $B_n \le 20$, alors $n \le 20 + 20 = 40$).</div> </li>
+                   <li onclick="toggle_visibility('6.4');">
+                        🌶 Calculer $\E(T_A)$ et $\E(T_B)$.
+                   <div class="sol" id="6.4"><p>Intuitivement, on se dit qu'Alice marque en moyenne $p$ points à chaque échange, et donc il lui faudra en moyenne $\frac{21}{p}$ échanges pour marquer 21 points. Et de même, on imagine qu'il faudra en moyenne $\frac{21}{q}$ échange pour que Bob marque 21 points. Cela peut se retrouver par le calcul :</p>
+                       <p>$$
+                          \begin{align*}
+                          \E(T_A) &= \sum_{n = 1}^{+ \infty} n \cdot \P(T_A = n)\\
+                          &= \sum_{n = 1}^{+ \infty} n . \binom{n-1}{20} p^{21} q^{n - 21}\\
+                          &= 21 \cdot \sum_{n = 1}^{+ \infty} \binom{n}{21} p^{21} q^{n - 21}\\
+                          &= \frac{21}{p}
+                          \end{align*}
+                          $$
+                      </p>
+                      <p>La dernière égalité venant d'une formule trouvée à la question 2. En échangeant les rôles de $p$ et $q$ on trouve de même $\E(T_B) = \frac{21}{q}$.</p>
+                   </div> </li>
+                   <li onclick="toggle_visibility('6.5');">
+                       🌶 Une partie est remportée par le premier joueur qui atteint 21 points. Exprimer la probabilité qu'Alice gagne le match en fonction de $p$. Évaluer numériquement cette probabilité avec $p = 0,6$.
+                   <div class="sol" id="6.5">Alice remporte la partie si $T_A < T_B$. Il s'agit donc de calculer la probabilité $\P(T_A < T_B)$.</div> </li>
+               </ol>
+               
+            </article>
+            
+        </li>
+        
+        <!-- <li class="exo" id="sondage">
+            <h2>Un sondage anonyme</h2>
+            <article class="exobox">
+                <p>On souhaite réaliser un sondage sur l'usage  </p>
+                <ol>
+                    <li onclick="toggle_visibility('6.1');">
+                        <p></p>
+                        <span id="6.1" class="sol">
+                            <p></p>
+                        </span>
+                    </li>
+                    <li onclick="toggle_visibility('6.2');">
+                        <p></p>
+                        <span id="6.2" class="sol">
+
+                        </span>
+                    </li>
+                </ol>
+            </article> -->
         </li>
     </ol>
 </div>   

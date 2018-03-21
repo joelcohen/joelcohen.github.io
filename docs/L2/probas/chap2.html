@@ -83,7 +83,7 @@ hidden : True
         <p>$$\P(X \in B) = \sum_{b \in B} \P(X = b)$$</p>
         <p>En particuliers les valeurs $\P(X = e)$ doivent se sommer à $1$ au total :</p>
         <p>$$\sum_{e \in E} \P(X = e) = \P(\Omega) = 1$$</p>
-        <h4>Variable discrète et probabilités totales</h4>
+        <h3>Variable discrète et probabilités totales</h3>
         <p>Remarquons que si $X : \Omega \to E$ est une variable aléatoire sur l'espace probabilisé $(\Omega, \mathcal{A}, \P)$, alors la famille d'événements $(\set{X = e})_{e \in E}$ forme une <a href="chap1#partition">partition</a> de $\Omega$. Alors d'après la <a href="chap1#probas_totales">formule des probabilités totales</a>, pour tout événement $A \in \mathcal{A}$, on a</p>
         <p>$$\P(A) = \sum_{e \in E, \ \P(X = e) \ne 0} \P(A | X = e) \cdot \P(X = e)$$</p>
         <p>Par exemple, on peut réinterpréter le calcul fait dans <a href="td1#proba_conditionelle">cet exercice</a> en termes de variables aléatoires. On lance un dé dix fois de suite. Si on note $N$ l'indice du premier lancer auquel on obtient un $6$, en prenant $N = 11$ si on ne fait jamais 6 (notons d'ailleurs que si la variable aléatoire $X_i$ désigne le résultat du $i^{\text{ème}}$ lancer de dé, alors $N = \min \set{i \in \ints{1,10}, X_i = 6}$). Alors les événements $(\set{N = n})_{1 \le n \le 11}$ forment une partition de l'univers $\Omega$. Si $B$ désigne l'événement "faire au moins un 6", d'après la formule des probabilités totales, on a</p>
@@ -179,14 +179,6 @@ hidden : True
         
         <p>Si $X$ admet une densité $p_X$, alors on a</p>
         <p>$$\P(a \le X \le b) = \int_a^b p_X(u) \, du$$</p>
-        
-        <!-- <h3>Loi usuelles</h3>
-        <p>On liste une série</p>
-        <h4>Loi de Bernouilli</h4>
-        <h4>Loi uniforme</h4>
-        <h4>Loi géométrique</h4>
-        <h4>Loi binomiale</h4>
-        <h4>Loi de Poisson</h4> -->
     </section>
     <section>
         <h2>Indépendance de variables aléatoires</h2>
@@ -197,7 +189,8 @@ hidden : True
             <p>En particulier, deux variables aléatoires discrètes $X : \Omega \to E_1$ et $Y : \Omega \to E_2$ sont indépendantes si pour tout $(x,y) \in E_1 \times E_2$, on a</p>
             <p>$$\P(X = x, Y = y) = \P(X = x) \times \P(Y = y)$$</p>
         </article>
-        <p>L'indépendance des variables aléatoires correspond à la notion intuitive que la valeur de l'une ne dépend pas des autres.</p>
+        <p>Remarquons que l'indépendance des variables aléatoire revient à demander l'indépendance mutuelle des événements $(\set{X_i = x_i})_{i \in I}$ pour toutes valeurs $(x_i) \in \prod_{i \in I} E_i$ (et pas seulement l'indépendance 2 à 2).</p>
+        <p>L'indépendance des variables aléatoires correspond à la notion intuitive que la valeur de l'une des variables ne dépend pas des autres.</p>
         <article class="exemple" id="lancers_successifs"><strong>Lancers successifs de dés</strong>
             <p>On lance un dés deux fois de suite. Soit $X_1$ la valeur obtenue au premier lancer, et $X_2$ la valeur obtenue second lancer. On comprend intuitivement que $X_1$ et $X_2$ sont indépendants : la valeur du premier lancer n'a a priori aucune influence sur celle du second lancer. Mais pour se familiariser avec la définition, donnons la preuve formelle. Alors pour $i \in \ints{1,6}$ fixé, on a</p>
             <p>$$\set{X_1 = i} = \set{(i, y), y \in \ints{1,6}}$$</p>
@@ -215,6 +208,38 @@ hidden : True
                 $$</p>
                 donc les variables $X_1$ et $X_2$ sont indépendantes. Plus généralement, si on lance un dé successivement $n$ fois et qu'on note $X_i$ le résultat du $i^{\text{ème}}$ lancer, alors les variables $(X_{i})_{1 \le i \le n}$ sont idépendantes.
         </article>
+    </section>
+    <section>
+        <h2>Loi usuelles</h2>
+        <p>Dans cette partie, on établit une liste une série non exhaustive de loi de variables aléatoires discrètes que l'on rencontre fréquemment.</p>
+        <h3>Loi de Bernouilli</h3>
+        <p>On dit que la variable aléatoire $X$ suit une <strong class="new">loi de Bernouilli</strong> si la variable est à valeurs dans $\set{0,1}$. La valeur $p = \P(X = 1)$ est appelée le <strong class="new">paramètre</strong> de la loi (ou on dit encore que $X$ suit une loi de Bernouilli de paramètre $p$). On a $\P(X = 0) = 1-p$.</p>
+        <p>Si $X$ est une variable aléatoire à valeurs dans $\set{-1,1}$, on dira qu'elle suit une <strong class="new">loi de Rademacher</strong> de paramètre $p = \P(X = 1)$. On a alors $\P(X = -1) = 1 -p$.</p>   
+        <p>Les deux loi sont réliées. En effet on remarque que $X$ suit une loi de Bernouilli de paramètre $p$ si et seulement si $2X-1$ suit une loi de Rademacher de paramètre $p$.</p>
+        <article class="exemple">On tire une carte au hasard dans un paquet de 52 cartes, on note $X$ la variable aléatoire qui vaut $1$ si la carte tirée est un roi, et $0$ sinon. Alors $X$ suit une loi de Bernouilli de paramètre $\P(X=1) = \P(\text{"tirer un roi"})= \frac{4}{52} = \frac{1}{13}$.</article>
+        <article class="exemple">Un urne contient 99 boules noires, et une boule blanche. On tire une boule au hasard dans l'urne et on note $B$ la variable aléatoire qui vaut $1$ si la boule est blanche, et $0$ sinon. Alors la variable $B$ suit une loi de Bernouilli de paramètre $\frac{1}{100}$.</article>
+        <article class="exemple">On joue à deux à un jeu de pile ou face avec pièce de monnaie équilibrée. Chacun mise 1€, et si la pièce tombe sur pile, je gagne 1€, sinon je perds 1€. Alors la variable $G$ qui représente mon gain (négatif si je perds) suit une loi de Rademacher de paramètre $\frac{1}{2}$.</article>
+        
+        <h3>Loi uniforme</h3>
+        <p>Pour $X$ une variable aléatoire à valeurs dans un ensemble fini $E$, on dit que la variable aléatoire $X$ suit une <strong class="new">loi uniforme sur $E$</strong> si toutes les valeurs sont équiprobables. On a alors pour tout $x \in E$ la probabilité $\P(X = x) = \frac{1}{|E|}$.</p>
+        <p>En particulier, si $X$ suit loi uniforme sur $\ints{a,b}$ on a $\P(X = k) = \frac{1}{b-a+1}$ pour tout $a \le k \le b$.</p>
+        <article class="exemple">
+            On lance un dé cubique à 6 face. On note $D$ la variable aléatoire qui représente le résultat du lancer. Alors la variable $D$ suit une loi uniforme sur $\ints{1,6}$.
+        </article>
+        <!-- <h3>Loi géométrique</h3> -->
+        
+        <h3>Loi binomiale</h3>
+        <p>C'est la loi que suit une somme de variables de Bernouilli indépendantes. Précisément, si les $(X_i)_{1 \le i \le n}$ sont $n$ variables de Bernouilli indépendantes de même paramètre $p$, on dira que la variable</p>
+        $$Y = \sum_{i = 1}^n X_i$$
+        <p>suit une <strong class="new">loi binomiale</strong> de paramètres $(n,p)$. La variable $Y$ prend ses valeurs dans $\ints{0,n}$, et pour tout $k \in \ints{0,n}$, on a</p>
+        $$\P(Y = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
+        <article class="exemple">
+            On lance une pièce équilibrée $10$ fois et on note $N$ la variable aléatoire qui représente le nombre de fois que l'on est tombé sur face. Alors $N$ suit une loi binomiale de paramètres $(10, 1/2)$ : en effet, si on note $X_i$ la variable aléatoire qui vaut $1$ si on fait face au $i^{\text{ème}}$ lancer et $0$ sinon, alors les variables $(X_i)_{1 \le i \le 20}$ suivent des lois de Bernouilli de paramètre $\frac{1}{2}$, sont indépendantes, et on a
+            $$N = \sum_{i = 1}^{20} X_i$$
+        </article>
+        
+        
+        <!-- <h3>Loi de Poisson</h3> -->
     </section>
     <nav>
         <a href="chap1"><< Chapitre précédent : Événements</a>
