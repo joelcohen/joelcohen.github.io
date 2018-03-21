@@ -212,13 +212,8 @@ hidden : True
     <section>
         <h2>Loi usuelles</h2>
         <p>Dans cette partie, on établit une liste une série non exhaustive de loi de variables aléatoires discrètes que l'on rencontre fréquemment.</p>
-        <h3>Loi de Bernouilli</h3>
-        <p>On dit que la variable aléatoire $X$ suit une <strong class="new">loi de Bernouilli</strong> si la variable est à valeurs dans $\set{0,1}$. La valeur $p = \P(X = 1)$ est appelée le <strong class="new">paramètre</strong> de la loi (ou on dit encore que $X$ suit une loi de Bernouilli de paramètre $p$). On a $\P(X = 0) = 1-p$.</p>
-        <p>Si $X$ est une variable aléatoire à valeurs dans $\set{-1,1}$, on dira qu'elle suit une <strong class="new">loi de Rademacher</strong> de paramètre $p = \P(X = 1)$. On a alors $\P(X = -1) = 1 -p$.</p>   
-        <p>Les deux loi sont réliées. En effet on remarque que $X$ suit une loi de Bernouilli de paramètre $p$ si et seulement si $2X-1$ suit une loi de Rademacher de paramètre $p$.</p>
-        <article class="exemple">On tire une carte au hasard dans un paquet de 52 cartes, on note $X$ la variable aléatoire qui vaut $1$ si la carte tirée est un roi, et $0$ sinon. Alors $X$ suit une loi de Bernouilli de paramètre $\P(X=1) = \P(\text{"tirer un roi"})= \frac{4}{52} = \frac{1}{13}$.</article>
-        <article class="exemple">Un urne contient 99 boules noires, et une boule blanche. On tire une boule au hasard dans l'urne et on note $B$ la variable aléatoire qui vaut $1$ si la boule est blanche, et $0$ sinon. Alors la variable $B$ suit une loi de Bernouilli de paramètre $\frac{1}{100}$.</article>
-        <article class="exemple">On joue à deux à un jeu de pile ou face avec pièce de monnaie équilibrée. Chacun mise 1€, et si la pièce tombe sur pile, je gagne 1€, sinon je perds 1€. Alors la variable $G$ qui représente mon gain (négatif si je perds) suit une loi de Rademacher de paramètre $\frac{1}{2}$.</article>
+        
+
         
         <h3>Loi uniforme</h3>
         <p>Pour $X$ une variable aléatoire à valeurs dans un ensemble fini $E$, on dit que la variable aléatoire $X$ suit une <strong class="new">loi uniforme sur $E$</strong> si toutes les valeurs sont équiprobables. On a alors pour tout $x \in E$ la probabilité $\P(X = x) = \frac{1}{|E|}$.</p>
@@ -226,20 +221,64 @@ hidden : True
         <article class="exemple">
             On lance un dé cubique à 6 face. On note $D$ la variable aléatoire qui représente le résultat du lancer. Alors la variable $D$ suit une loi uniforme sur $\ints{1,6}$.
         </article>
-        <!-- <h3>Loi géométrique</h3> -->
+        
+        
+        <h3>Loi de Bernouilli</h3>
+        <p>On dit que la variable aléatoire $X$ suit une <strong class="new">loi de Bernouilli</strong> si la variable est à valeurs dans $\set{0,1}$. La valeur $p = \P(X = 1)$ est appelée le <strong class="new">paramètre</strong> de la loi (ou on dit encore que $X$ suit une loi de Bernouilli de paramètre $p$). On a $\P(X = 0) = 1-p$.</p>
+        <p>Si $X$ est une variable aléatoire à valeurs dans $\set{-1,1}$, on dira qu'elle suit une <strong class="new">loi de Rademacher</strong> de paramètre $p = \P(X = 1)$. On a alors $\P(X = -1) = 1 -p$.</p>   
+        <p>Les deux loi sont réliées. En effet on remarque que $X$ suit une loi de Bernouilli de paramètre $p$ si et seulement si $2X-1$ suit une loi de Rademacher de paramètre $p$.</p>
+        <article class="exemple">On tire une carte au hasard dans un paquet de 52 cartes, on note $X$ la variable aléatoire qui vaut $1$ si la carte tirée est un roi, et $0$ sinon. Alors $X$ suit une loi de Bernouilli de paramètre $\P(X=1) = \P(\text{"tirer un roi"})= \frac{4}{52} = \frac{1}{13}$.</article>
+        <article class="exemple">Une urne contient 99 boules noires, et une boule blanche. On tire une boule au hasard dans l'urne et on note $B$ la variable aléatoire qui vaut $1$ si la boule est blanche, et $0$ sinon. Alors la variable $B$ suit une loi de Bernouilli de paramètre $\frac{1}{100}$.</article>
+        <article class="exemple">On joue à deux à un jeu de pile ou face avec pièce de monnaie équilibrée. Chacun mise 1€, et si la pièce tombe sur pile, je gagne 1€, sinon je perds 1€. Alors la variable $G$ qui représente mon gain (négatif si je perds) suit une loi de Rademacher de paramètre $\frac{1}{2}$.</article>
         
         <h3>Loi binomiale</h3>
-        <p>C'est la loi que suit une somme de variables de Bernouilli indépendantes. Précisément, si les $(X_i)_{1 \le i \le n}$ sont $n$ variables de Bernouilli indépendantes de même paramètre $p$, on dira que la variable</p>
+        <p>C'est la loi que suit une somme de variables de Bernouilli indépendantes. Précisément, si les $(X_i)_{1 \le i \le n}$ sont $n$ variables de Bernouilli indépendantes de même paramètre $p \in [0,1]$, on dira que la variable</p>
         $$Y = \sum_{i = 1}^n X_i$$
         <p>suit une <strong class="new">loi binomiale</strong> de paramètres $(n,p)$. La variable $Y$ prend ses valeurs dans $\ints{0,n}$, et pour tout $k \in \ints{0,n}$, on a</p>
         $$\P(Y = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
+        <p>La loi binomiale apparaît comme le nombre de succès lorsqu’on répète une même expérience aléatoire dont la probabilité de succès est $p$.</p>
         <article class="exemple">
-            On lance une pièce équilibrée $10$ fois et on note $N$ la variable aléatoire qui représente le nombre de fois que l'on est tombé sur face. Alors $N$ suit une loi binomiale de paramètres $(10, 1/2)$ : en effet, si on note $X_i$ la variable aléatoire qui vaut $1$ si on fait face au $i^{\text{ème}}$ lancer et $0$ sinon, alors les variables $(X_i)_{1 \le i \le 20}$ suivent des lois de Bernouilli de paramètre $\frac{1}{2}$, sont indépendantes, et on a
-            $$N = \sum_{i = 1}^{20} X_i$$
+            On lance une pièce équilibrée $10$ fois et on note $N$ la variable aléatoire qui représente le nombre de fois que l'on est tombé sur face. Alors $F$ suit une loi binomiale de paramètres $(10, 1/2)$ : en effet, si on note $X_i$ la variable aléatoire qui vaut $1$ si on fait face au $i^{\text{ème}}$ lancer et $0$ sinon, alors les variables $(X_i)_{1 \le i \le 20}$ suivent des lois de Bernouilli de paramètre $\frac{1}{2}$, sont indépendantes, et on a
+            $$F = \sum_{i = 1}^{20} X_i$$
+            Si $k \le n$, la probabilité d'avoir obtenu $k$ fois face est donnée par
+            $$\P(F = k) = \binom{20}{k} p^k (1-p)^{20-k}$$
+            Car il faut faire $k$ lancers avec face, $20-k$ lancer avec pile, et il y a $\binom{20}{k}$ façon de choisir l'ordre des piles et faces obtenus.
         </article>
         
         
-        <!-- <h3>Loi de Poisson</h3> -->
+        <h3>Loi géométrique</h3>
+        <p>On dit que la variable $X$ suit une <strong class="new">loi géométrique</strong> de paramètre $p \in [0,1]$ si $X$ est à valeurs dans $\N^*$ et si pour tout $n \in \N^*$, on a</p>
+        <p>$$\P(X = n) = p (1-p)^{n-1}$$</p>
+        <p>La loi géométrique apparaît comme le temps nécessaire pour obtenir un premier succès lorsqu’on répète une même expérience aléatoire dont la probabilité de succès est $p$. Formellement, si $(X_n)_{n \in \N}$ est une suite de variables aléatoires de Bernouilli de paramètre $p$ et indépendantes, alors la variable aléatoire</p>
+        <p>$$N = \min \set{n \in \N, X_n = 1}$$</p>
+        <p>suit une loi géométrique de paramètre $p$. On remarque que la somme des probabilités $\P(X = n)$ pour $n$ variant dans $\N$ fait bien à $1$ au total :</p>
+        <p>$$
+            \begin{align*}
+            \sum_{n = 1}^{+\infty} \P(X = n) &= p \sum_{n = 1}^{+\infty} (1-p)^{n-1}\\
+             &= p \sum_{k = 0}^{+\infty} (1-p)^{k} \\
+             &= p \cdot \frac{1}{1- (1-p)} \\
+             &= 1
+            \end{align*}$$</p>
+        <article class="exemple">
+            On lance le dé de manière répétée jusqu'à ce qu'on fasse un $6$. Si on fait $6$ on s'arrête de lancer le dé, sinon on continue. On note $N$ la variable aléatoire qui représente le nombre de lancer qu'on a fait au total. On vérifie que pour $n \in \N$, on a
+            $$\P(N = n) = \pars{\frac{5}{6}}^{n-1} \frac{1}{6}$$
+            car si on doit faire $n$ lancer pour atteindre 6, c'est qu'on a fait un 6 sur le dernier lancer (probabilité $1/6$) et autre chose qu'un 6 sur les $n-1$ premiers lancers (probabilité $5/6$ pour chacun). Donc la variable $N$ suit une loi géométrique de paramètre $\frac{1}{6}$.
+        </article>
+        
+        
+        <h3>Loi de Poisson</h3>
+        <p>On dit qu'une variable aléatoire suit une loi de Poisson de paramètre $\lambda > 0$, si $X$ est à valeurs dans $\N$ et pour tout $k \in \N$ on a</p>
+        <p>$$\P(X = k) = e^{-\lambda} \frac{\lambda^k}{k!}$$</p>
+        <p>On vérifie que la somme des probabilités $\P(X = k)$ vaut bien $1$ au total :</p>
+        <p>$$
+            \begin{align*}
+            \sum_{k= 0}^{+\infty} \P(X = k) &= e^{-\lambda} \sum_{k = 0}^{+\infty} \frac{\lambda^k}{k!}\\
+             &= e^{-\lambda} e^{\lambda} \\
+             &= 1
+            \end{align*}$$
+        </p>
+        <p>Une utilité de la loi de Poisson est qu'elle permet d'approximer la loi binomiale. Précisément, si $n$ est très grand et $p$ petit, la loi binomiale de paramètre $(n, p)$ est proche de la loi de Poisson de paramètre $\lambda = np$. En conséquence, la loi de Poisson permet notamment de modéliser le nombre d'occurence d'un phénomènes rare ($p$ petit) dans une grande population ($n$ grand).</p>
+        <p>Initialement cantonnée à modéliser des événements rares comme les arrivées de bateaux dans un port ou les accidents dus aux coups de pied de cheval dans les armées (source <a href="https://fr.wikipedia.org/wiki/Loi_de_Poisson#Domaines_d'application" target="new">Wikipédia</a>). Son champs d'applications s'est considérablement élargi depuis, et on l'utilise désormais pour modéliser de nombreux phénomènes comme la charge d'un réseau de télécommunication (nombre de personnes connectées à un moment donnée), la durée de vie de composant électroniques, le temps de vie d'une particule radioactive, le taux de mutations aléatoires, la demande de passagers pour un avion, la probabilité de défaut d'un crédit (probabilité qu'une personne ne puisse pas rembourser son crédit), etc.</p>
     </section>
     <nav>
         <a href="chap1"><< Chapitre précédent : Événements</a>
