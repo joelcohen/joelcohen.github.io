@@ -69,3 +69,7 @@ permalink: /ens/
 * [TP Boucles imbriquées](../docs/L1/info/boucles2.pdf)
 * [Interrogation](../docs/L1/info/eval1.pdf)
 * Examen : [Sujet Type](../docs/L1/info/sujet_type.pdf), [Type 1](../docs/L1/info/type1.pdf)
+
+### Projets informatique (UE Codage)
+
+* [Présentation et intro à GitHub](../docs/L1/info/presentation_UE_codage.pdf)
