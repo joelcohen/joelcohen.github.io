@@ -1,5 +1,6 @@
 ---
 layout: page
+hidden : True
 title: UE Codage : Projet informatique
 permalink: /ens/codage
 ---
