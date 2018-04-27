@@ -1,8 +1,8 @@
 ---
 layout: page
+title: UE Codage - Projet informatique
+permalink: /ens/codage/
 hidden : True
-title: UE Codage : Projet informatique
-permalink: /ens/codage
 ---
 
 
