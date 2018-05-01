@@ -73,3 +73,4 @@ permalink: /ens/
 ### [Projets informatique (UE Codage)](../ens/codage/)
 
 * [Présentation et intro à GitHub](../docs/L1/info/presentation_UE_codage.pdf)
+* [Recommandations sur le projet](../docs/L1/info/projet-recommandations.pdf)
