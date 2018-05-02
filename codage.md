@@ -50,7 +50,7 @@ Sur GitHub Classroom, un devoir a été créé pour recevoir le code de votre pr
 
 -   Cliquer sur le lien ci-dessus pour créer un repository GitHub pour votre équipe.
 
--   Créer un fichier README détaillant le descriptif du projet, les membres de l’équipe, et leurs rôles respectifs.
+-   Créer un fichier `README` détaillant le descriptif du projet, les membres de l’équipe, et leurs rôles respectifs.
 
 Documents
 ---------
