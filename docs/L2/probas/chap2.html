@@ -88,7 +88,7 @@ hidden : True
         <p>$$\P(A) = \sum_{e \in E, \ \P(X = e) \ne 0} \P(A | X = e) \cdot \P(X = e)$$</p>
         <p>Par exemple, on peut réinterpréter le calcul fait dans <a href="td1#proba_conditionelle">cet exercice</a> en termes de variables aléatoires. On lance un dé dix fois de suite. Si on note $N$ l'indice du premier lancer auquel on obtient un $6$, en prenant $N = 11$ si on ne fait jamais 6 (notons d'ailleurs que si la variable aléatoire $X_i$ désigne le résultat du $i^{\text{ème}}$ lancer de dé, alors $N = \min \set{i \in \ints{1,10}, X_i = 6}$). Alors les événements $(\set{N = n})_{1 \le n \le 11}$ forment une partition de l'univers $\Omega$. Si $B$ désigne l'événement "faire au moins un 6", d'après la formule des probabilités totales, on a</p>
         <p>$$\P(B) = \sum_{n = 1}^{11} \P(B | N = n) \cdot \P(N = n) = \sum_{n = 1}^{10} \pars{\frac{5}{6}}^{n-1} \cdot \frac{1}{6} = 1 - \pars{\frac{5}{6}}^{10}$$</p>
-        <article class="exemple"><strong>Les déplacements au Monopoly</strong>
+        <article class="exemple" id="monopoly"><strong>Les déplacements au Monopoly</strong>
             <p>On joue (sans tricher) au Monopoly. On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés. Au chapitre précédent, on a calculé $\P(S = 7) = \frac{1}{6}$ et $\P(S = 5) = \frac{1}{9}$. Plus généralement, on peut calculer que pour $2 \le k \le 12$, on a</p>
             <p>$$\P(S = k) = \frac{6 - |k-7|}{36}$$</p>
             <p>On peut mettre résumer dans un tableau</p>
@@ -240,13 +240,15 @@ hidden : True
         $$Y = \sum_{i = 1}^n X_i$$
         <p>suit une <strong class="new">loi binomiale</strong> de paramètres $(n,p)$. La variable $Y$ prend ses valeurs dans $\ints{0,n}$, et pour tout $k \in \ints{0,n}$, on a</p>
         $$\P(Y = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
+        <p>où le nombre $\binom{n}{k}$, est appelé <strong class="new">coefficient binomial</strong> "k parmi n", est donné par la formule</p>
+        $$\binom{n}{k} = \frac{n (n-1) \cdots (n-k+1)}{k (k-1) \cdots 1} = \frac{\overbrace{n (n-1) \cdots (n-k+1) \color{red}{(n-k) \cdots 1}}^{n!} }{k! \cdot \underbrace{\color{red}{(n-k) \cdots 1} }_{(n-k)!}} = \frac{n!}{k! \cdot (n-k)!}$$
         <p>La loi binomiale apparaît comme le nombre de succès lorsqu’on répète une même expérience aléatoire dont la probabilité de succès est $p$.</p>
         <article class="exemple">
-            On lance une pièce équilibrée $10$ fois et on note $N$ la variable aléatoire qui représente le nombre de fois que l'on est tombé sur face. Alors $F$ suit une loi binomiale de paramètres $(10, 1/2)$ : en effet, si on note $X_i$ la variable aléatoire qui vaut $1$ si on fait face au $i^{\text{ème}}$ lancer et $0$ sinon, alors les variables $(X_i)_{1 \le i \le 20}$ suivent des lois de Bernouilli de paramètre $\frac{1}{2}$, sont indépendantes, et on a
-            $$F = \sum_{i = 1}^{20} X_i$$
+            On lance une pièce équilibrée $10$ fois et on note $N$ la variable aléatoire qui représente le nombre de fois que l'on est tombé sur face. Alors $F$ suit une loi binomiale de paramètres $(10, 1/2)$ : en effet, si on note $X_i$ la variable aléatoire qui vaut $1$ si on fait face au $i^{\text{ème}}$ lancer et $0$ sinon, alors les variables $(X_i)_{1 \le i \le 10}$ suivent des lois de Bernouilli de paramètre $\frac{1}{2}$, sont indépendantes, et on a
+            $$F = \sum_{i = 1}^{10} X_i$$
             Si $k \le n$, la probabilité d'avoir obtenu $k$ fois face est donnée par
-            $$\P(F = k) = \binom{20}{k} p^k (1-p)^{20-k}$$
-            Car il faut faire $k$ lancers avec face, $20-k$ lancer avec pile, et il y a $\binom{20}{k}$ façon de choisir l'ordre des piles et faces obtenus.
+            $$\P(F = k) = \binom{10}{k} \left(\frac{1}{2}\right)^k \cdot \left(1-\frac{1}{2} \right)^{10-k} = \frac{1}{2^{10}}\binom{10}{k}$$
+            Car il faut faire $k$ lancers avec face, $10-k$ lancer avec pile, et il y a $\binom{10}{k}$ façon de choisir l'ordre des piles et faces obtenus.
         </article>
         
         
@@ -284,6 +286,104 @@ hidden : True
         <p>Une utilité de la loi de Poisson est qu'elle permet d'approximer la loi binomiale. Précisément, si $n$ est très grand et $p$ petit, la loi binomiale de paramètre $(n, p)$ est proche de la loi de Poisson de paramètre $\lambda = np$. En conséquence, la loi de Poisson permet notamment de modéliser le nombre d'occurence d'un phénomènes rare ($p$ petit) dans une grande population ($n$ grand).</p>
         <p>Initialement cantonnée à modéliser des événements rares comme les arrivées de bateaux dans un port ou les accidents dus aux coups de pied de cheval dans les armées (source <a href="https://fr.wikipedia.org/wiki/Loi_de_Poisson#Domaines_d'application" target="new">Wikipédia</a>). Son champs d'applications s'est considérablement élargi depuis, et on l'utilise désormais pour modéliser de nombreux phénomènes comme la charge d'un réseau de télécommunication (nombre de personnes connectées à un moment donnée), la durée de vie de composant électroniques, le temps de vie d'une particule radioactive, le taux de mutations aléatoires, la demande de passagers pour un avion, la probabilité de défaut d'un crédit (probabilité qu'une personne ne puisse pas rembourser son crédit), etc.</p>
     </section>
+    
+    <section>
+        <h2>Moments d'une variable aléatoire</h2>
+        <h3>Espérance</h3>
+        <article class="definition" id="esperance">Soit $X : \Omega \to E$ une variable aléatoire discrète dont les valeurs sont des nombres (c'est-à-dire que l'ensemble $E$ des valeurs de $X$ est un sous-ensemble discret de $\R$). Alors l'<strong class="new">éspérance</strong> de la variable $X$ est la quantité
+        $$\E(X) = \sum_{x \in E} x \cdot \P(X = x)$$
+        <p>Si l'ensemble $E$, cette somme est potentiellement infinie. Si la somme est finie, ou infinie mais convergente, on dit que $X$ <strong class="new">admet une espérance</strong>.</p>
+        </article>
+        L'espérance représente la valeur moyenne prise par une variable aléatoire. Une variable aléatoire d'espérance nulle est dite <strong class="new">centrée</strong>. Étant donnée une variable aléatoire $X$ admettant une espérance, on peut se ramener à une variable centrée en considérant la variable décalée $X - \E(X)$.
+        <article class="exemple" id="esperance_de">
+            On tire un dé à 6 faces, on note $D$ la variable aléatoire qui représente la valeur obtenue. La variable $D$ suit une loi uniforme dans $\ints{1,6}$. Sont espérance est
+            $$
+            \begin{align*}
+                \E(D) &= 1 \times \P(D = 1) + 2 \times \P(D = 2) + 3 \times \P(D = 3) + 4 \times \P(D = 4) + 5 \times \P(D = 5) + 6 \times \P(D = 6) \\
+                &= 1 \times \frac{1}{6} + 2 \times \frac{1}{6} + 3 \times \frac{1}{6} + 4 \times \frac{1}{6} + 5 \times \frac{1}{6} + 6 \times \frac{1}{6} \\
+                &= \frac{1+2+3+4+5+6}{6} \\
+                &= \frac{6\times 7}{2 \times 6} \\
+                &= \frac{7}{2} \\
+                &= 3,5
+            \end{align*}
+            $$
+            Cela veut par exemple dire que si l'on tire le dé un grand nombre de fois, la moyenne des résultats que l'on fera sera proche de cette valeur de $3,5$. Pouvez-vous de la même manière calculer l'espérance de la valeur prise par un dé à 4 faces ? 12 faces ? À 20 faces ?
+        </article>
+        
+        <p>Il peut être utile de remarquer que l'espérance est linéaire</p>
+        $$\E(\lambda \cdot X + \mu \cdot Y) = \lambda \E(X) + \mu \E(Y)$$
+        Ainsi l'espérance d'une somme de variables aléatoires se calculer facilement en calculant l'espérance de chacune des variables.
+        <article class="exemple"> <strong>Retour sur le monopoly</strong>
+            <p>On lance deux dés à 6 faces, et on note $S$ la variable aléatoire qui représente la somme des valeurs de deux dés. On peut calculer l'espérance de $S$ de deux manières : soit en utilisant la loi de la variable aléatoire (qui a été calculée <a href="#monopoly">précédemment</a>), soit en utilisant la linéarité de l'espérance. Commençons par la première méthode. La loi de la variable $S$  est donnée dans le tableau suivant.</p>
+            <table class="dist">
+                <tr>
+                    <th>$k$</th>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>$\P(S = k)$</th>
+                    <td>$\frac{1}{36}$</td>
+                    <td>$\frac{2}{36}$</td>
+                    <td>$\frac{3}{36}$</td>
+                    <td>$\frac{4}{36}$</td>
+                    <td>$\frac{5}{36}$</td>
+                    <td>$\frac{6}{36}$</td>
+                    <td>$\frac{5}{36}$</td>
+                    <td>$\frac{4}{36}$</td>
+                    <td>$\frac{3}{36}$</td>
+                    <td>$\frac{2}{36}$</td>
+                    <td>$\frac{1}{36}$</td>
+                </tr>
+            </table>
+            On peut alors calculer l'espérance de $S$ :
+            $$
+            \begin{align*}
+                \E(S) &= \sum_{k = 2}^{12} k \cdot \P(S = k) \\
+                &= \frac{2 \times 1 + 3 \times 2 + 4 \times 3 + 5 \times 4 + 6 \times 5 + 7 \times 6 + 8 \times 5 + 9 \times 4 + 10 \times 3 + 11 \times 2 + 12 \times 1}{36} \\
+                &= \frac{252}{36} \\
+                &= 7
+            \end{align*}
+            $$
+            On peut calculer l'espérance de $S$ par linéarité de l'espérance. En effet, si les variables aléatoires $D_1$ et $D_2$ représentent le résultat des dés $1$ et $2$ respectivement, alors $S = D_1 + D_2$ et donc
+            $$\E(S) = \E(D_1 + D_2) = \E(D_1) + \E(D_2) = \frac{7}{2} + \frac{7}{2} = 7$$
+            où le calcul de l'espérance de $D_1$ et $D_2$ a été fait <a href="#esperance_de">précédemment</a>.
+        </article>
+        <h3>Variance et écart type</h3>
+        <p>La variance d'une variable aléatoire est une mesure de l'éparpillement des valeurs de la variable autour de la moyenne. Précisément, c'est la moyenne des carrés de ces écarts à la moyenne.</p>
+        <article class="definition">
+            Soit $X : \Omega \to \E$ une variable aléatoire discrète à valeurs numériques. On suppose que $X$ admet une espérance. Alors la <strong class="new">variance</strong> de $X$ est définie par
+            $$\V(X) = \E\left((X-\E(X))^2\right) = \sum_{x \in E} (x-\E(x))^2 \cdot \P(X = x)$$
+            Il s'agit d'une quantité positive. On définit l'<strong class="new">écart type</strong> comme la racine carrée de la variance
+            $$\sigma(X) = \sqrt{\V(X)}$$
+        </article>
+        <article class="prop">Soit $X$ une variable aléatoire qui admet une variance. Alors, on a
+        $$\V(X) = \E(X^2) - \E(X)^2$$
+        </article>
+        <article class="proof">
+            Pour rendre le calcul plus lisible, notons $m = \E(X)$. On a
+            $$
+            \begin{align*}
+                \V(X) &= \E\left( (X-m)^2 \right) \\
+                &= \E\left( X^2 - 2 m X + m^2 \right) \\
+                &= \E\left(X^2 \right) - 2m \E(X) + \E\left(m^2\right) \\
+                &= \E\left(X^2\right) - 2m^2 + m^2 \\
+                &= \E\left(X^2\right) - m^2 \\
+                &= \E(X^2) - \E(X)^2
+            \end{align*}
+            $$
+        </article>
+    </section>
+
     <nav>
         <a href="chap1"><< Chapitre précédent : Événements</a>
     </nav>

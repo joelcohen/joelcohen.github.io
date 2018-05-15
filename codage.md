@@ -9,7 +9,7 @@ hidden : True
 
 # Projets informatique (UE Codage)
 
-Le but de l’UE Codage est de mettre en pratique l’informatique dans un projet. L’informatique est à la fois un objet d’étude en soi, et un outil qui sert dans d’autres domaines ; c’est ce que nous souhaitons vous faire découvrir à travers l’écriture d’un programme en groupe. Cela devrait vous permettre de ressentir la satisfaction d’avoir produit quelque chose de concret tout en soulevant des questions d’informatique au fil du projet. Dans ce document, nous rappelons quelques recommandations pour sa réalisation.
+Le but de l’UE Codage est de mettre en pratique l’informatique dans un projet. L’informatique est à la fois un objet d’étude en soi, et un outil qui sert dans d’autres domaines ; c’est ce que nous souhaitons vous faire découvrir à travers l’écriture d’un programme en groupe. Cela devrait vous permettre de ressentir la satisfaction d’avoir produit quelque chose de concret tout en soulevant des questions d’informatique au fil du projet. Rappelons quelques recommandations pour sa réalisation.
 
 Choix du groupe et du projet
 ----------------------------
@@ -51,6 +51,12 @@ Sur GitHub Classroom, un devoir a été créé pour recevoir le code de votre pr
 -   Cliquer sur le lien ci-dessus pour créer un repository GitHub pour votre équipe.
 
 -   Créer un fichier `README` détaillant le descriptif du projet, les membres de l’équipe, et leurs rôles respectifs.
+
+Liens GitHub
+------------
+
+- Chaines de caractères et code de César : [https://classroom.github.com/g/FOt3g95z](https://classroom.github.com/g/FOt3g95z)
+- Projet final : [https://classroom.github.com/g/vMnx-0oJ](https://classroom.github.com/g/vMnx-0oJ)
 
 Documents
 ---------
