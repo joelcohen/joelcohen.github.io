@@ -50,12 +50,13 @@ Sur GitHub Classroom, un devoir a été créé pour recevoir le code de votre pr
 
 -   Créer un fichier `README` détaillant le descriptif du projet, les membres de l’équipe, et leurs rôles respectifs.
 
-## Liens GitHub
+### Liens GitHub
 
 - Chaines de caractères et code de César : [https://classroom.github.com/g/FOt3g95z](https://classroom.github.com/g/FOt3g95z)
+- Chiffrement de Vigenère : [https://classroom.github.com/g/S7m9r_EW](https://classroom.github.com/g/S7m9r_EW)
 - Projet final : [https://classroom.github.com/g/vMnx-0oJ](https://classroom.github.com/g/vMnx-0oJ)
 
-## Documents
+### Documents
 
 * [Présentation et intro à GitHub](../../docs/L1/info/presentation_UE_codage.pdf)
 * [Recommandations sur le projet](../../docs/L1/info/projet-recommandations.pdf)
