@@ -66,7 +66,7 @@ permalink: /ens/
 * [Feuille d'exercices 1](../docs/L2/probas/td1)
 * [Feuille d'exercices 2](../docs/L2/probas/td2)
 * [Examen](../docs/L2/probas/examen.pdf)
-* [Rattrapge (extrait d'une épreuve interdisciplinaire)](../docs/L2/probas/rattrapage.pdf)
+* [Rattrapage (extrait d'une épreuve interdisciplinaire)](../docs/L2/probas/rattrapage.pdf)
 
 ## L1
 
@@ -77,10 +77,10 @@ permalink: /ens/
 * [TP Boucles imbriquées](../docs/L1/info/boucles2.pdf)
 * [Interrogation](../docs/L1/info/eval1.pdf)
 * Examen : [Sujet Type](../docs/L1/info/sujet_type.pdf), [Type 1](../docs/L1/info/type1.pdf)
-* [Rattrapge (extrait d'une épreuve interdisciplinaire)](../docs/L1/info/rattrapage_nombres.pdf)
+* [Rattrapage (extrait d'une épreuve interdisciplinaire)](../docs/L1/info/rattrapage_nombres.pdf)
 
 ### [Projets informatique (UE Codage)](../ens/codage/)
 
 * [Présentation et intro à GitHub](../docs/L1/info/presentation_UE_codage.pdf)
 * [Recommandations sur le projet](../docs/L1/info/projet-recommandations.pdf)
-* [Rattrapge (extrait d'une épreuve interdisciplinaire)](../docs/L1/info/rattrapage_codage.pdf)
+* [Rattrapage (extrait d'une épreuve interdisciplinaire)](../docs/L1/info/rattrapage_codage.pdf)
