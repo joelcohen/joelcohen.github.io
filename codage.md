@@ -66,7 +66,7 @@ Sur GitHub Classroom, un devoir a été créé pour recevoir le code de votre pr
 
 #### Barême
 
-- **Oral** *(7 points)*
+- **Oral** *(7 points)* : 
     * support présentation, démo *(2 points)*
 	* repartition parole *(1 points)*
 	* qualité présentation *(2 points)*
@@ -74,12 +74,12 @@ Sur GitHub Classroom, un devoir a été créé pour recevoir le code de votre pr
 
 - **Travail en scéances** *(2 points)*
 
-- **Rendu du code** *(8 points)*
+- **Rendu du code** *(8 points)* :
 	* commits, régularité *(4 points)*
 	* conformité au cahier des charges *(1 points)*
 	* lisibilité du code *(1 points)*
 	* contribution personnelle *(2 points)*
 
-- **Divers** *(3 points)*
+- **Divers** *(3 points)* :
 	* assiduité, ponctualité *(2 points)*
 	* bonus appréciation générale *(1 points)*
