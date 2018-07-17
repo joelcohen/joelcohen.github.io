@@ -23,7 +23,7 @@ permalink: /ens/
 * [Feuille d'exercices 3](../docs/L3/maths_G/td3.pdf)
 * [Devoir Maison 1](../docs/L3/maths_G/dm1.pdf), [Corrigé](../docs/L3/maths_G/dm1_corrige.pdf)
 * [Devoir Maison 2](../docs/L3/maths_G/dm2.pdf)
-* [Examen](../docs/L3/maths_G/examen.pdf), [Rattrapage](../docs/L3/maths_G/rattrapge.pdf)
+* [Examen](../docs/L3/maths_G/examen.pdf), [Rattrapage](../docs/L3/maths_G/rattrapage.pdf)
 
 ### Analyse 2
 
