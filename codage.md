@@ -23,25 +23,6 @@ Le but de l’UE Codage est de mettre en pratique l’informatique dans un proje
 
 Nous disposons de 15h ensemble, reparties en 6 séances (2 séances de 1h30, et 4 séances de 3h). Le temps des séances est entièrement consacré à la réalisation du projet et des TD facultatifs. À cela s’ajoute le temps entre les séances pour compléter votre projet, ou préparer la soutenance orale. Nous resterons à disposition pour vos questions tout au long de l’UE.
 
-### Modalités d’évaluation
-
--   Rendu du code via un repository GitHub.
-
--   Date limite : la veille de la soutenance (la date vous sera communiquée dès que possible). Seuls les commits effectués sur votre projet avant cette date seront pris en compte.
-
--   Soutenance d’environ 5min par étudiant : présentation mais surtout questions.
-
-### Critères d’évaluation
-
-
--   **Régularité des commits :** au moins à chaque séance à partir de la deuxième séance. Cela vous évitera d’avoir à tout faire à la dernière minute et vous permettra d’avoir la satisfaction d’avoir réalisé un projet intéressant à la fin. Pour ceux qui travaillent sur les TD facultatifs, les commits effectués sur les TD peuvent faire office d’avancement sur le projet.
-
--   **Travail équilibré entre membres du groupe** : notamment en termes de commits. À cet effet, il est important que chaque membre de l’équipe travaille sur le code depuis son propre compte GitHub.
-
--   **Lisibilité du code :** bonne organisation : séparation des tâches dans différents fichiers ou fonctions, noms de variables pertinents, commentaires, etc.
-
--   **Résultat final et conformité avec l’objectif initial.** il est bien sûr possible (et même encouragé) d’aller au-delà de l’objectif minimal du projet si le temps le permet.
-
 ### En pratique
 
 Sur GitHub Classroom, un devoir a été créé pour recevoir le code de votre projet. Voici le lien : <https://classroom.github.com/g/vMnx-0oJ>.
@@ -60,3 +41,45 @@ Sur GitHub Classroom, un devoir a été créé pour recevoir le code de votre pr
 
 * [Présentation et intro à GitHub](../../docs/L1/info/presentation_UE_codage.pdf)
 * [Recommandations sur le projet](../../docs/L1/info/projet-recommandations.pdf)
+
+
+### Évaluation
+
+#### Modalités d'évaluation
+
+-   Rendu du code via un repository GitHub.
+
+-   Date limite : la veille de la soutenance (la date vous sera communiquée dès que possible). Seuls les commits effectués sur votre projet avant cette date seront pris en compte.
+
+-   Soutenance d’environ 5 minutes par étudiant : présentation mais surtout questions.
+
+#### Critères d’évaluation
+
+
+-   **Régularité des commits :** au moins à chaque séance à partir de la deuxième séance. Cela vous évitera d’avoir à tout faire à la dernière minute et vous permettra d’avoir la satisfaction d’avoir réalisé un projet intéressant à la fin. Pour ceux qui travaillent sur les TD facultatifs, les commits effectués sur les TD peuvent faire office d’avancement sur le projet.
+
+-   **Travail équilibré entre membres du groupe** : notamment en termes de commits. À cet effet, il est important que chaque membre de l’équipe travaille sur le code depuis son propre compte GitHub.
+
+-   **Lisibilité du code :** bonne organisation : séparation des tâches dans différents fichiers ou fonctions, noms de variables pertinents, commentaires, etc.
+
+-   **Résultat final et conformité avec l’objectif initial.** il est bien sûr possible (et même encouragé) d’aller au-delà de l’objectif minimal du projet si le temps le permet.
+
+#### Barême
+
+- **Oral** *(7 points)*
+    * support présentation, démo *(2 points)*
+	* repartition parole *(1 points)*
+	* qualité présentation *(2 points)*
+	* question (individuel) *(2 points)*
+
+- **Travail en scéances** *(2 points)*
+
+- **Rendu du code** *(8 points)*
+	* commits, régularité *(4 points)*
+	* conformité au cahier des charges *(1 points)*
+	* lisibilité du code *(1 points)*
+	* contribution personnelle *(2 points)*
+
+- **Divers** *(3 points)*
+	* assiduité, ponctualité *(2 points)*
+	* bonus appréciation générale *(1 points)*
