@@ -14,7 +14,7 @@ permalink: /ens/
 * [Feuille d'exercices 4](../docs/L3/outils_calc/td4.pdf) 
 * [Feuille d'exercices 5](../docs/L3/outils_calc/td5.pdf)
 * [Corrigé du devoir maison](../docs/L3/outils_calc/dm1_corrige.pdf) (manuscrit)
-* [Examen](../docs/L3/outils_calc/examen.pdf)
+* [Examen](../docs/L3/outils_calc/examen.pdf), [Rattrapage](../docs/L3/outils_calc/rattrapage.pdf)
 
 ### Mathématiques Générales
 
@@ -23,6 +23,7 @@ permalink: /ens/
 * [Feuille d'exercices 3](../docs/L3/maths_G/td3.pdf)
 * [Devoir Maison 1](../docs/L3/maths_G/dm1.pdf), [Corrigé](../docs/L3/maths_G/dm1_corrige.pdf)
 * [Devoir Maison 2](../docs/L3/maths_G/dm2.pdf)
+* [Examen](../docs/L3/maths_G/examen.pdf), [Rattrapage](../docs/L3/maths_G/examen.pdf)
 
 ### Analyse 2
 
@@ -44,6 +45,11 @@ permalink: /ens/
 * [Message 5](../docs/L3/crypto/message5.txt)
 * [Message 6](../docs/L3/crypto/message6.txt)
 
+### Sciences en tête
+
+* [Interro (QCM)](../docs/L3/set/interro.pdf)
+* [Rattrapage](../docs/L3/set/interro.pdf)
+
 ## L2
 
 ### Algorithmique (UE Transmission de l'information)
@@ -59,6 +65,8 @@ permalink: /ens/
 * Cours : [Chapitre 1](../docs/L2/probas/chap1), [Chapitre 2](../docs/L2/probas/chap2)
 * [Feuille d'exercices 1](../docs/L2/probas/td1)
 * [Feuille d'exercices 2](../docs/L2/probas/td2)
+* [Examen](.../docs/L2/probas/examen.pdf)
+* [Rattrapge (extrait d'une épreuve interdisciplinaire)](.../docs/L2/probas/rattrapage.pdf)
 
 ## L1
 
@@ -69,8 +77,10 @@ permalink: /ens/
 * [TP Boucles imbriquées](../docs/L1/info/boucles2.pdf)
 * [Interrogation](../docs/L1/info/eval1.pdf)
 * Examen : [Sujet Type](../docs/L1/info/sujet_type.pdf), [Type 1](../docs/L1/info/type1.pdf)
+* [Rattrapge (extrait d'une épreuve interdisciplinaire)](.../docs/L1/info/rattrapage_nombres.pdf)
 
 ### [Projets informatique (UE Codage)](../ens/codage/)
 
 * [Présentation et intro à GitHub](../docs/L1/info/presentation_UE_codage.pdf)
 * [Recommandations sur le projet](../docs/L1/info/projet-recommandations.pdf)
+* [Rattrapge (extrait d'une épreuve interdisciplinaire)](.../docs/L1/info/rattrapage_codage.pdf)
