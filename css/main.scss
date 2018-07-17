@@ -185,6 +185,7 @@ h3 {
         page-break-after: avoid;
     }
     article {
+        position: relative;
         page-break-inside : avoid;
     }
 }
