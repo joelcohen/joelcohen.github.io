@@ -27,7 +27,7 @@ hidden : True
            <p>Si on lance une pièce de monnaie, l'univers sera l'ensemble $\Omega = \{\pile, \face\}$, et $\omega = \face$ est un résultat possible.</p>
        </article>
        <article class="exemple">
-           <p>Si on lance un dé à 6 faces, l'univers sera l'ensemble $\Omega = \{1,2,3,4,5,6\}$ des valeurs possibles du dé, et $\omega = 5$ est un résultat possible.</p>
+           <p>Si on lance un dé à 6 faces, l'univers sera l'ensemble $\Omega = \ints{1,6} = \{1,2,3,4,5,6\}$ des valeurs possibles du dé, et $\omega = 5$ est un résultat possible.</p>
        </article>
        <article class="exemple">
            <p>Si on lance une pièce de monnaie deux fois, l'univers sera l'ensemble des couples de résultats $\Omega = \{\pile, \face\}^2 = \{(\pile,\pile), (\pile,\face), (\face,\pile), (\face,\face)\}$, et $\omega = (\face, \pile)$ est un résultat possible.</p>
@@ -143,13 +143,21 @@ hidden : True
             <p>Étant donné un espace probabilisé $(\Omega, \mathcal{A}, \P)$, on dit que deux événements $A, B \in \mathcal{A}$ sont <strong class="new">indépendants</strong> si</p>
             <p>$$\P(A \cap B) = \P(A) \times \P(A)$$</p>
         </article>
-        <p>Moralement deux événements sont indépendants si savoir que l'un a été réalisé (ou pas) ne donne aucune information sur la réalisation de l'autre. Il faut faire attention au fait que l'indépendance d'événements est une notion qui dépend du choix de la probabilité (c'est pour cela que notre définition commence par se donner un espace probabilisé).</p>
+        <p>Moralement, deux événements sont indépendants si savoir que l'un a été réalisé (ou pas) ne donne aucune information sur la réalisation de l'autre. Il faut faire attention au fait que l'indépendance d'événements est une notion qui dépend du choix de la probabilité (c'est pour cela que notre définition commence par se donner un espace probabilisé).</p>
         
         <article class="exemple">
             On lance un dé deux fois de suite. On prend $\Omega = [\![1,6]\!]^2$, on considère les événements
-            $$A = \text{"on fait 6 au premier lancer"} = \{(6,y), y \in [\![1,6]\!]\}$$
+			$$\begin{align*}
+			A &= \text{"on fait 6 au premier lancer"}\\
+			 &= \{(6,y), y \in [\![1,6]\!]\}\\
+			  &= \{(6,1), (6,2), (6,3), (6,4), (6,5), (6,6)\}
+			\end{align*}$$
             et
-            $$B = \text{"on fait 6 au second lancer"} = \{(x,6), x \in [\![1,6]\!]\}$$
+			$$
+			\begin{align*}
+			B &= \text{"on fait 6 au second lancer"}\\
+			&= \{(x,6), x \in [\![1,6]\!]\} \\
+			&= \{(1,6), (2,6), (3,6), (4,6), (5,6), (6,6)\}\end{align*}$$
             Alors l'intersection de ces deux événements est
             $$A \cap B = \text{"on fait deux fois 6"} = \{(6,6)\}$$
             On a
@@ -194,9 +202,29 @@ hidden : True
         <p>Pour que les événements soient mutuellement indépendants, il faut également vérifier une égalité supplémentaire :
             $$\P(A \cap B \cap C) = \P(A) \times \P(B) \times \P(C)$$
         </p>
-        <p>Pouvez-vous écrire les 11 égalités que l'on obtient pour l'indépendance mutuelle de quatre événements $A$, $B$, $C$ et $D$ ?</p>
-        
-        
+        <p onclick="toggle_visibility('ind4ev');">Pouvez-vous écrire les 11 égalités que l'on obtient pour l'indépendance mutuelle de quatre événements $A$, $B$, $C$ et $D$ ?
+		</p>
+        <span id="ind4ev" class="sol"><p>Quatre événements $A$, $B$, $C$ et $D$ sont mutuellement indépendants s'ils sont indépendants 2 à 2 :</p>
+		$$\begin{align*}
+			\P(A \cap B) = \P(A) \times \P(B) && \qquad \P(B \cap C) = \P(B) \times \P(C) \\
+			\\
+			\qquad \P(C \cap D) = \P(C) \times \P(D) && \P(D \cap A) = \P(D) \times \P(A) \\
+			\\
+			\qquad \P(B \cap D) = \P(B) \times \P(D) && \P(A \cap C) = \P(A) \times \P(C)
+		\end{align*}$$
+        <p>indépendants 3 à 3 :</p>
+		$$\begin{align*}
+			\P(B \cap C \cap D) = \P(B) \times \P(C) \times \P(D) \\
+			\\
+			\qquad \P(A \cap C \cap D) = \P(A) \times \P(C) \times \P(D) \\
+			\\
+			\qquad \P(A \cap B \cap D) = \P(A) \times \P(B) \times \P(D) \\
+			\\
+			\qquad \P(A \cap B \cap C) = \P(A) \times \P(B) \times \P(C)
+		\end{align*}$$
+		<p>en enfin, indépendants 4 à 4 :</p>
+		$$\P(A \cap B \cap C \cap D) = \P(A) \times \P(B) \times \P(C) \times \P(D)$$
+	</span>
     </section>
     <section>
         <h2>Probabilité conditionnelle</h2>

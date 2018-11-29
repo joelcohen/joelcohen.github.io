@@ -170,7 +170,7 @@ hidden : True
             </article>
         </li>
         <li class="exo" id="proba_conditionelle">
-            <h2>Probabilité conditionnelle</h2>
+            <h2>Probabilités conditionnelles</h2>
             <article class="exobox">
                 On lance $10$ fois un dé à 6 faces. Pour $1 \le n \le 10$, on considère l'événement
                 $$A_n = \text{"La première fois qu'on obtient 6 est au }n^{\text{ième}} \text{ lancer"}$$
@@ -196,8 +196,8 @@ hidden : True
                     <li onclick="toggle_visibility('4.2');">Montrer que les événements $(A_n)_{1 \le n \le 11}$ forment une <a href="chap1#partition">partition</a> de l'univers.
                     <span id="4.2" class="sol">
                         <p>On doit montrer d'une part que les événements sont deux à deux disjoints (c'est-à-dire qu'on a $A_i \cap A_j = \emptyset$ pour tous les couples $i \ne j$ entre 1 et 11) et d'autre part qu'il recouvrent l'univers $\Omega$ tout entier (c'est-à-dire que $A_1 \cup A_2 \cup \ldots \cup A_{11} = \Omega$).</p>
-                        <p>Commençons par le fait que les évéments sont disjoints. On se donne deux entiers distincts $1 \le i < j \le 11$ entre $1$ et $11$. Supposons par l'absurde que l'intersection n'est pas vide, on se donne alors $\omega = (x_1, x_2, \ldots,x_{10}) \in A_i \cap A_j$. Comme $\omega \in A_i$, alors $x_i = 6$. Mais par ailleurs, comme  $\omega \in A_j$ alors $x_i \ne j$ ($\omega \in A_j$ implique qu'on ne peut pas avoir fait un $6$ avant le $j^{\text{ème}}$ lancer). Et donc c'est absurde, et $A_i \cap A_j$.</p>
-                        <p>Montront que l'union fait $\Omega$. On se donne $\omega = (x_1, x_2, \ldots,x_{10}) \in \Omega$ et on cherche à monrer que $\omega$ est dans l'un des $A_i$. De deux choses l'une soit au moins l'un des $x_i$ vaut $6$, soit aucune coordonnée ne vaut $6$. Si aucune coordonnée ne vaut $6$, alors $\omega \in A_{11}$. Sinon, au moins une coordonnée vaut $6$. Si on note $i_0$ le premier indice tel que $x_{i_0} = 6$ alors $\omega \in A_i$. Donc dans tous les cas, $\omega$ est bien dans l'un des $A_i$. En conclusion, les $(A_n)_{1 \le n \le 11}$ forment une partition de l'univers.</p>
+                        <p>Commençons par le fait que les évéments sont disjoints. On se donne deux entiers distincts $1 \le i < j \le 11$ entre $1$ et $11$. Supposons par l'absurde que l'intersection n'est pas vide, on se donne alors $\omega = (x_1, x_2, \ldots,x_{10}) \in A_i \cap A_j$. Comme $\omega \in A_i$, alors $x_i = 6$. Mais par ailleurs, comme  $\omega \in A_j$ alors $x_i \ne 6$ ($\omega \in A_j$ implique qu'on ne peut pas avoir fait un $6$ <strong>avant</strong> le $j^{\text{ème}}$ lancer). Et donc c'est absurde, et $A_i \cap A_j$.</p>
+                        <p>Montront que l'union fait $\Omega$. On se donne $\omega = (x_1, x_2, \ldots,x_{10}) \in \Omega$ et on cherche à monrer que $\omega$ est dans l'un des $A_i$. De deux choses l'une soit au moins l'un des $x_i$ vaut $6$, soit aucune coordonnée ne vaut $6$. Si aucune coordonnée ne vaut $6$, alors $\omega \in A_{11}$. Sinon, au moins une coordonnée vaut $6$. Si on note $i_0$ le premier indice tel que $x_{i_0} = 6$ alors $\omega \in A_{i_0}$. Donc dans tous les cas, $\omega$ est bien dans l'un des $A_i$. En conclusion, les $(A_n)_{1 \le n \le 11}$ forment une partition de l'univers.</p>
                     </span>
                     </li>
                     <li onclick="toggle_visibility('4.3');">Calculer la probabilité de $B$ en appliquant <a href="chap1#probas_totales">la formule des probabilités totales</a>. Pouvez-vous calculer cette probabilité autrement ?
@@ -260,6 +260,30 @@ hidden : True
                 
             </article>
         </li>
-        
+		
+        <li class="exo" id="examen">
+            <h2>L'usine de boulons</h2>
+            <article class="exobox">
+                Dans une usine de production de boulons, il y a trois machines de production de boulons qu'on nomme $A$, $B$ et $C$. Ces trois machines fournissent respectivement 50%, 30% et 20% de la production totale en boulons de l'usine, et leurs pourcentages de pièces défectueuses sont respectivement 3%, 4% et 5%.
+				<ol>
+					<li onclick="toggle_visibility('6.1');">
+						<p>Quelle est la probabilité qu'une pièce, choisie au hasard dans la production, soit défectueuse ?</p>
+		                <span id="6.1" class="sol">
+              	
+		                </span>
+					</li>
+					<li onclick="toggle_visibility('6.2');">
+						<p>Vous tirez une pièces défectueuse au hasard dans la production, quelle est la probabilité que cette pièce provienne de la machine $A$ ?</p>
+		                <span id="6.2" class="sol">
+              	
+		                </span>
+					</li>
+				</ol>
+              
+            </article>
+        </li>
+		
+		
+		
     </ol>
 </div>   

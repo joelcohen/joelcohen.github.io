@@ -89,7 +89,73 @@ hidden : True
         <p>Par exemple, on peut réinterpréter le calcul fait dans <a href="td1#proba_conditionelle">cet exercice</a> en termes de variables aléatoires. On lance un dé dix fois de suite. Si on note $N$ l'indice du premier lancer auquel on obtient un $6$, en prenant $N = 11$ si on ne fait jamais 6 (notons d'ailleurs que si la variable aléatoire $X_i$ désigne le résultat du $i^{\text{ème}}$ lancer de dé, alors $N = \min \set{i \in \ints{1,10}, X_i = 6}$). Alors les événements $(\set{N = n})_{1 \le n \le 11}$ forment une partition de l'univers $\Omega$. Si $B$ désigne l'événement "faire au moins un 6", d'après la formule des probabilités totales, on a</p>
         <p>$$\P(B) = \sum_{n = 1}^{11} \P(B | N = n) \cdot \P(N = n) = \sum_{n = 1}^{10} \pars{\frac{5}{6}}^{n-1} \cdot \frac{1}{6} = 1 - \pars{\frac{5}{6}}^{10}$$</p>
         <article class="exemple" id="monopoly"><strong>Les déplacements au Monopoly</strong>
-            <p>On joue (sans tricher) au Monopoly. On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés. Au chapitre précédent, on a calculé $\P(S = 7) = \frac{1}{6}$ et $\P(S = 5) = \frac{1}{9}$. Plus généralement, on peut calculer que pour $2 \le k \le 12$, on a</p>
+            <p>On joue (sans tricher) au Monopoly. On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés. Au chapitre précédent, on a calculé $\P(S = 7) = \frac{1}{6}$ et $\P(S = 5) = \frac{1}{9}$. Pour dénombrer combien de fois on tombe sur chaque valeur de la somme, on peut représenter toutes les possibilités dans un tableau croisé :
+			<table class="dist">
+				<tr>
+					<th>+</th>
+					<th>1</th>
+					<th>2</th>
+					<th>3</th>
+					<th>4</th>
+					<th>5</th>
+					<th>6</th>
+				</tr>
+				<tr>
+					<th>1</th>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<th>2</th>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<th>3</th>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<th>4</th>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<th>5</th>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+				</tr>
+				<tr>
+					<th>6</th>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+				</tr>
+			</table>
+			En comptant le nombre de fois que chaque somme apparaît (1 fois pour $S=2$, 2 fois pour $S=3$ et ainsi de suite), on obtient toutes les valeurs des probabilités $\P(S=k)$. On peut d'ailleurs calculer que pour $2 \le k \le 12$, on a</p>
             <p>$$\P(S = k) = \frac{6 - |k-7|}{36}$$</p>
             <p>On peut mettre résumer dans un tableau</p>
             <table class="dist">
