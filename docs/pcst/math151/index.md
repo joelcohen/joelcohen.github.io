@@ -15,3 +15,5 @@ Les TD ont lieu les lundi de 10h30 à 12h00 (salle 32), mardi de 13h30 à 15h (s
 ### Sujet précédents de tests
 
 - [Test 1](test1.pdf)
+- [Test 2](test2.pdf)
+- [Test 3](test3.pdf)
