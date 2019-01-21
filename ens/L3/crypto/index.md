@@ -8,7 +8,7 @@ hidden : True
 
 # Cryptographie
 
-L'objectif de l'UE est d'être une introduction à la cryptographie et la cryptanalyse par la pratique. Le principe est de progresser à travers une série de messages chiffrés de difficulté croissante. Leur déchiffrement nécessité la compréhension de l'algorithme de chiffrement, mais aussi de ses faiblesses, et la mise en pratique informatique d'une attaque exploitant celles-ci.
+L'objectif de l'UE est d'être une introduction à la cryptographie et la cryptanalyse par la pratique. Le principe est de progresser à travers une série de messages chiffrés de difficulté croissante. Leur déchiffrement nécessite la compréhension de l'algorithme de chiffrement, mais aussi de ses faiblesses, et la mise en pratique informatique d'une attaque exploitant celles-ci.
 
 ## Messages chiffrés
 
