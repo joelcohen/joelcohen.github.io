@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Math101 - Calculus
-permalink: /docs/pcst/math151/
+title: Math151 - Calculus
+permalink: /ens/pcst/m151/
 hidden : True
 ---
 

@@ -26,6 +26,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$ratio : 6/5; // ratio between consecutive title sizes
+
 // Width of the content area
 $content-width:    800px;
 
@@ -55,15 +57,19 @@ code.highlighter-rouge {
 
 h1 {
 	font-size : 2.5em;
+    //font-size : $ratio * $ratio * $ratio * 1em;
 	line-height: 1.5em;
 	margin-top: 2em;
 }
 h2 {
     font-size: 2em;
+    //font-size: $ratio * $ratio * 1em;
     line-height: 1.1em;
+    margin-top: 1.5em;
 }
 h3 {
-    font-size: 1.5em;
+    font-size: 1.6em;
+    //font-size: $ratio * 1em;
 }
 
 .exobox {
@@ -99,7 +105,9 @@ h3 {
         //margin : 1em;
     }
 }
-
+li a::before {
+    
+}
 
 .titlebox {
     //text-align : center;

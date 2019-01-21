@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Math101 - Calculus
-permalink: /docs/mpi/math152/
+permalink: /ens/mpi/m152/
 hidden : True
 ---
 
