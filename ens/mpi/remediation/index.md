@@ -18,11 +18,14 @@ L'objectif du cours de remédiation mathématique du semestre 2 est de renforcer
 2. Points, droites, vecteurs :
 	[enoncé](td2.pdf), [corrigé](td2_corr.pdf)
 
-2. Théorème de Thalès, produit scalaire, norme, relation de Chasles :
+3. Théorème de Thalès, produit scalaire, norme, relation de Chasles :
     [énoncé](td3.pdf), [corrigé](td3_corr.pdf)
 
-3. Trigonométrie 1 :
+4. Trigonométrie 1 :
     [énoncé](td4.pdf), [corrigé](td4_corr.pdf)
+
+5. Trigonométrie 2 :
+    [énoncé](td5.pdf), [corrigé](td5_corr.pdf)
 
 ## Savoir-faire L1-L2
 
