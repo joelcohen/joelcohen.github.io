@@ -13,6 +13,6 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 ## Carnet de bord
 
 - **31/01/2019 :**  *Systèmes linéaires*
-	* Exercices traités : 1.1, 1.2, 1.4, 1.6
+	* Exercices traités : 1.1, 1.2, 1.4, 1.6, 1.7 (partie)
 	* A traiter par vous même : 1.5, 1.7 (fin)
 	* [Enigme](http://images.math.cnrs.fr/Janvier-2019-2e-defi.html)
