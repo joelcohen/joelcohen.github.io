@@ -16,7 +16,7 @@ Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semes
 
 - <span class="date">6/02/2019, après-midi :</span>  *Feuille 2 : équations différentielles ordinaires*
 	* Exercices traités : 1, 3 *(équations 1, 2)*
-	* A traiter par vous-même : 2, 3 *(fin)*, 4
+	* A traiter par vous-même : 2, 3 *(fin)*, 4 : [réponse](td2_corr.pdf)
 - <span class="date">6/02/2019, matin :</span> *Feuille 1 : Calculs de primitives
 	* Exercices traités : 1 *(question 1)*, 2 *(questions 1 et 3)*, 3 *(question 1 + première intégrale de la question 2)*
 	* A traiter par vous-même : 1 *(question 2)*, 2 *(question 2)*, 3 *(question 2)*
