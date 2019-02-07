@@ -165,6 +165,17 @@ li a::before {
     color : $brand-color;
 }
 
+li {}
+
+.date {
+	font-weight : bold;
+	//font-size : 1.2em;
+	display : inline-block;
+	margin-top : 2em;
+	margin-bottom : .5em;
+	color : $brand-color;
+}
+
 @media print {
     body
     {
