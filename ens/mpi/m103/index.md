@@ -17,7 +17,7 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 	* A traiter par vous-même : 1.10, 1.11, 1.12, 1.13
 	* Solution de l'énigme : 
 		
-		Soit $h_e$ la hauteur (comptée en nombre de marches) de l'escalator. On note $v_a$ la vitesse d'Alice, et $v_e$ la vitesse de l'escalator, et $t_a$ la durée de montée de l'escalator pour Alice. Dans un référentiel fixe, Alice a monté $h_e$ marches à vitesse $v_a+v_e$, donc
+		Soit $h_e$ la hauteur (comptée en nombre de marches) de l'escalator. On note $v_a$ la vitesse d'Alice, $v_e$ la vitesse de l'escalator, et $t_a$ la durée de montée de l'escalator pour Alice. Dans un référentiel fixe, Alice a monté $h_e$ marches à vitesse $v_a+v_e$, donc
 		
 		$$(v_a + v_e) t_a = h_e$$
 		
@@ -37,7 +37,7 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 		
 		$$\pars{\frac{1}{14}-\frac{1}{21}} h_e = 1 \Longleftrightarrow h_e = 42$$
 	
-		**Remarque :** Si $(v_a, v_e, t_a ,t_b, h_e)$ est une solution de ce problème, alors $(\lambda v_a,\lambda v_b,\lambda v_e,\lambda^{-1} t_a ,\lambda^{-1} t_b, h_e)$) est une autre solution. Donc il n'y pas une valeur unique pour les vitesses et les durées, et il ne faut pas s'inquiéter de n'avoir écrit que 4 équations pour 5 inconnues.
+		**Remarque :** Si $(v_a, v_e, t_a ,t_b, h_e)$ est une solution de ce problème, alors $(\lambda v_a, \lambda v_e, \lambda^{-1} t_a, \lambda^{-1} t_b, h_e)$) est une autre solution. Donc il n'y a pas une valeur unique pour les vitesses et les durées, et il ne faut pas s'inquiéter de n'avoir écrit que 4 équations pour 5 inconnues.
 
 - **31/01/2019 :**  *Systèmes linéaires*
 	* Exercices traités : 1.1, 1.2, 1.4, 1.6, 1.7 *(partie)*
