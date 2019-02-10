@@ -12,7 +12,7 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Carnet de bord
 
-- <span class="date">7/02/2019 :</span> *Systèmes linéaires, sous-espaces vectoriels*
+- <span class="date">7/02/2019 :</span> **Systèmes linéaires, sous-espaces vectoriels**
 	* Exercices traités : 1.7 *(fin)*, 1.8, 1.9, 2.1, 2.2 *(sauf 2.c)*
 	* A traiter par vous-même : 1.10, 1.11, 1.12, 1.13
 	* Solution de l'énigme : 
@@ -40,7 +40,7 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 		**Remarque :** Si $(v_a, v_e, t_a ,t_b, h_e)$ est une solution de ce problème, alors $(\lambda v_a, \lambda v_e, \lambda^{-1} t_a, \lambda^{-1} t_b, h_e)$) est une autre solution. Donc il n'y a pas une valeur unique pour les vitesses et les durées, et il ne faut pas s'inquiéter de n'avoir écrit que 4 équations pour 5 inconnues.
 	* Erratum exercice 1.7 :
 
-- <span class="date">31/01/2019 :</span> *Systèmes linéaires*
+- <span class="date">31/01/2019 :</span> **Systèmes linéaires**
 	* Exercices traités : 1.1, 1.2, 1.4, 1.6, 1.7 *(partie)*
 	* A traiter par vous-même : 1.5, 1.7 *(fin)*
 	* [Enigme](http://images.math.cnrs.fr/Janvier-2019-2e-defi.html)		
