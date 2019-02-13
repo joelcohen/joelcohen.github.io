@@ -8,7 +8,12 @@ hidden : True
 
 # Math 103 - Algèbre linéaire
 
-Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (polycopiés de cours et de TD) se trouvent sur [Dokéos](http://formation.u-psud.fr). Le partiel est prévu le mardi 12 mars.
+Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (polycopiés de cours et de TD) se trouvent sur [Dokéos](http://formation.u-psud.fr).
+
+## Dates à retenir
+
+* Le test 1 aura lieu le jeudi 21 février à 8h15
+* Le partiel est prévu le mardi 12 mars.
 
 ## Carnet de bord
 

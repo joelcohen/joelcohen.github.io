@@ -10,6 +10,11 @@ hidden : True
 
 Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semestre. Les documents (polycopiés de cours et de TD) se trouvent sur [Dokéos](http://formation.u-psud.fr). Le partiel est prévu le mardi 12 mars. 
 
+## Dates à retenir
+
+* Le test 1 aura lieu le mercredi 27 février à 8h15
+* Le partiel est prévu le mardi 12 mars.
+
 ## Carnet de bord
 
 
