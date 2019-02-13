@@ -13,7 +13,10 @@ Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semes
 ## Carnet de bord
 
 
-
+- <span class="date">13/02/2019:</span> **Feuille 2 : équations différentielles ordinaires**
+	* Exercices traités : 5, 7
+	* A traiter par vous-même : 6, 8, 9
+	* [Solutions des exercices 5 à 9](td3_corr.pdf)
 - <span class="date">6/02/2019, après-midi :</span>  **Feuille 2 : équations différentielles ordinaires**
 	* Exercices traités : 1, 3 *(équations 1, 2)*
 	* A traiter par vous-même : 2, 3 *(fin)*, 4
