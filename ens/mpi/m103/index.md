@@ -16,7 +16,7 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 * Le partiel est prévu le mardi 12 mars.
 
 ## Carnet de bord
-- <span class="date">14/02/2019 :</span> **Systèmes linéaires, sous-espaces vectoriels**
+- <span class="date">14/02/2019 :</span> **Suites génératrices, suites libres**
 	* Exercices traités : 2.3, 2.4, 2.5
 
 - <span class="date">7/02/2019 :</span> **Systèmes linéaires, sous-espaces vectoriels**
