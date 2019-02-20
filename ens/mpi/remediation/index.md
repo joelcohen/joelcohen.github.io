@@ -27,6 +27,9 @@ L'objectif du cours de remédiation mathématique du semestre 2 est de renforcer
 5. Trigonométrie 2 :
     [énoncé](td5.pdf), [corrigé](td5_corr.pdf)
 
+6. Fonctions :
+	[énoncé](td6.pdf)
+
 ## Savoir-faire L1-L2
 
 Cette [liste](sf.pdf) contient les savoir faire attendus d'un étudiant à l'issue du L2. Cette liste vous permet de vous positionner par rapport à ce que vous avez déjà acquis, et ce que vous souhaitez acquérir.
