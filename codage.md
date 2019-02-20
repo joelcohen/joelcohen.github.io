@@ -39,8 +39,8 @@ Sur GitHub Classroom, un devoir a été créé pour recevoir le code de votre pr
 
 ### Documents
 
-* [Présentation et intro à GitHub](../../docs/L1/info/presentation_UE_codage.pdf)
-* [Recommandations sur le projet](../../docs/L1/info/projet-recommandations.pdf)
+* [Présentation et intro à GitHub](../../ens/L1/info/presentation_UE_codage.pdf)
+* [Recommandations sur le projet](../../ens/L1/info/projet-recommandations.pdf)
 
 
 ### Évaluation
