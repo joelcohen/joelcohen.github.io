@@ -17,7 +17,10 @@ Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semes
 
 ## Carnet de bord
 
-
+- <span class="date">13/02/2019:</span> **Feuille 2 : équations différentielles linéaires de degré 2 à coefficients constants**
+	* Exercices traités : 19, 21, 27
+	* A traiter par vous-même : 20, 22, 23 (**erratum :** pour la question, remplacer l'équation considérée par $y^{\prime \prime}-4y'+3y = (2t+1)e^t$ )
+	* [Solutions des exercices 19 à 23](td3_corr.pdf)
 - <span class="date">13/02/2019:</span> **Feuille 2 : équations différentielles ordinaires**
 	* Exercices traités : 5, 7
 	* A traiter par vous-même : 6, 8, 9
