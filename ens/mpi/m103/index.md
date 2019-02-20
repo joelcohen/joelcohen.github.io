@@ -17,7 +17,8 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Carnet de bord
 - <span class="date">14/02/2019 :</span> **Suites génératrices, suites libres**
-	* Exercices traités : 2.3, 2.4, 2.5
+	* Exercices traités : 2.3, 2.4, 2.5, 2.7, 2.9, 2.11 (début)
+    * A traiter par vous-même : 2.6, 2.8, 2.10
 
 - <span class="date">7/02/2019 :</span> **Systèmes linéaires, sous-espaces vectoriels**
 	* Exercices traités : 1.7 *(fin)*, 1.8, 1.9, 2.1, 2.2 *(sauf 2.c)*
