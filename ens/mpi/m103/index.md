@@ -17,7 +17,8 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Carnet de bord
 - <span class="date">14/02/2019 :</span> **Bases, coordonnées, dimension**
-	* Exercices traités : 2.12, 2.13, 2.14
+	* Exercices traités : 2.12, 2.13, 2.14, 2.17, 3.12
+	* A traiter par vous-même : 2.15
 	
 - <span class="date">14/02/2019 :</span> **Suites génératrices, suites libres**
 	* Exercices traités : 2.3, 2.4, 2.5, 2.7, 2.9, 2.11 (début)
