@@ -12,10 +12,13 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Dates à retenir
 
-* Le test 1 aura lieu le jeudi 28 février à 8h15
 * Le partiel est prévu le mardi 12 mars.
+* L'examen est prévu le lundi 13 mai.
 
 ## Carnet de bord
+- <span class="date">28/02/2019 :</span> **Dimension, Opérations sur les sous-espaces**
+	* Exercices traités : 3.1, test 1.11, test 1.5, 3.5, 3.6
+	
 - <span class="date">21/02/2019 :</span> **Bases, coordonnées, dimension**
 	* Exercices traités : 2.12, 2.13, 2.14, 2.17, 3.12
 	* A traiter par vous-même : 2.15

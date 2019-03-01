@@ -28,14 +28,14 @@ L'objectif du cours de remédiation mathématique du semestre 2 est de renforcer
     [énoncé](td5.pdf), [corrigé](td5_corr.pdf)
 
 6. Fonctions 1 :
-	[énoncé](td6.pdf)
+	[énoncé](td6.pdf), [corrigé](td6_corr.pdf)
 	
 7. Fonctions 2 :
 	[énoncé](td7.pdf)
 
 ## Feuilles d'exercices WIMS
 
-Des feuilles d'exercices sont à disposition sur [WIMS](https://wims.u-psud.fr). 
+Des feuilles d'exercices sont à disposition sur [WIMS](https://wims.u-psud.fr/wims/wims.cgi?session=new.673258039&+lang=fr&+old_session=1T1FBBB62F&+module=home). 
 
 ## Savoir-faire L1-L2
 
