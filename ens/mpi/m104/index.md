@@ -13,13 +13,14 @@ Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semes
 ## Dates à retenir
 
 * Le partiel est prévu le mardi 12 mars.
+* L'examen est prévu la semaine du 13 mai.
 
 ## Carnet de bord
 
 - <span class="date">27/02/2019:</span> **Feuille 3 : Formules de Taylor-Lagrange**
 	* Exercices traités : 1, 3
 	* A traiter par vous-même : 2, 4
-	* [Corrigé du test 1](test1_corr.pdf)
+	* Test 1 : [Enoncé](test1.pdf), [Corrigé](test1_corr.pdf)
 - <span class="date">20/02/2019:</span> **Feuille 2 : équations différentielles linéaires de degré 2 à coefficients constants**
 	* Exercices traités : 19, 21, 27
 	* A traiter par vous-même : 20, 22, 23 (**erratum :** pour la question, remplacer l'équation considérée par $y^{\prime \prime}-4y'+3y = (2t+1)e^t$ )
