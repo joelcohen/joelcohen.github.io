@@ -12,8 +12,7 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Dates à retenir
 
-* Le partiel est prévu le mardi 12 mars.
-* L'examen est prévu le lundi 13 mai.
+* L'examen est prévu le jeudi 16 mai de 13h45 à 15h45
 
 ## Carnet de bord
 - <span class="date">28/02/2019 :</span> **Dimension, Opérations sur les sous-espaces**
