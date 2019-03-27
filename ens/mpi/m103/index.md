@@ -12,10 +12,14 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Dates à retenir
 
-* Le partiel est prévu le mardi 12 mars.
-* L'examen est prévu le lundi 13 mai.
+* L'examen est prévu le jeudi 16 mai de 13h45 à 15h45
 
 ## Carnet de bord
+
+- <span class="date">21/03/2019 : **Dimension. Intersection et somme de sous-espaces. Equations cartésiennes.**</span> 
+    * Exercices traités : 3.7, 3.8, 3.11, 3.13
+    * A traiter par vous-même : 3.2, 3.3, 3.4, 3.9
+    
 - <span class="date">28/02/2019 :</span> **Dimension, Opérations sur les sous-espaces**
 	* Exercices traités : 3.1, test 1.11, test 1.5, 3.5, 3.6
 	

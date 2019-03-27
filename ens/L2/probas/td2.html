@@ -197,7 +197,7 @@ hidden : True
         <li class="exo" id="piece_pipee">
             <h2>Pièce pipée</h2>
             <article  class="exobox">
-               <p>On souhaite tirer à pile ou face, mais on dispose d'une pièce de monnaie dont on ignore si elle est équilibrée ou pas (la probabilité de tomber sur face vaut un paramètre $p \in [0,1]$ que l'on ne connaît pas). On vous propose alors le jeu suivant : On tire la pièce jusqu'à obtenir deux résultat successifs différents, si le jeu s'arrête sur $(\pile, \face)$ vous gagnez, s'il s'arrête sur $(\face, \pile)$ vous perdez.</p>
+               <p>On souhaite tirer à pile ou face, mais on dispose d'une pièce de monnaie dont on ignore si elle est équilibrée ou pas (la probabilité de tomber sur face vaut un paramètre $p \in [0,1]$ que l'on ne connaît pas). On vous propose alors le jeu suivant : On tire la pièce deux fois de suite. Si on obtient deux fois le même résultat, on tire à nouveau deux fois, et ce jusqu'à obtenir deux résultat successifs différents. Si le jeu s'arrête sur $(\pile, \face)$ vous gagnez, s'il s'arrête sur $(\face, \pile)$ vous perdez.</p>
                <ol>
                    <li onclick="toggle_visibility('4.1');">Quelle est la probabilité que le jeu ne s'arrête jamais ?
                    <div class="sol" id="4.1">Pour que le jeu ne s'arrête jamais, il faut faire pile indéfiniment ou face indéfiniment, ce qui est de probabilité nulle (bien que ça ne soit pas strictement impossible en théorie).</div></li>

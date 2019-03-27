@@ -12,10 +12,12 @@ Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semes
 
 ## Dates à retenir
 
-* Le partiel est prévu le mardi 12 mars.
 * L'examen est prévu la semaine du 13 mai.
 
 ## Carnet de bord
+
+- <span class="date">20/03/2019:</span> **Feuille 4 : Développements limités**
+    * Exercices traités : 1, 2
 
 - <span class="date">27/02/2019:</span> **Feuille 3 : Formules de Taylor-Lagrange**
 	* Exercices traités : 1, 3

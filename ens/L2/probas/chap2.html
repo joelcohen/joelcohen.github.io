@@ -39,7 +39,7 @@ hidden : True
         
         
         <article class="exemple"><strong>Pile je gagne, face tu perds</strong>
-            <p>On joue à pile ou face, le joueur lance une pièce de monnnaie, si elle tombe sur pile, il gagne 1€, sinon il perd 1€. L'univers associé à cette expérience aléatoire est $\Omega = \set{\pile, \face}$. On peut définit sur $\Omega$ la variable aléatoire $X : \Omega \to \set{-1,1}$ qui représente les gains du joueur, en posant</p>
+            <p>On joue à pile ou face, le joueur lance une pièce de monnnaie, si elle tombe sur pile, il gagne 1€, sinon il perd 1€. L'univers associé à cette expérience aléatoire est $\Omega = \set{\pile, \face}$. On peut définir sur $\Omega$ la variable aléatoire $X : \Omega \to \set{-1,1}$ qui représente les gains du joueur, en posant</p>
             $$X(\pile) = 1, \qquad X(\face) = -1$$
         </article>
         <article class="exemple"><strong>Somme de deux dés</strong>
@@ -362,7 +362,7 @@ hidden : True
         </article>
         L'espérance représente la valeur moyenne prise par une variable aléatoire. Une variable aléatoire d'espérance nulle est dite <strong class="new">centrée</strong>. Étant donnée une variable aléatoire $X$ admettant une espérance, on peut se ramener à une variable centrée en considérant la variable décalée $X - \E(X)$.
         <article class="exemple" id="esperance_de">
-            On tire un dé à 6 faces, on note $D$ la variable aléatoire qui représente la valeur obtenue. La variable $D$ suit une loi uniforme dans $\ints{1,6}$. Sont espérance est
+            On tire un dé à 6 faces, on note $D$ la variable aléatoire qui représente la valeur obtenue. La variable $D$ suit une loi uniforme dans $\ints{1,6}$. Son espérance est
             $$
             \begin{align*}
                 \E(D) &= 1 \times \P(D = 1) + 2 \times \P(D = 2) + 3 \times \P(D = 3) + 4 \times \P(D = 4) + 5 \times \P(D = 5) + 6 \times \P(D = 6) \\
@@ -373,7 +373,9 @@ hidden : True
                 &= 3,5
             \end{align*}
             $$
-            Cela veut par exemple dire que si l'on tire le dé un grand nombre de fois, la moyenne des résultats que l'on fera sera proche de cette valeur de $3,5$. Pouvez-vous de la même manière calculer l'espérance de la valeur prise par un dé à 4 faces ? 12 faces ? À 20 faces ?
+            Cela veut par exemple dire que si l'on tire le dé un grand nombre de fois, la moyenne des résultats que l'on fera sera proche de cette valeur de $3,5$.</p>
+            <p onclick="toggle_visibility('espdespoly');">Pouvez-vous de la même manière calculer l'espérance de la valeur prise par un dé à 4 faces ? 12 faces ? À 20 faces ?</p>
+            <span id="espdespoly" class="sol"><p>On calcule que l'espérance de la valeur obtenue est de $\frac{5}{2} = 2,5$ pour un dé à $4$ faces, $\frac{13}{2} = 6,5$ pour un dé à $12$ faces, et $\frac{21}{2} = 6,5$ pour un dé à $20$ faces.</p></span>
         </article>
         
         <p>Il peut être utile de remarquer que l'espérance est linéaire</p>

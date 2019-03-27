@@ -51,7 +51,7 @@ hidden : True
                    $$\overline{A} \in \mathcal{A}$$
                </li>
                <li><strong>Stable par union (dénombrable):</strong> Pour toute suite $(A_n)_{n \in \N} \in \mathcal{A}^{\N}$ de parties de $\mathcal{A}$, l'union est encore dans $\mathcal{A}$ :
-               $$\bigcap_{n \in \N} A_n \in \mathcal{A}$$
+               $$\bigcup_{n \in \N} A_n \in \mathcal{A}$$
                </li>
            </ol>
            <p>Si $\mathcal{A}$ est une tribu sur $\Omega$, le couple $(\Omega, \mathcal{A})$ est appelé un <strong class="new">espace probabilisable</strong>.</p>
@@ -141,7 +141,7 @@ hidden : True
         <h2>Événements indépendants</h2>
         <article class="definition" id="independant"><strong>Indépendance de deux événements</strong>
             <p>Étant donné un espace probabilisé $(\Omega, \mathcal{A}, \P)$, on dit que deux événements $A, B \in \mathcal{A}$ sont <strong class="new">indépendants</strong> si</p>
-            <p>$$\P(A \cap B) = \P(A) \times \P(A)$$</p>
+            <p>$$\P(A \cap B) = \P(A) \times \P(B)$$</p>
         </article>
         <p>Moralement, deux événements sont indépendants si savoir que l'un a été réalisé (ou pas) ne donne aucune information sur la réalisation de l'autre. Il faut faire attention au fait que l'indépendance d'événements est une notion qui dépend du choix de la probabilité (c'est pour cela que notre définition commence par se donner un espace probabilisé).</p>
         
@@ -222,7 +222,7 @@ hidden : True
 			\\
 			\qquad \P(A \cap B \cap C) = \P(A) \times \P(B) \times \P(C)
 		\end{align*}$$
-		<p>en enfin, indépendants 4 à 4 :</p>
+		<p>et enfin, indépendants 4 à 4 :</p>
 		$$\P(A \cap B \cap C \cap D) = \P(A) \times \P(B) \times \P(C) \times \P(D)$$
 	</span>
     </section>
@@ -262,7 +262,7 @@ hidden : True
         <p>Il est parfois intéressant de découper l'univers en plusieurs parties disjointes pour étudier les choses séparément dans chaque cas. Cela nous amène à poser la définition suivante.</p>
         
         <article class="definition" id="partition"><strong>Partition</strong>
-            <p>Soit $(\Omega, \mathcal{A})$ un espace probabilisable, et $(A_i)_{i \in I}$ une famille d'événements de $\mathcal{A}$. On dit que la famille d'événements $(A_i)_{i \in I}$ <strong class="new">forme une partition</strong> de l'univers $\Omega$ (on parle également de <strong class="new">système exhaustif</strong>) si</p>
+            <p>Soit $(\Omega, \mathcal{A})$ un espace probabilisable, et $(A_i)_{i \in I}$ une famille d'événements de $\mathcal{A}$. On dit que la famille d'événements $(A_i)_{i \in I}$ <strong class="new">forme une partition</strong> de l'univers $\Omega$ (on parle également de <strong class="new">système exhaustif</strong> ou <strong class="new">système complet</strong>) si</p>
             <ol>
                 <li><strong>Les événements sont disjoints deux à deux :</strong> Pour tout $i, j \in I$ avec $i\ne j$, on a $A_i \cap A_j = \emptyset$.
                 </li>
