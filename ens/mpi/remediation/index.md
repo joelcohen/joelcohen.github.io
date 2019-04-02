@@ -34,7 +34,10 @@ L'objectif du cours de remédiation mathématique du semestre 2 est de renforcer
 	[énoncé](td7.pdf)
     
 8. Fonctions spéciales :
-	[énoncé](td10.pdf), [énoncé](td10_corr.pdf)
+	[énoncé](td10.pdf), [corrigé](td10_corr.pdf)
+	
+9. Nombres complexes :
+	[énoncé](td11.pdf)
 
 ## Feuilles d'exercices WIMS
 
