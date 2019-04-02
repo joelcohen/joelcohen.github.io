@@ -12,11 +12,15 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Dates à retenir
 
+* Le test 2 aura lieu le jeudi 18 avril à 8h15
 * L'examen est prévu le jeudi 16 mai de 13h45 à 15h45
 
 ## Carnet de bord
 
-- <span class="date">21/03/2019 : **Dimension. Intersection et somme de sous-espaces. Equations cartésiennes.**</span> 
+- <span class="date">28/03/2019 :</span> **Matrices.**
+	* Exercices traités : 4.1, 4.2, 4.3, 4.4, 4.5, 4.6
+
+- <span class="date">21/03/2019 :</span> **Dimension. Intersection et somme de sous-espaces. Equations cartésiennes.** 
     * Exercices traités : 3.7, 3.8, 3.11, 3.13
     * A traiter par vous-même : 3.2, 3.3, 3.4, 3.9
     

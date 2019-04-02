@@ -16,6 +16,11 @@ Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semes
 
 ## Carnet de bord
 
+- <span class="date">27/03/2019:</span> **Feuille 4 : Développements limités**
+    * Exercices traités : 3, 5, 7
+	* A traiter par vous-même : 4, 6, 8
+	* [Solutions des exercices 1 à 12](td6_corr.pdf)
+
 - <span class="date">20/03/2019:</span> **Feuille 4 : Développements limités**
     * Exercices traités : 1, 2
 
