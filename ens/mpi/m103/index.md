@@ -23,7 +23,34 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 - <span class="date">21/03/2019 :</span> **Dimension. Intersection et somme de sous-espaces. Equations cartésiennes.** 
     * Exercices traités : 3.7, 3.8, 3.11, 3.13
     * A traiter par vous-même : 3.2, 3.3, 3.4, 3.9
-    
+	* Fin de l'exercice 3.13 : 
+		1. On pose $T_0 = 1$, $T_1(x) = x$ et $T_{n+2} = 2 X T_{n+1} - T_n$. Vérifions par récurrence que pour tout $n \in \N$ et tout $\theta \in \R$, $T_n(\cos \theta) = \cos(n \theta)$.
+		Pour $n = 0$ et $n = 1$ c'est évident. Supposons désormais la propriété vrai **jusqu'au** rang $n+1$, et montrons-la au rang $n+2$. Pour $\theta \in \R$, on a
+
+		$$\begin{align*} T_{n+2}(\cos(\theta)) &= 2 \cos(\theta) T_{n+1}(\cos \theta) - T_n(\cos \theta) \\
+		&= 2 \cos(\theta) \cos((n+1)\theta) - \cos(n \theta) \\
+		&= \cos((n+1) \theta + \theta) + \cos((n+1) \theta - \theta) - \cos(n \theta)\\
+		&= \cos((n+2) \theta)\end{align*}$$
+	
+		2. Comme $\deg T_k = k$ pour tout $k \in \N$, alors la famille $(T_0, T_1, \ldots T_d)$ est une base de $\R_d[X]$ (cf exercice 3.12 question 1).
+		
+		3.	On a
+	
+		$$\int_0^{\pi} T_n(\cos \theta) \times T_m(\cos \theta) \, d\theta = \begin{cases} 0 & \text{si } m \ne n \\ \frac{\pi}{2} & \text{si } m = n\end{cases}$$
+	
+		D'après la question 2, la famille $(T_0, T_1, \ldots T_d)$ est une base de $\R_d[X]$, donc tout polynôme $P \in \R_d[X]$ s'écrit de manière unique
+	
+		$$P = \sum_{k = 0}^d \lambda_k T_k$$
+	
+		avec $\lambda_0, \lambda_1, \ldots, \lambda_d \in \R$. Soit $0 \le i \le d$ un entier. Pour trouver le coefficient $\lambda_i$, on peut intégrer $P(\cos \theta) T_i(\cos \theta)$ :
+	
+		$$\int_0^{\pi} P(\cos \theta) \times T_i(\cos \theta) \, d\theta =  \sum_{k = 0}^d \lambda_k \underbrace{\int_0^{\pi} T_k(\cos \theta) \times T_i(\cos \theta) \, d\theta}_{\text{nul si } k \ne i} = \frac{\pi}{2} \lambda_i$$
+	
+	    d'où on tire la formule
+	
+		$$\lambda_i = \frac{2}{\pi} \int_0^{\pi} P(\cos \theta) \times T_i(\cos \theta) \, d\theta$$
+		
+	
 - <span class="date">28/02/2019 :</span> **Dimension, Opérations sur les sous-espaces**
 	* Exercices traités : 3.1, test 1.11, test 1.5, 3.5, 3.6
 	
