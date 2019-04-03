@@ -12,14 +12,19 @@ Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semes
 
 ## Dates à retenir
 
+* Le test 2 est prévu le 10 avril
 * L'examen est prévu la semaine du 13 mai.
 
 ## Carnet de bord
 
 - <span class="date">27/03/2019:</span> **Feuille 4 : Développements limités**
+	* Exercices traités : 9, 10 (partie), 11 (partie), 12 (partie)
+	* A traiter par vous-même : 10, 11, 12
+
+- <span class="date">27/03/2019:</span> **Feuille 4 : Développements limités**
     * Exercices traités : 3, 5, 7
 	* A traiter par vous-même : 4, 6, 8
-	* [Solutions des exercices 1 à 12](td6_corr.pdf)
+	* [Solutions des exercices 1 à 13](td6_corr.pdf)
 
 - <span class="date">20/03/2019:</span> **Feuille 4 : Développements limités**
     * Exercices traités : 1, 2
