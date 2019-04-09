@@ -12,7 +12,7 @@ Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semes
 
 ## Dates à retenir
 
-* Le test 2 est prévu le 10 avril
+* Le test 2 est prévu le 17 avril
 * L'examen est prévu la semaine du 13 mai.
 
 ## Carnet de bord
