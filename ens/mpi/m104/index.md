@@ -8,7 +8,7 @@ hidden : True
 
 # Math 104 - Analyse
 
-Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semestre. Les documents (polycopiés de cours et de TD) se trouvent sur [Dokéos](http://formation.u-psud.fr). Le partiel est prévu le mardi 12 mars. 
+Ce  cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semestre. Les documents (polycopiés de cours et de TD) se trouvent sur [Dokéos](http://formation.u-psud.fr). Le partiel est prévu le mardi 12 mars. 
 
 ## Dates à retenir
 
@@ -17,7 +17,11 @@ Ce cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier semes
 
 ## Carnet de bord
 
-- <span class="date">27/03/2019:</span> **Feuille 4 : Développements limités**
+- <span class="date">10/04/2019:</span> **Feuille 5 : Nombres complexes**
+	* Exercices traités : 1, 3, 4, 5 (début)
+	* A traiter par vous-même : 2, 5 (fin)
+
+- <span class="date">3/04/2019:</span> **Feuille 4 : Développements limités**
 	* Exercices traités : 9, 10 (partie), 11 (partie), 12 (partie)
 	* A traiter par vous-même : 10, 11, 12
 

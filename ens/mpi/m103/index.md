@@ -10,12 +10,19 @@ hidden : True
 
 Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (polycopiés de cours et de TD) se trouvent sur [Dokéos](http://formation.u-psud.fr).
 
-## Dates à retenir
+## Enploi du temps
 
+* **Le TD de l'après midi est déplacé au matin 10h30-12h30**
 * Le test 2 aura lieu le jeudi 18 avril à 8h15
 * L'examen est prévu le jeudi 16 mai de 13h45 à 15h45
 
 ## Carnet de bord
+
+- <span class="date">11/04/2019 :</span> **Application linéaires**
+    * Exercices traités : 5.3, 5.4, 5.8, 5.9
+
+- <span class="date">4/04/2019 :</span> **Matrices et application linéaires**
+    * Exercices traités : 4.7, 4.8, 4.9, 5.2
 
 - <span class="date">28/03/2019 :</span> **Matrices.**
 	* Exercices traités : 4.1, 4.2, 4.3, 4.4, 4.5, 4.6
