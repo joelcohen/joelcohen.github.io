@@ -18,10 +18,10 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Carnet de bord
 
-- <span class="date">11/04/2019 :</span> **Application linéaires**
+- <span class="date">11/04/2019 :</span> **Applications linéaires**
     * Exercices traités : 5.3, 5.4, 5.8, 5.9
 
-- <span class="date">4/04/2019 :</span> **Matrices et application linéaires**
+- <span class="date">4/04/2019 :</span> **Matrices et applications linéaires**
     * Exercices traités : 4.7, 4.8, 4.9, 5.2
 
 - <span class="date">28/03/2019 :</span> **Matrices.**
