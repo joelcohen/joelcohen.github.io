@@ -24,10 +24,10 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 - <span class="date">4/04/2019 :</span> **Matrices et applications linéaires**
     * Exercices traités : 4.7, 4.8, 4.9, 5.2
 
-- <span class="date">28/03/2019 :</span> **Matrices.**
+- <span class="date">28/03/2019 :</span> **Matrices**
 	* Exercices traités : 4.1, 4.2, 4.3, 4.4, 4.5, 4.6
 
-- <span class="date">21/03/2019 :</span> **Dimension. Intersection et somme de sous-espaces. Equations cartésiennes.** 
+- <span class="date">21/03/2019 :</span> **Dimension. Intersection et somme de sous-espaces. Equations cartésiennes** 
     * Exercices traités : 3.7, 3.8, 3.11, 3.13
     * A traiter par vous-même : 3.2, 3.3, 3.4, 3.9
 	* Fin de l'exercice 3.13 : 
