@@ -17,6 +17,11 @@ Ce  cours prend la suite de l'UE [Math 101 : Calculus](../m101/) du premier seme
 
 ## Carnet de bord
 
+- <span class="date">17/04/2019:</span> **Feuille 5 : Nombres complexes**
+	* Exercices traités : 6 (fin), 8, 9 (début)
+	* A traiter par vous-même : 7
+	* Test 2 : [Enoncé](test2.pdf), [Corrigé](test2_corr.pdf)
+
 - <span class="date">10/04/2019:</span> **Feuille 5 : Nombres complexes**
 	* Exercices traités : 1, 3, 4, 5 (début)
 	* A traiter par vous-même : 2, 5 (fin)
