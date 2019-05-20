@@ -46,7 +46,7 @@ L'objectif du cours de remédiation mathématique du semestre 2 est de renforcer
 	[énoncé](td13.pdf), [corrigé](td13_corr.pdf)
 
 12. Intégration - intérprétation géométrique, formule de la moyenne :
-	[énoncé](td14.pdf)
+	[énoncé](td14.pdf), [corrigé](td14_corr.pdf)
 
 ## Feuilles d'exercices WIMS
 
