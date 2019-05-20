@@ -42,10 +42,10 @@ L'objectif du cours de remédiation mathématique du semestre 2 est de renforcer
 10. Théorème des accroissements finis :
 	[énoncé](td12.pdf), [corrigé](td12_corr.pdf)
 	
-11. Intégration : primitives, principes du calcul intégral
+11. Intégration - primitives, principes du calcul intégral :
 	[énoncé](td13.pdf), [corrigé](td13_corr.pdf)
 
-12. Intégration : intérprétation géométrique, formule de la moyenne
+12. Intégration - intérprétation géométrique, formule de la moyenne :
 	[énoncé](td14.pdf)
 
 ## Feuilles d'exercices WIMS
