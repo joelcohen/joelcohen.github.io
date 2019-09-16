@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Math191 - Mathématiques de la modélisation
-permalink: /ens/bcst/m191/
+permalink: /ens/bcst/m191/2018/
 hidden : True
 ---
 
