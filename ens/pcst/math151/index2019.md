@@ -18,7 +18,7 @@ Il s'agit d'un cours d'introduction à l'analyse réelle. Cette page est spécif
 
 ## Modalités d'évaluation
 
-La note finale de l'UE est calculée en premier session à partir des notes de contrôle continu (30%), partiel (30%) et examen (40%). Et la note de contrôle continu est obtenue à partir des notes de tests (75%), WIMS (10%), participation (10%) et devoir maison (5%).
+La note finale de l'UE est calculée en première session à partir des notes de contrôle continu (30%), partiel (30%) et examen (40%). Et la note de contrôle continu est obtenue à partir des notes de tests (75%), WIMS (10%), participation (10%) et devoir maison (5%).
 
 ## Carnet de bord
 

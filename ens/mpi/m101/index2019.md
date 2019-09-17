@@ -19,7 +19,7 @@ Il s'agit d'un cours d'introduction à l'analyse. Cette page est spécifiquement
 
 ## Modalités d'évaluation
 
-La note finale de l'UE est calculée en premier session à partir des notes de contrôle continu (30%), partiel (30%) et examen (40%). La note de contrôle continu est la moyenne des notes de test, en comptant la meilleure note avec un coefficient 2, et en effaçant la moins bonne.
+La note finale de l'UE est calculée en première session à partir des notes de contrôle continu (30%), partiel (30%) et examen (40%). La note de contrôle continu est la moyenne des notes de test, en comptant la meilleure note avec un coefficient 2, et en effaçant la moins bonne.
 
 ## Carnet de bord
 
