@@ -26,3 +26,6 @@ La note finale de l'UE est calculée en première session à partir des notes de
 - <span class="date">17/09/2019:</span> **Equations, inéquations**
 	* Exercices traités : 1, 2, 3 (début)
 	* A traiter par vous-même : 3 (fin)
+	
+- <span class="date">18/09/2019:</span> **Equations, inéquations**
+	* Exercices traités : 4, 5, 6

@@ -25,3 +25,10 @@ La note finale de l'UE est calculée en première session à partir des notes de
 - <span class="date">17/09/2019:</span> **Feuiles 0 et 1**
 	* Exercices traités : 0.1, 0.2, 1.1, 1.2
 	* A traiter par vous-même : 1.3
+	
+- <span class="date">18/09/2019:</span> **Feuile 1**
+	* Exercices traités : 1.3
+	
+- <span class="date">20/09/2019:</span> **Feuiles 1 et 2**
+	* Exercices traités : 1.4, 2.1, 1.7
+	* A traiter par vous-même : 1.5
