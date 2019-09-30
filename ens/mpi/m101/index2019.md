@@ -29,3 +29,9 @@ La note finale de l'UE est calculée en première session à partir des notes de
 	
 - <span class="date">18/09/2019:</span> **Equations, inéquations**
 	* Exercices traités : 4, 5, 6
+	
+- <span class="date">24/09/2019:</span> **Equations, inéquations**
+	* Exercices traités : 7, 9, 10
+
+- <span class="date">25/09/2019:</span> **Equations, inéquations**
+	* Exercices traités : 12, 13, 15 (plus graphes de $x \mapsto f(-x)$, $x \mapsto -f(x)$ et $x \mapsto -f(-x)$)

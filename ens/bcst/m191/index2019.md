@@ -22,3 +22,6 @@ Il s'agit d'un cours d'introduction à l'analyse et aux probabilités destinés 
 	
 - <span class="date">23/09/2019:</span> **Fonctions**
 	* Exercices traités : 4 (fin), 5
+	
+- <span class="date">25/09/2019:</span> **Fonctions**
+	* Exercices traités : 6, 7
