@@ -12,14 +12,20 @@ Il s'agit d'un cours d'introduction à l'analyse. Cette page est spécifiquement
 
 ## Dates à retenir
 
-* Partiel 1 : Lundi 7 Octobre de 8h30 à 10h30
-* Vacances : du 26 Octobre au 3 Novembre
+<!-- * Partiel 1 : Lundi 7 Octobre de 8h30 à 10h30
+* Vacances : du 26 Octobre au 3 Novembre -->
+* Test 3 : mercredi 20 Novembre
 * Partiel 2 : Lundi 25 Novembre de 8h30 à 10h30
 * Examen : Mardi 17 Décembre de 13h45 à 16h45
 
 ## Modalités d'évaluation
 
 La note finale de l'UE est calculée en première session à partir des notes de contrôle continu (30%), partiel (30%) et examen (40%). La note de contrôle continu est la moyenne des notes de test, en comptant la meilleure note avec un coefficient 2, et en effaçant la moins bonne.
+
+## Sujets de test
+
+- [Test 1](test1.pdf) *(mardi 8 octobre 2019)*
+- [Test 2](test2.pdf) *(mercredi 23 octobre 2019)*
 
 ## Carnet de bord
 

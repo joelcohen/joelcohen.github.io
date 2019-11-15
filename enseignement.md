@@ -8,6 +8,7 @@ permalink: /ens/
 # Année 2019 - 2020
 
 * [Remédiation méthodes de calcul](../ens/mpi/m152/2019/)
+* [Soutien calculus](../ens/mpi/m152b/2019/)
 * [Math 101 : Calculus](../ens/mpi/m101/2019/)
 * [Math 151 : Calculus](../ens/pcst/m151/2019/)
 * [Math 191 : Mathématiques de la modélisation](../ens/bcst/m191/2019/)
