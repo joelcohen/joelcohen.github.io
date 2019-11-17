@@ -8,7 +8,7 @@ hidden : True
 
 ## Soutien calculus
 
-Cette unité d'enseignement est conçue comme un complément à l'UE Math 101 Calculus et aborde les bases du raisonnement logique, le langage de la théorie des ensembles et la recherche et redaction de preuves mathématiques. 
+Cette unité d’enseignement est conçue comme un complément à l’UE Math 101 Calculus. A travers des exemples tirés de math 101 et d'ailleurs, elle aborde les bases du raisonnement logique, le langage de la théorie des ensembles et la recherche et redaction de preuves mathématiques. Son objectif est de fournir des bases disciplinaires et méthodologiques solides pour poursuivre un cursus de mathématique dans le supérieur.
 
 
 - Logique : [TD 1](../td1/pdf)
