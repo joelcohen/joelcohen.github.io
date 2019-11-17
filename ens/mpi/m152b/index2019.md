@@ -12,6 +12,7 @@ Cette unité d'enseignement est conçue comme un complément à l'UE Math 101 Ca
 
 
 <!-- - Logique : [TD 1](td1.pdf) -->
+- Logique : [TD 1](../td1/pdf)
 - Ensembles : [TD 2](../td2.pdf)
 - Implications : [TD 3](../td3.pdf)
 
