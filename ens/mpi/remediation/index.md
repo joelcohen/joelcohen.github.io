@@ -8,7 +8,7 @@ hidden : True
 
 # Remédiation S2
 
-L'objectif du cours de remédiation mathématique du semestre 2 est de renforcer les acquis en mathématiques en vue de la préparation du L1.
+L'objectif du cours de remédiation est de préparer les étudiants à poursuivre des études en mathématiques en leur donnant un semestre complet pour consolider et approfondir les bases. Le programme recouvre celui du lycée, de l'UE [Math 101 : Calculus](../m101/2019) et se prolonge vers la suite (avec des ouvertures sur [Math 103 : Algèbre linéaire](../m103/) et [Math 104 : Analyse](../m104/)). Le cours vise à vous faire (re)découvrir les mathématiques, vous faire réussir la seconde session de l'examen M101, et vous préparer pour la poursuite de vos études.
 
 ## Feuilles d'exercices
 
@@ -47,6 +47,10 @@ L'objectif du cours de remédiation mathématique du semestre 2 est de renforcer
 
 12. Intégration - intérprétation géométrique, formule de la moyenne :
 	[énoncé](td14.pdf), [corrigé](td14_corr.pdf)
+
+## Modalités d'évaluation
+
+Un test de 30 minutes aura lieu en séance, toutes les 2 semaines afin de vous permettre de suivre votre avancement. Ces tests donneront lieu à une note qui comptera ensuite pour 20% de votre note de seconde session pour l'examen de M101 (à la place de votre note de première session).
 
 ## Feuilles d'exercices WIMS
 

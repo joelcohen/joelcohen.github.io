@@ -7,6 +7,14 @@ permalink: /ens/
 
 # Année 2019 - 2020
 
+## Semestre 2
+
+* [Remédiation S2](../ens/mpi/remediation/)
+* [Math 103 : Algèbre linéaire](../ens/mpi/m103/)
+* [Cryptographie](../ens/L3/crypto/)
+
+## Semestre 1
+
 * [Remédiation méthodes de calcul](../ens/mpi/m152/2019/)
 * [Soutien calculus](../ens/mpi/m152b/2019/)
 * [Math 101 : Calculus](../ens/mpi/m101/2019/)
@@ -18,7 +26,7 @@ permalink: /ens/
 ## Semestre 2
 
 
-* [Remédiation](../ens/mpi/remediation/)
+* [Remédiation S2](../ens/mpi/remediation/)
 * [Math 103 : Algèbre linéaire](../ens/mpi/m103/)
 * [Math 104 : Analyse](../ens/mpi/m104/)
 * [Cryptographie](../ens/L3/crypto/)
