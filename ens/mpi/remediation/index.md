@@ -10,6 +10,13 @@ hidden : True
 
 L'objectif du cours de remédiation est de préparer les étudiants à poursuivre des études en mathématiques en leur donnant un semestre complet pour consolider et approfondir les bases. Le programme recouvre celui du lycée, de l'UE [Math 101 : Calculus](../m101/2019) et se prolonge vers la suite (avec des ouvertures sur [Math 103 : Algèbre linéaire](../m103/) et [Math 104 : Analyse](../m104/)). Le cours vise à vous faire (re)découvrir les mathématiques, vous faire réussir la seconde session de l'examen M101, et vous préparer pour la poursuite de vos études.
 
+## Carnet de bord
+
+- <span class="date">21/01/2020 :</span> *Séance annulée en raison de l'examen de Math 101*
+- <span class="date">22/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(séance en autonomie)*
+    * Exercices à traiter : 1, 2, 5, 6
+	* Si vous voulez vous entrainer au calcul : [*Feuille 1*](td1.pdf) exercices 1, 2, 3
+
 ## Feuilles d'exercices
 
 1. Calcul élémentaire, développement, factorisation, fractions, puissances :
