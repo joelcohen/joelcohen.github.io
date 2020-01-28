@@ -16,6 +16,9 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 - <span class="date">22/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(séance en autonomie)*
     * Exercices à traiter : 1, 2, 5, 6
 	* Si vous voulez vous entrainer au calcul : [*Feuille 1*](td1.pdf) exercices 1, 2, 3
+	
+- <span class="date">27/01/2020 :</span> [**Nombres Complexes**](td11.pdf)
+	* Exercice à finir par vous-même : 12
 
 ## Feuilles d'exercices
 
