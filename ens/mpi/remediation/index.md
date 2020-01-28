@@ -16,16 +16,13 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 
 ## Carnet de bord
 
-- <span class="date">21/01/2020 :</span> *Séance annulée en raison de l'examen de Math 101*
-- <span class="date">22/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(Autonomie)*
-    * Exercices à traiter : 1, 2, 5, 6
-	* Si vous voulez vous entrainer au calcul : [*Feuille 1*](td1.pdf) exercices 1, 2, 3
-	
-- <span class="date">27/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(Cours/TD)*
-	* Exercice à finir par vous-même : 12
 
-- <span class="date">28/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(Cours/TD)*
-	* Exercices traités ensemble : 9, 10, 11, 13, 14 *(en utilisant $\overline{u} = -u$)*
+<!-- 
+- <span class="date">5/02/2020 :</span>
+- <span class="date">4/02/2020 :</span>
+- <span class="date">3/02/2020 :</span> [**Nombres Complexes**](td11.pdf)
+	* Test sur les complexes
+ -->
 
 - <span class="date">29/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(Autonomie)*
 	* **Finir les parties II.A et II.B**
@@ -33,12 +30,18 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 	* Trigonométrie : 14 *(en notant $z=x+iy$, exprimer $u$ sous forme algébrique)*, 15, 16, 17, 18
 	* Pour aller plus loin : 19, 20, 21, 22
 
-<!-- - <span class="date">3/02/2020 :</span> [**Nombres Complexes**](td11.pdf)
-	* Test sur les complexes
+- <span class="date">28/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(Cours/TD)*
+	* Exercices traités ensemble : 9, 10, 11, 13, 14 *(en utilisant $\overline{u} = -u$)*
 
-- <span class="date">4/02/2020 :</span>
+- <span class="date">27/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(Cours/TD)*
+	* Exercice à finir par vous-même : 12
 
-- <span class="date">5/02/2020 :</span> -->
+- <span class="date">22/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(Autonomie)*
+    * Exercices à traiter : 1, 2, 5, 6
+	* Si vous voulez vous entrainer au calcul : [*Feuille 1*](td1.pdf) exercices 1, 2, 3
+
+- <span class="date">21/01/2020 :</span> *Séance annulée en raison de l'examen de Math 101*
+
 
 ## Feuilles d'exercices
 
