@@ -12,7 +12,7 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 
 ## Dates à retenir
 
-- lundi 3 février - Test 1 : complexes
+- **Test 1** : Lundi 3 février, le test portera sur les nombres complexes
 
 ## Carnet de bord
 
