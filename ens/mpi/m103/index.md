@@ -24,5 +24,8 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 -->
 
 - <span class="date">29/01/2019 :</span> **Systèmes linéaires**
+	* [Présentation de l'UE](m103syllabus.pdf)
+	* Exercices traités : 1.1, 1.2, 1.4
+	* A traiter par vous-même : 1.5
 	* Enigme : Alice et Bob montent en marchant un escalier mécanique en mouvement. Lorsque Bob arrive en haut de l’escalier, il a monté 21 marches alors qu'Alice, avec une vitesse double de celle de Bob en a monté 28. Combien de marches l’escalier possède-t-il au repos ? [Source](http://images.math.cnrs.fr/Janvier-2019-2e-defi.html)
 			
