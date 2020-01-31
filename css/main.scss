@@ -147,15 +147,6 @@ li a::before {
         //letter-spacing : -.05em;
         //font-family : $serif-title;
     }
-    .sol {
-        display: none;
-        background-color : #f9f9f9;
-        border : 1px solid #f0f0f0;
-        border-radius: .5em;
-        padding : 1.5em 2em;
-        margin : 1em 0;
-        //color: $sol-color;
-    }
     nav {
         margin : 3em 0;
     }
@@ -166,6 +157,17 @@ li a::before {
         margin: 0 auto;
     }
 }
+.sol {
+    display: none;
+    background-color : #f9f9f9;
+    border : 1px solid #f0f0f0;
+    border-radius: .5em;
+    padding : 1.5em 2em;
+    margin : 1em 0;
+    //color: $sol-color;
+}
+
+
 .new {
     color : $brand-color;
 }

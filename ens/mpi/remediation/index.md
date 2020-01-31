@@ -12,7 +12,7 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 
 ## Dates à retenir
 
-- **Test 1** : Lundi 3 février, le test portera sur les nombres complexes
+- **Test 1** : Lundi 3 février, le test portera sur les nombres complexes. Pour vous entrainer, voici un [sujet blanc](test1_blanc.pdf).
 
 ## Carnet de bord
 
@@ -20,9 +20,10 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 <!-- 
 - <span class="date">5/02/2020 :</span>
 - <span class="date">4/02/2020 :</span>
-- <span class="date">3/02/2020 :</span> [**Nombres Complexes**](td11.pdf)
-	* Test sur les complexes
  -->
+- <span class="date">3/02/2020 :</span> [**Nombres Complexes**](td11.pdf)
+	* **Test 1 :** [sujet blanc](test1_blanc.pdf)
+
 
 - <span class="date">29/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(Autonomie)*
 	* **Finir les parties II.A et II.B**
