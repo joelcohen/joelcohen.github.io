@@ -30,7 +30,7 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 	* Exercices traité ensembles : 12 *(le logarithme transforme produits en sommes)*
 
 - <span class="date">3/02/2020 :</span> [**Nombres Complexes**](td11.pdf)
-	* **Test 1 :** [sujet blanc](test1_blanc.pdf)
+	* **Test 1 :** [sujet blanc](test1_blanc.pdf), [sujet](test1.pdf)
 
 
 - <span class="date">29/01/2020 :</span> [**Nombres Complexes**](td11.pdf) *(Autonomie)*
