@@ -16,11 +16,19 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 
 ## Carnet de bord
 
+<!-- - <span class="date">10/02/2020 :</span>
+- <span class="date">11/02/2020 :</span>
+- <span class="date">12/02/2020 :</span>  -->
 
-<!-- 
-- <span class="date">5/02/2020 :</span>
-- <span class="date">4/02/2020 :</span>
- -->
+
+- <span class="date">5/02/2020 :</span> [Fonctions spéciales](td10.pdf) *(Autonomie)*
+	* Exercices à traiter : 1, 2, 3, 4, 5, 7, 8 
+	* Pour aller plus loin : 13 *(bijectivité du logarithme)*
+
+- <span class="date">4/02/2020 :</span> [Fonctions spéciales](td10.pdf) *(Cours)*
+	* Correction du test 1
+	* Exercices traité ensembles : 12 *(le logarithme transforme produits en sommes)*
+
 - <span class="date">3/02/2020 :</span> [**Nombres Complexes**](td11.pdf)
 	* **Test 1 :** [sujet blanc](test1_blanc.pdf)
 
