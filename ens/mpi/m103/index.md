@@ -30,6 +30,11 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Carnet de bord
 
+- <span class="date">31/01/2019 :</span> **Systèmes linéaires**
+    * Exercices traités : 1.8, 1.9, 1.12 *(début)*
+    * A traiter par vous-même : 1.12 *(fin)*
+    * Pour aller plus loin : 1.10, 1.13
+    
 
 - <span class="date">31/01/2019 :</span> **Systèmes linéaires**
 	* Exercices traités : 1.6, 1.7, 1.3 *(début)*
