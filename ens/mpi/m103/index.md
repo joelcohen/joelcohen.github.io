@@ -32,14 +32,29 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 - <span class="date">31/01/2019 :</span> **Systèmes linéaires**
     * Exercices traités : 1.8, 1.9, 1.12 *(début)*
-    * A traiter par vous-même : 1.12 *(fin)*
+    * A traiter par vous-même : 1.12 *(fin)* <a onclick="toggle_visibility('1.12');">*(afficher/masquer la solution)*</a>
+        <div id="1.12" class="sol">
+        <p>Appelons $D_3$ la droite perpendiculaire à $D_1$ et $D_2$ (il y a bien une unique telle droite). En faisant le produit vectoriel des vecteurs directeurs de $D_1$ et $D_2$, on trouve le vecteur $(-1,2,-1)$ qui est simultanément perpendiculaire au deux précédents, donc directeur de $D_3$. Il nous reste à déterminer un point de $D_3$. Soient $A_1 \in D_1$ et $A_2 \in D_2$, alors $A_1$ et $A_2$ sont sur $D_3$ si et seulement si le vecteur $\overrightarrow{A_1A_2}$ est colinéaire à $(-1,2,-1)$. Ce qui nous fournit donc un point (et même deux) de la droite $D_3$. On cherche donc $u,t$ tels qu'il existe $v$ tel que</p>
+        
+        $$(1+u,u,u) - (t,2t,3t) = v.(-1,2,-1)$$
+        
+        <p>En d'autres termes, si $(t,u,v)$ est solution de ce système, alors les points $(1+u,u,u)$ et $(t,2t,3t)$ seront sur $D_3$. La résolution du système conduit à $(t,u,v) = \frac{1}{6} (-3,-8,-1)$ est donc les points sont $A_1 = -\frac{1}{3}(1,4,4)$ et $A_2 = -\frac{1}{2}(1,2,3)$.</p>
+        
+        <p><b>Methode alternative :</b> Sans connaître de vecteur directeur pour $D_3$, on peut utiliser une méthode similaire pour trouver deux points de $D_3$ (ce qui nous fournit un point et un vecteur directeur). En effet, si $A_1 \in D_1$ et $A_2 \in D_2$, alors $D_1$ et $D_2$ sont sur $D_3$ si et seulement si le vecteur $\overrightarrow{A_1A_2}$ est simultanément perpendiculaire à $(1,1,1)$ et $(1,2,3)$. En écrivant la nullité des deux produits scalaires, cela donne donc le système</p>
+        
+        $$
+        \left\{\begin{matrix}(1+u-t,u-2t,u-3t) \cdot (1,1,1) & = & 0\\
+        (1+u-t,u-2t,u-3t) \cdot (1,2,3) & = & 0\end{matrix}\right.
+        $$
+        <p>Ce qui donne la même solution $t = -\frac{1}{2}$ et $u = -\frac{4}{3}$ et donc les points $A_1 = -\frac{1}{3}(1,4,4)$ et $A_2 = -\frac{1}{2}(1,2,3)$. Et enfin le vecteur $\overrightarrow{A_1A_2} = \frac{1}{6}(1,-2,1)$ est alors un vecteur directeur de $D_3$.</p>
+        </div>
     * Pour aller plus loin : 1.10, 1.13
     
 
 - <span class="date">31/01/2019 :</span> **Systèmes linéaires**
 	* Exercices traités : 1.6, 1.7, 1.3 *(début)*
 	* A traiter par vous-même : 1.3 *(fin)*
-	* **Solution de l'énigme :** <span onclick="toggle_visibility('enigme');">*(afficher/masquer)*</span>
+	* **Solution de l'énigme :** <a onclick="toggle_visibility('enigme');">*(afficher/masquer)*</a>
 		<div id="enigme" class="sol">
 		Soit $h_e$ la hauteur (comptée en nombre de marches) de l'escalator. On note $v_a$ la vitesse d'Alice, $v_e$ la vitesse de l'escalator, et $t_a$ la durée de montée de l'escalator pour Alice. Dans un référentiel fixe, Alice a monté $h_e$ marches à vitesse $v_a+v_e$, donc
 		
@@ -61,7 +76,7 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 		
 		$$\pars{\frac{1}{14}-\frac{1}{21}} h_e = 1 \iff h_e = 42$$
 	
-		**Remarque :** Si $(v_a, v_e, t_a ,t_b, h_e)$ est une solution de ce problème, alors $(\lambda v_a, \lambda v_e, \lambda^{-1} t_a, \lambda^{-1} t_b, h_e)$) est une autre solution. Donc il n'y a pas une valeur unique pour les vitesses et les durées, et il ne faut pas s'inquiéter de n'avoir écrit que 4 équations pour 5 inconnues.</div>
+		<b>Remarque :</b> Si $(v_a, v_e, t_a ,t_b, h_e)$ est une solution de ce problème, alors $(\lambda v_a, \lambda v_e, \lambda^{-1} t_a, \lambda^{-1} t_b, h_e)$) est une autre solution. Donc il n'y a pas une valeur unique pour les vitesses et les durées, et il ne faut pas s'inquiéter de n'avoir écrit que 4 équations pour 5 inconnues.</div>
 
 - <span class="date">29/01/2019 :</span> **Systèmes linéaires**
 	* [Présentation de l'UE](m103syllabus.pdf)
