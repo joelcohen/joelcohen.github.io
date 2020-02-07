@@ -30,6 +30,10 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Carnet de bord
 
+- <span class="date">7/02/2019 :</span> **Systèmes linéaires, sous espaces vectoriels**
+    * Exercices traités : 1.5, 1.11, 2.1, 2.2 *(début)*
+    * A traiter par vous-même : 2.2 *(fin)*
+
 - <span class="date">5/02/2019 :</span> **Systèmes linéaires**
     * Exercices traités : 1.8, 1.9, 1.12 *(début)*
     * A traiter par vous-même : 1.12 *(fin)* <a onclick="toggle_visibility('1.12');">*(afficher/masquer la solution)*</a>
