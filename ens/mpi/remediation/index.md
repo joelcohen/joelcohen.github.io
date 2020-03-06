@@ -12,13 +12,40 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 
 ## Dates à retenir
 
-- **Test 2** : Lundi 24 février
+- **Test 3** : Lundi 9 mars, [sujet blanc](test3_blanc.pdf)
+- **Test 4** : Lundi 23 mars
+- **Test 5** : Lundi 6 avril
+- **Test 6** : Lundi 20 avril
+- **Test 7** : Lundi 4 mai
+- **Test 8** : Lundi 18 mai
 
 ## Carnet de bord
 
+- <span class="date">9/03/2020 : [Dérivation, TAF](td12.pdf) *(Autonomie)*</span>
+    * **Test 3** : [sujet blanc](test3_blanc.pdf)
 
-- <span class="date">11/02/2020 :</span> [Fonctions spéciales](td10.pdf) *Autonomie)*
-- <span class="date">12/02/2020 :</span> [Fonctions spéciales](td10.pdf) *(TD)*
+- <span class="date">4/03/2020 : [Dérivation, TAF](td12.pdf) *(Autonomie)*</span>
+    * Calculs de dérivées : 1, 2, 3, 4, 5, 6, 7, 8, 11, 12
+- <span class="date">3/03/2020 : [Dérivation, TAF](td12.pdf) *(TD)*</span>
+    * Retour sur la correction du test 2
+    * Calculs de limites via les taux de variation
+- <span class="date">2/03/2020 : [Dérivation, TAF](td12.pdf) *(TD)*</span>
+	* Exercices à traiter : 1, 2, 3, 4,  
+	* Pour aller plus loin : 5, 6, 7
+
+
+- <span class="date">26/02/2020 : [Dérivation, TAF](td12.pdf)</span>
+	* Exercices à traiter : 1, 2, 3, 4,  
+	* Pour aller plus loin : 5, 6, 7
+- <span class="date">25/02/2020 : [Fonctions spéciales](td10.pdf) *(TD)*</span>
+    * Correction du test 2
+    * Devoir maison 1 (à rendre lundi 2/03/2020) : [DM1](DM1.pdf)
+- <span class="date">24/02/2020 : [Fonctions spéciales](td10.pdf) *(TD)*</span>
+    * Questions et réponses sur les fonctions spéciales
+    * **Test 2 :** [sujet](test2.pdf)
+
+- <span class="date">12/02/2020 :</span> [Fonctions spéciales](td10.pdf) *(Autonomie)*
+- <span class="date">11/02/2020 :</span> [Fonctions spéciales](td10.pdf) *(TD)*
 
 - <span class="date">10/02/2020 :</span> [Fonctions spéciales](td10.pdf) *(TD)*
     * Exercices traités ensemble : 13

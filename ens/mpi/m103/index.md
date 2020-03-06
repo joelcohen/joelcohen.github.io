@@ -24,16 +24,34 @@ Il s'agit d'un cours d'introduction à l'algèbre linéaire. Les documents (poly
 
 ## Enploi du temps
 
-* Les vacances d'hiver auront lieu du 15 au 23 février.
-* La partiel aura lieu la semaine du 9 au 13 mars.
+<!-- * Les vacances d'hiver auront lieu du 15 au 23 février. -->
+* La partiel aura lieu le 10 mars à partir de 13h45 au bâtiment 337 (durée 2h).
 * Les vacances de Pâques auront lieu du 11 au 19 avril.
 
 ## Carnet de bord
 
+- <span class="date">6/03/2019 : **Dimension**</span>
+- <span class="date">4/03/2019 : **familles libres, génératrices, bases, dimension**</span>
+    * Correction du test 2
+    * Exercices traités : 2.17
+    * A traiter par vous-même : Montrer que la famille de polynômes $(p_0 : x \mapsto 1, p_1: x \mapsto x, p_2: x \mapsto x^2)$ est libre.
+
+- <span class="date">28/02/2019 : **familles libres, génératrices, bases**</span>
+    * **Test 1**
+    * Exercices traités : 2.15
+- <span class="date">26/02/2019 : **familles libres, génératrices, bases**</span>
+    * Exercices traités : 2.11, 2.13, 2.14
+    
+- <span class="date">14/02/2019 : **sous espaces vectoriels, familles libres**</span>
+    * Exercices traités : 2.5, 2.6, 2.7
+- <span class="date">12/02/2019 : **sous espaces vectoriels, familles libres**</span>
+    * Exercices traités : 2.2 *(fin)*, 2.3, 2.4, 2.5 *(question 1)* 
+    * A traiter par vous-même : 2.5 *(fin)*
+
 - <span class="date">7/02/2019 :</span> **Systèmes linéaires, sous espaces vectoriels**
     * Exercices traités : 1.5, 1.11, 2.1, 2.2 *(début)*
     * A traiter par vous-même : 2.2 *(fin)*
-
+    
 - <span class="date">5/02/2019 :</span> **Systèmes linéaires**
     * Exercices traités : 1.8, 1.9, 1.12 *(début)*
     * A traiter par vous-même : 1.12 *(fin)* <a onclick="toggle_visibility('1.12');">*(afficher/masquer la solution)*</a>
