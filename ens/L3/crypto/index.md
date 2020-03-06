@@ -31,6 +31,8 @@ Pour plus de renseignements sur l'utilisation des fichiers en Python, vous pouve
 * 📄 [Message 4](message4.txt)
 * 📄 [Message 5](message5.txt)
 * 📄 [Message 6](message6.txt)
+* 📄 [Message 7](message7.txt)
+* 📄 [Message 8](message8.txt)
 
 ## Documents utiles
 
