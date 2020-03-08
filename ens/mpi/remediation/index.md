@@ -12,7 +12,7 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 
 ## Dates à retenir
 
-- **Test 3** : Lundi 9 mars, [sujet blanc](test3_blanc.pdf)
+- **Test 3** : Lundi 9 mars, [sujet blanc](test3_blanc.pdf), [corrigé](test3_blanc_corr.pdf)
 - **Test 4** : Lundi 23 mars
 - **Test 5** : Lundi 6 avril
 - **Test 6** : Lundi 20 avril
@@ -22,7 +22,7 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 ## Carnet de bord
 
 - <span class="date">9/03/2020 : [Dérivation, TAF](td12.pdf) *(Autonomie)*</span>
-    * **Test 3** : [sujet blanc](test3_blanc.pdf)
+    * **Test 3** : [sujet blanc](test3_blanc.pdf), [corrigé](test3_blanc_corr.pdf)
 
 - <span class="date">4/03/2020 : [Dérivation, TAF](td12.pdf) *(Autonomie)*</span>
     * Calculs de dérivées : 1, 2, 3, 4, 5, 6, 7, 8, 11, 12
