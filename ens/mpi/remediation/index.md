@@ -30,11 +30,11 @@ Notre premier essai de discord en live aura lieu **lundi 16 mars à 15h45** (hor
 ## Dates à retenir
 
 - **Test 3** : Lundi 9 mars, [sujet blanc](test3_blanc.pdf), [corrigé](test3_blanc_corr.pdf)
-<!-- - **Test 4** : Lundi 23 mars
-- **Test 5** : Lundi 6 avril
-- **Test 6** : Lundi 20 avril
-- **Test 7** : Lundi 4 mai
-- **Test 8** : Lundi 18 mai -->
+<!-- - **Test 4** : Lundi 23 mars -->
+<!-- - **Test 5** : Lundi 6 avril -->
+<!-- - **Test 6** : Lundi 20 avril -->
+<!-- - **Test 7** : Lundi 4 mai -->
+<!-- - **Test 8** : Lundi 18 mai -->
 
 ## Carnet de bord
 
