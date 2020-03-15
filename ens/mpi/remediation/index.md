@@ -10,14 +10,29 @@ hidden : True
 
 L'objectif du cours de remédiation est de préparer les étudiants à poursuivre des études en mathématiques en leur donnant un semestre complet pour consolider et approfondir les bases. Le programme recouvre celui du lycée, de l'UE [Math 101 : Calculus](../m101/2019) et se prolonge vers la suite (avec des ouvertures sur [Math 103 : Algèbre linéaire](../m103/) et [Math 104 : Analyse](../m104/)). Le cours vise à vous faire (re)découvrir les mathématiques, vous faire réussir la seconde session de l'examen M101, et vous préparer pour la poursuite de vos études.
 
+
+
+## Organisation à distance
+
+Dans le cadre des mesures sanitaires de protection contre la propagation du virus covid-19, les locaux de l'université seront fermés jusqu'à nouvel ordre. A cet effet, les cours de remédiation seront organisés à distances à travers les moyens suivants :
+
+- cette page web
+
+- [serveur discord](https://discord.gg/RRdcWPQ)
+
+- espace de cours sur e-Campus
+
+Notre premier essai de discord en live aura lieu **lundi 16 mars à 15h45** (horaire habituel des cours). Merci d'échanger largement l'information entre vous afin de tout le monde soit inscrit rapidement sur [Discord](https://discordapp.com/) ! Etant donné le caractère expérimental de cela, il faudra s'attendre à ce que le format évolue en fonction de vos retours. Je compte sur vous et votre engagement à tous pour que cela marche dans les meilleures conditions. Prenez bien soin de vous.
+
+
 ## Dates à retenir
 
 - **Test 3** : Lundi 9 mars, [sujet blanc](test3_blanc.pdf), [corrigé](test3_blanc_corr.pdf)
-- **Test 4** : Lundi 23 mars
+<!-- - **Test 4** : Lundi 23 mars
 - **Test 5** : Lundi 6 avril
 - **Test 6** : Lundi 20 avril
 - **Test 7** : Lundi 4 mai
-- **Test 8** : Lundi 18 mai
+- **Test 8** : Lundi 18 mai -->
 
 ## Carnet de bord
 
