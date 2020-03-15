@@ -16,11 +16,13 @@ L'objectif du cours de remédiation est de préparer les étudiants à poursuivr
 
 Dans le cadre des mesures sanitaires de protection contre la propagation du virus covid-19, les locaux de l'université seront fermés jusqu'à nouvel ordre. A cet effet, les cours de remédiation seront organisés à distances à travers les moyens suivants :
 
+- la liste de diffusion remediation-mpi🐌framalistes.org
+
 - cette page web
 
 - [serveur discord](https://discord.gg/RRdcWPQ)
 
-- espace de cours sur e-Campus
+- l'espace de cours sur e-Campus
 
 Notre premier essai de discord en live aura lieu **lundi 16 mars à 15h45** (horaire habituel des cours). Merci d'échanger largement l'information entre vous afin de tout le monde soit inscrit rapidement sur [Discord](https://discordapp.com/) ! Etant donné le caractère expérimental de cela, il faudra s'attendre à ce que le format évolue en fonction de vos retours. Je compte sur vous et votre engagement à tous pour que cela marche dans les meilleures conditions. Prenez bien soin de vous.
 
