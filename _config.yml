@@ -17,6 +17,8 @@ title: Joël Cohen
 email: joel@piday.fr
 description: > # this means to ignore newlines until "baseurl:"
   Les aventures d'un mathématicien sur internet.
+keywords: Joël Cohen, Joel Cohen, math, maths, mathématiques, mathematics, diffusion mathématique, diffusion scientifique, mathematics outreach, science outreach
+author : Joël Cohen
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://joelcohen.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
