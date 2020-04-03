@@ -22,7 +22,7 @@ hidden : True
     </div>
     <section>
        <h2>Univers et événements</h2>
-       <p>On parlera d'une <strong class="new">expérience aléatoire</strong> pour une expérience dont on ne connaît pas le résultat avec certitude a priori. À une expérience aléatoire, on associe l'ensemble des issues possibles, qu'on appelle l'<strong class="new">univers</strong> de cette expérience aléatoire et qui est le plus souvent noté par la lettre $\Omega$ majuscule (on parle parfois aussi de population pour l'ensemble $\Omega$, notamment en statistiques). Un élément de l'ensemble $\Omega$ (que l'on note souvent $\omega$ minuscule) est un des résultats possibles de l'expérience.</p>
+       <p>On parlera d'une <strong class="new">expérience aléatoire</strong> pour une expérience dont on ne connaît pas le résultat avec certitude a priori. À une expérience aléatoire, on associe l'ensemble des issues possibles, qu'on appelle l'<strong class="new">univers</strong> de cette expérience aléatoire et qui est le plus souvent noté par la lettre $\Omega$ (omega majuscule) (on parle parfois aussi de population pour l'ensemble $\Omega$, notamment en statistiques). Un élément de l'ensemble $\Omega$, que l'on note souvent $\omega$ (omega minuscule) est un des résultats possibles de l'expérience.</p>
        <article class="exemple">
            <p>Si on lance une pièce de monnaie, l'univers sera l'ensemble $\Omega = \{\pile, \face\}$, et $\omega = \face$ est un résultat possible.</p>
        </article>
@@ -30,7 +30,7 @@ hidden : True
            <p>Si on lance un dé à 6 faces, l'univers sera l'ensemble $\Omega = \ints{1,6} = \{1,2,3,4,5,6\}$ des valeurs possibles du dé, et $\omega = 5$ est un résultat possible.</p>
        </article>
        <article class="exemple">
-           <p>Si on lance une pièce de monnaie deux fois, l'univers sera l'ensemble des couples de résultats $\Omega = \{\pile, \face\}^2 = \{(\pile,\pile), (\pile,\face), (\face,\pile), (\face,\face)\}$, et $\omega = (\face, \pile)$ est un résultat possible.</p>
+           <p>Si on lance une pièce de monnaie deux fois, l'univers sera l'ensemble $\Omega = \{\pile, \face\}^2 = \{(\pile,\pile), (\pile,\face), (\face,\pile), (\face,\face)\}$ des couples de résultats d'un lancer, et $\omega = (\face, \pile)$ est un résultat possible.</p>
        </article>
        <article class="exemple">Si on tire au hasard une carte dans un paquet de 52 cartes, l'univers sera l'ensemble des 52 valeurs possibles de cartes, qu'on peut voir comme un couple contenant la valeur de la carte (de 1 à 13), et la couleur (coeur, pique, carreau ou trèfle), c'est-à-dire
        $$\Omega = \ints{1,13} \times \set{\color{red}{\heartsuit}, \spadesuit, \color{red}{\diamondsuit}, \clubsuit}$$
@@ -39,25 +39,26 @@ hidden : True
        
        <article class="definition">
            <p>Étant donnée une expérience aléatoire ayant pour univers $\Omega$, un <strong class="new">événement aléatoire</strong> (ou juste événement) $E$ est un ensemble de résultats possibles de l'expérience, c'est-à-dire une partie de l'univers : $E \subset \Omega$.</p>
-           <p>On dit qu'un événement $E$ se <strong class="new">réalise</strong> si le résultat $\omega$ de l'expérience appartient à l'ensemble $E$ : $\omega \in E$</p>
+           <p>On dit qu'un événement $E$ se <strong class="new">réalise</strong> si le résultat $\omega$ de l'expérience appartient à l'ensemble $E$ : $\omega \in E$.</p>
            <p>L'ensemble $\mathcal{A}$ de tous les événements est appelé une <strong class="new">tribu</strong>. Le couple $(\Omega, \mathcal{A})$ est appelé un <strong class="new">espace probabilisable</strong>.</p>
        </article>
-       <p>La définition ci-dessus de tribu est délibérément vague pour cacher la complexité sous-jacente et dont les subtilités dépassent la portée de ce cours. À titre culturel, nous donnons quand même la définition rigoureuse.</p>
+       <p>La définition ci-dessus reste délibérément vague sur la notion de tribu pour cacher la complexité sous-jacente dont les subtilités dépassent la portée de ce cours. À titre culturel, nous donnons quand même la définition rigoureuse.</p>
        
        <article class="definition" id="tribu"><strong>Tribu</strong>
-           <p>Soit $\Omega$ un ensemble et $\mathcal{A} \subset \Omega$ un ensemble de parties de $\Omega$. On dit que $\mathcal{A}$ est une <strong class="new">tribu</strong> sur $\Omega$ si</p>
+           <p>Soit $\Omega$ un ensemble et $\mathcal{A} \subset \mathcal{P}(\Omega)$ un ensemble de parties de $\Omega$. On dit que $\mathcal{A}$ est une <strong class="new">tribu</strong> sur $\Omega$ si</p>
            <ol>
                <li><strong>Stable par complémentaire :</strong> Pour toute partie $A \in \mathcal{A}$, le complémentaire est encore dans $\mathcal{A}$ :
                    $$\overline{A} \in \mathcal{A}$$
                </li>
-               <li><strong>Stable par union (dénombrable):</strong> Pour toute suite $(A_n)_{n \in \N} \in \mathcal{A}^{\N}$ de parties de $\mathcal{A}$, l'union est encore dans $\mathcal{A}$ :
+               <li><strong>Stable par union (dénombrable):</strong> Pour toute suite $(A_n)_{n \in \N} \in \mathcal{A}^{\N}$ de parties $A_n \in \mathcal{A}$, l'union est encore dans $\mathcal{A}$ :
                $$\bigcup_{n \in \N} A_n \in \mathcal{A}$$
                </li>
            </ol>
            <p>Si $\mathcal{A}$ est une tribu sur $\Omega$, le couple $(\Omega, \mathcal{A})$ est appelé un <strong class="new">espace probabilisable</strong>.</p>
        </article>
        
-       <p>Dans ce cours, l'univers $\Omega$ sera fini le plus souvent, et la tribu $\mathcal{A}$ sera pratiquement toujours l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. On peut donc se permettre de ne pas trop se soucier de la question. Quand l'univers $\Omega$ est infini, des subtilités apparaissent et on peut être amenés à considérer des tribus plus petites, ne contenant pas toutes les parties de $\Omega$. Pour s'exercer sur la notion d'événement aléatoire, voir la <a href="td1#evenements">feuille 1 exercice 2</a>.</p>
+       <p>Dans ce cours, l'univers $\Omega$ sera fini le plus souvent, et la tribu $\mathcal{A}$ sera pratiquement toujours l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. On peut donc se permettre de ne pas trop se soucier de la question. Quand l'univers $\Omega$ est infini, des subtilités apparaissent et on peut être amené à considérer des tribus plus petites, ne contenant pas toutes les parties de $\Omega$.</p>
+       <p>Pour s'exercer sur la notion d'événement aléatoire, voir la <a href="td1#evenements">feuille 1 exercice 2</a>.</p>
     </section>
     
     <section>
@@ -65,7 +66,7 @@ hidden : True
         <h3>Définition axiomatique</h3>
         <p>À titre culturel, on donne la définition axiomatique d'une probabilité.</p>
         <article class="definition" id="probabilité"><strong>Probabilité</strong>
-            <p>Étant donné un univers $\Omega$ et une tribu $\mathcal{A}$ (c'est-à-dire un espace probabilisable), une <strong class="new">probabilité</strong> est une fonction qui à chaque événement associe une valeur numérique :</p>
+            <p>Étant donné un espace probabilisable (c'est-à-dire un univers $\Omega$ et une tribu $\mathcal{A}$), une <strong class="new">probabilité</strong> est une fonction qui à chaque événement associe une valeur numérique :</p>
             <p>
                 $$\begin{align*}
                 \P : \mathcal{A}    & \longrightarrow [0,1] \\
@@ -75,7 +76,7 @@ hidden : True
             <p>satisfaisant les propriétés</p>
             <ol>
                 <li>$\P(\Omega) = 1$</li>
-                <li>Si $(A_n)_{n \ge 0}$ sont des événéments 2 à 2 disjoints (c'est-à-dire que $A_i \cap A_j = \emptyset$ pour tous $i \ne j$), alors
+                <li>Pour toute famille $(A_n)_{n \ge 0}$ d'événements 2 à 2 disjoints (c'est-à-dire que $A_i \cap A_j = \emptyset$ pour tous $i \ne j$), la probablité de leur réunion est la somme de leurs probabilités :
                 $$\P\left(\bigcup_{i = 0}^{+\infty} A_i \right) = \sum_{i = 0}^{+\infty} \P(A_i)$$
                 </li>
             </ol>
@@ -135,7 +136,7 @@ hidden : True
                 <li>$\P(A \cup B) = \P(A) + \P(B) - \P(A \cap B)$</li>
             </ol>
         </article>
-        <p>Ici, $\overline{A}$ désigne le complémentaire de $A$. La propriété $\P(\overline{A}) = 1 - \P(A)$ peut se révéler très pratique dans certains cas pour lesquels il est plus facile de calculer la probabilité du complémentaire.</p>
+        <p>Ici, $\overline{A}$ désigne le complémentaire de $A$. La propriété $\P(\overline{A}) = 1 - \P(A)$ se révèle très pratique dans de nombreux cas où la probabilité du complémentaire est plus facile à calculer.</p>
     </section>
     <section>
         <h2>Événements indépendants</h2>
@@ -195,14 +196,14 @@ hidden : True
                 </li>
             </ul>
         </article>
-        <p>La notion d'indépendance mutuelle est plus forte que celle d'indépendance deux à deux. En effet, des événements qui sont mutuellement indépendants sont aussi 2 à 2 indépendants, mais il est possible pour des événements 2 à 2 indépendants de ne pas être mutuellement indépendants (c'est par exemple le cas des événements $A$, $B$ et $C$ de l'exemple précédent qui sont 2 à 2 indépdendants, mais pas mutuellement indépendants).</p>
+        <p>La notion d'indépendance mutuelle est plus forte que celle d'indépendance deux à deux. En effet, des événements qui sont mutuellement indépendants sont aussi 2 à 2 indépendants, mais il est possible pour des événements 2 à 2 indépendants de ne pas être mutuellement indépendants (c'est par exemple le cas des événements $A$, $B$ et $C$ de l'exemple précédent qui sont 2 à 2 indépendants, mais pas mutuellement indépendants).</p>
         <p>Pour trois événements $A$, $B$ et $C$, dire qu'ils sont deux à deux indépendants revient à avoir les trois égalités :
             $$\P(A \cap B) = \P(A) \times \P(B), \qquad \P(B \cap C) = \P(B) \times \P(C), \qquad \P(C \cap A) = \P(C) \times \P(A)$$
         </p>
         <p>Pour que les événements soient mutuellement indépendants, il faut également vérifier une égalité supplémentaire :
             $$\P(A \cap B \cap C) = \P(A) \times \P(B) \times \P(C)$$
         </p>
-        <p onclick="toggle_visibility('ind4ev');">Pouvez-vous écrire les 11 égalités que l'on obtient pour l'indépendance mutuelle de quatre événements $A$, $B$, $C$ et $D$ ?
+        <p onclick="toggle_visibility('ind4ev');">Pouvez-vous écrire les 11 égalités qui traduisent l'indépendance mutuelle de quatre événements $A$, $B$, $C$ et $D$ ?
 		</p>
         <span id="ind4ev" class="sol"><p>Quatre événements $A$, $B$, $C$ et $D$ sont mutuellement indépendants s'ils sont indépendants 2 à 2 :</p>
 		$$\begin{align*}
@@ -234,7 +235,7 @@ hidden : True
             <p>$$\P_{A}(B) = \P(B | A) = \frac{\P(A \cap B)}{\P(A)}$$</p>
             <p>est une probabilité, appelé <strong class="new">probabilité conditionnellement à $A$</strong>, ou probabilité sachant $A$.</p>
         </article>
-        <p>On peut interprêter $\P(B | A)$ comme la probabilité de l'événement $B$ dès lors qu'on sait que l'évenement $A$ s'est produit. La formule de la probabilité conditionnelle est parfois utilisée sous la forme</p>
+        <p>On peut interpréter $\P(B | A)$ comme la probabilité de l'événement $B$ dès lors qu'on sait que l'évenement $A$ s'est produit. La formule de la probabilité conditionnelle est parfois utilisée sous la forme</p>
         <p>$$\P(A \cap B) = \P(B | A) \P(A)$$</p>
         <p>Ce qui fournit bien souvent un moyen de calculer la probabilité d'une intersection d'événements.</p>
         <article class="exemple">On lance un dé équilibré à 12 faces, c'est-à-dire que l'on prend $\Omega = [\![1,12]\!]$ et la probabilité uniforme. Considérons les événements
@@ -247,7 +248,7 @@ hidden : True
         <h3>Probabilité conditionnelle et indépendance</h3>
         <p>On peut caractériser l'indépendance de deux événements en termes de probabilité conditionelle. On a en effet la proposition suivante.</p>
         <article class="prop">
-            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $A, B \in \mathcal{A}$ deux événements. On suppose que $\P(A) \ne 0$. Alors $A$ et $B$ sont indépendant si et seulement si</p>
+            <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $A, B \in \mathcal{A}$ deux événements. On suppose que $\P(A) \ne 0$. Alors $A$ et $B$ sont indépendants si et seulement si</p>
             <p>$$\P(B | A) = \P(B)$$</p>
         </article>
         <p>On peut interpréter l'égalité $\P(B | A) = \P(B)$ de la façon suivante : connaître $A$ n'apporte aucune nouvelle information sur $B$, donc la probabilité de $B$ est inchangée.</p>
@@ -256,7 +257,7 @@ hidden : True
             <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, et $A, B \in \mathcal{A}$ deux événements de probabilité non nulle. Alors on a</p>
             <p>$$\P(A | B) = \frac{\P(B | A) \cdot \P(A)}{\P(B)}$$</p>
         </article>
-        <p>Voir <a href="td1#examen">Feuille 1</a> pour un exemple d'application de la formule.</p>
+        <p>Voir <a href="td1#examen">feuille 1</a> pour un exemple d'application de la formule.</p>
         <p>La preuve de la formule de Bayes n'est pas compliquée, mais cette égalité est étonnemment profonde dans l'interpretation qu'on peut lui donner, c'est notamment la base des statistiques inférentielles.</p>
         <h3>Formule des probabilites totales</h3>
         <p>Il est parfois intéressant de découper l'univers en plusieurs parties disjointes pour étudier les choses séparément dans chaque cas. Cela nous amène à poser la définition suivante.</p>
