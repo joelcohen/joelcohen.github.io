@@ -301,7 +301,10 @@ hidden : True
                    </div> </li>
                    <li onclick="toggle_visibility('6.5');">
                        🌶 Une partie est remportée par le premier joueur qui atteint 21 points. Exprimer la probabilité qu'Alice gagne le match en fonction de $p$. Évaluer numériquement cette probabilité avec $p = 0,6$.
-                   <div class="sol" id="6.5">Alice remporte la partie si $T_A < T_B$. Il s'agit donc de calculer la probabilité $\P(T_A < T_B)$.</div> </li>
+                   <div class="sol" id="6.5">Lorsqu'Alice atteint le score de 21 points à l'instant $T_A$, Bob possède un score de $T_A-21$ points. Alice a gagné si et seulement si, le score de Bob est strictement plus petit que 21 au moment où elle marque 21 points, c'est-à-dire si et seulement si $T_A-21 < 21 \iff T_A < 42$. Donc la probabilité qu'Alice gagne la partie peut s'exprimer
+                       $$\P(T_A < 42) = \sum_{n = 21}^{41} \P(T_A = n) = \sum_{n = 21}^{41} \binom{n-1}{20} p^{21} q^{n-21}$$
+                        Pour $p = 0.6$, on peut évaluer numériquement que cette probabilité vaut environ $0.903$ (exactement $\frac{8217128048428009517473199457}{9094947017729282379150390625}$).
+                       </div> </li>
                </ol>
                
             </article>
