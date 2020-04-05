@@ -22,71 +22,69 @@ hidden : True
     </div>
     <section>
         <h2>Variable aléatoire</h2>
-        
+
         <h3>Définition</h3>
-        <p>Jusqu'ici nous avons parlé d'ensembles (univers, événements). Il est donc naturel de construire des fonctions entre espaces probabilisables, c'est la notion de variable aléatoire. Cela est notamment utile quand on calcule une quantité qui dépend du résultat d'une expérience aléatoire (vos gains à un jeu de pile de face, somme des valeurs deux dés, etc).</p>
-        
+        <p>Jusqu'ici nous avons parlé d'ensembles (univers, événements). Il est donc naturel de construire des fonctions entre espaces probabilisables, c'est la notion de variable aléatoire. Cela est notamment utile quand on calcule une quantité qui dépend du résultat d'une expérience aléatoire (gains à un jeu de pile de face, somme des valeurs de deux dés, etc).</p>
+
         <article class="definition" id="def_variable"><strong>Variable aléatoire</strong>
-            <p>Soient $(\Omega, \mathcal{A})$ et $(E, \mathcal{E})$ des espaces probabilisables. Une <strong class="new">variable aléatoire</strong> sur $\Omega$ à valeurs dans $E$ est une fonction $X : \Omega \longmapsto E$ telle que pour tout événement $B \in \mathcal{E}$, on a</p>
+            <p>Soient $(\Omega, \mathcal{A})$ et $(E, \mathcal{E})$ des espaces probabilisables. Une <strong class="new">variable aléatoire</strong> sur $\Omega$ à valeurs dans $E$ est une fonction $X : \Omega \to E$ telle que pour tout événement $B \in \mathcal{E}$, on a</p>
             <p>$$X^{-1}(B) = \set{\omega \in \Omega, \ X(\omega) \in B} \in \mathcal{A}$$</p>
-            Pour alléger les notations, l'événement $X^{-1}(B)$ sera noté $\set{X \in B}$. Dans le cas où $B = \set{b}$, on notera même $X^{-1}(\{b\}) = \set{X = b}$.
+            Pour alléger les notations, l'événement $X^{-1}(B)$ sera noté $X \in B$. Dans le cas où $B = \set{b}$, on notera même $X = b$ pour $X^{-1}(\{b\})$.
         </article>
-        
-        <p>Moralement, on peut penser à $X$ comme une variable (à valeur dans l'ensemble $E$) qui est tirée au hasard. C'est ce qui explique le nom de variable aléatoire.</p>
+
+        <p>Moralement, on peut penser à $X$ comme une variable (à valeurs dans l'ensemble $E$) qui est tirée au hasard. C'est ce qui explique le nom de variable aléatoire.</p>
         <article class="culturel">
-            <p>La condition que $X^{-1}(B) \in \mathcal{A}$ pour tout $B \in \mathcal{E}$ signifie que la fonction $X$ est <strong class="new">mesurable</strong>. Dans la plupart des exemples que l'on considère dans ce cours, l'ensemble $\Omega$ est fini, et la tribu $\mathcal{A}$ est l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. Dans ce cas, on peut oublier la condition de mesurabilité, qui sera automatiquement vérifiée. Et dans le cas général, il est assez difficile de fabriquer une fonction $X$ qui ne serait pas mesurable (on doit au mathématicien italien Guiseppe la construction en 1905 du premier exemple d'un <a href="https://fr.wikipedia.org/wiki/Ensemble_de_Vitali" target="new">ensemble non mesurable</a>).</p>
+            <p>La condition que $X^{-1}(B) \in \mathcal{A}$ pour tout $B \in \mathcal{E}$ signifie que la fonction $X$ est <strong class="new">mesurable</strong>. Dans la plupart des exemples que l'on considère dans ce cours, l'ensemble $\Omega$ est fini et la tribu $\mathcal{A}$ est l'ensemble $\mathcal{P}(\Omega)$ de toutes les parties de $\Omega$. Dans ce cas, on peut oublier la condition de mesurabilité, qui sera automatiquement vérifiée. Et dans le cas général, il est assez difficile de fabriquer une fonction $X$ qui ne serait pas mesurable (on doit au mathématicien italien Guiseppe la construction en 1905 du premier exemple d'un <a href="https://fr.wikipedia.org/wiki/Ensemble_de_Vitali" target="new">ensemble non mesurable</a>).</p>
         </article>
-        
-        
+
         <article class="exemple"><strong>Pile je gagne, face tu perds</strong>
-            <p>On joue à pile ou face, le joueur lance une pièce de monnnaie, si elle tombe sur pile, il gagne 1€, sinon il perd 1€. L'univers associé à cette expérience aléatoire est $\Omega = \set{\pile, \face}$. On peut définir sur $\Omega$ la variable aléatoire $X : \Omega \to \set{-1,1}$ qui représente les gains du joueur, en posant</p>
+            <p>On joue à pile ou face, le joueur lance une pièce de monnnaie, si elle tombe sur pile, il gagne 1€, sinon il perd 1€. L'univers associé à cette expérience aléatoire est $\Omega = \set{\pile, \face}$. On peut définir sur $\Omega$ la variable aléatoire $X : \Omega \to \set{-1,1}$ qui représente le gain du joueur, en posant</p>
             $$X(\pile) = 1, \qquad X(\face) = -1$$
         </article>
         <article class="exemple"><strong>Somme de deux dés</strong>
             <p>On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés.</p>
-            
-            <p>Formellement, l'univers de notre expérience est $\Omega = \ints{1,6}^2$ Cela veut dire qu'on considère la fonction $S : \Omega \to \N$ définie pour $\omega = (x,y) \in \Omega$ par</p>
+            <p>Formellement, l'univers de notre expérience est $\Omega = \ints{1,6}^2$. Cela veut dire qu'on considère la fonction $S : \Omega \to \N$ définie pour $\omega = (x,y) \in \Omega$ par</p>
             $$S(\omega) = x + y$$
         </article>
         <article class="exemple"><strong>Le Scrabble</strong>
-            <p>On joue au scrabble, on tire une lettre au sort dans le sachet. On note $V$ la variable aléatoire qui représente la valeur en point de la lettre (en français).</p>
+            <p>On joue au Scrabble, on tire une lettre au sort dans le sachet. On note $V$ la variable aléatoire qui représente la valeur en points de la lettre (en français).</p>
             <p>Formellement, on a donc $\Omega = \set{A, B, C, \ldots, Y, Z, \text{joker}}$, et $V(A) = 1$, $V(B) = 3$, $V(C) = 3$, $V(D) = 2$, …, $V(Z) = 10$ et $V(\text{joker}) = 0$ (voir <a href="https://www.regles-de-jeux.com/regle-du-scrabble/" target="new">ici</a> pour la liste complète).</p>
         </article>
         <article class="exemple"><strong>Temps d'arrêt</strong>
             <p>On lance une pièce jusqu'à ce qu'on fasse pile. On note $N$ la variable aléatoire qui représente le nombre de lancers qu'on a fait (et on pose $N = +\infty$ dans l'éventualité où on ne tombe jamais sur pile).</p>
         </article>
-        
+
         <h3>Variable discrète, réelle</h3>
         <p>Si l'ensemble $E$ des valeurs d'une variable aléatoire est fini ou dénombrable, on dira que la variable est <strong class="new">discrète</strong>. Si $E = \R$ on parlera d'une <strong class="new">variable aléatoire réelle</strong>. Il est même possible de prendre un espace vectoriel (comme par exemple $E = \R^n$) pour ensemble des valeurs de la variable, on parle alors de <strong class="new">vecteur aléatoire</strong>. Pour des raisons de simplicité, on étudiera principalement les variables aléatoires discrètes dans ce cours.</p>
     </section>
     <section>
         <h2>Loi d'une variable aléatoire</h2>
-        
+
         <article class="prop" id="loi_variable"><strong>Loi d'une variable aléatoire</strong>
             <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé, $(E, \mathcal{E})$ un espace probabilisable, et $X : \Omega \to E$ une variable aléatoire sur $\Omega$ à valeurs dans $E$. Alors la fonction</p>
             $$\begin{align*}
-            \P_X : \mathcal{E} & \longmapsto [0,1] \\
+            \P_X : \mathcal{E} & \longrightarrow [0,1] \\
             \qquad B & \longmapsto \P(X \in B)
             \end{align*}$$
             <p>est une probabilité sur l'espace probabilisable $(E, \mathcal{E})$, appelée <strong class="new">loi de la variable</strong> $X$.</p>
         </article>
-        <p>On fera attention au fait que la loi d'une variable aléatoire est une probabilité sur l'ensemble $E$ des valeurs et pas sur l'espace de départ $\Omega$. C'est d'ailleurs un des grands bénéfices pratiques de la notion de variable aléatoire, elle permet parfois de laisser un flou artistique sur l'ensemble $\Omega$ (potentiellement complexe) et se concentrer sur l'ensemble des valeurs.</p>
+        <p>On fera attention au fait que la loi d'une variable aléatoire est une probabilité sur l'ensemble $E$ des valeurs et pas sur l'espace de départ $\Omega$. C'est d'ailleurs un des grands bénéfices pratiques de la notion de variable aléatoire, elle permet parfois de laisser un flou artistique sur l'ensemble $\Omega$ (potentiellement complexe) pour se concentrer sur l'ensemble des valeurs.</p>
         <p>Bien souvent, on commet l'abus de confondre une variable aléatoire avec sa loi (en toute impunité avouons-le) mais il faut bien comprendre que des variables aléatoires distinctes peuvent avoir la même loi. Par exemple, sur $\Omega = \set{\pile, \face}$ on peut définir les variable aléatoires $X, Y : \Omega \to \set{-1,1}$ par</p>
         <p>$$X(\pile) = Y(\face) = 1, \qquad X(\face) = Y(\pile) = -1$$</p>
         <p>Les variables $X$ et $Y$ sont distinctes, et pourtant</p>
         <p><span class="inlineblock">$$\P(X = 1) = \P(Y = 1) = \frac{1}{2}$$</span>
                 <span class="inlineblock">$$\P(X = -1) = \P(Y = -1) = \frac{1}{2}$$</span></p>
         <p>donc $X$ et $Y$ ont la même loi.</p>
-        
+
         <h3>Loi d'une variable aléatoire discrète</h3>
         <p>Dans le cas d'une variable aléatoire discrète, la loi de $X$ est entièrement déterminée par les valeurs $\P(X = e)$ pour $e \in E$. En effet, si $B \in \mathcal{E}$, alors on peut calculer $\P(X \in B)$ avec la formule :</p>
         <p>$$\P(X \in B) = \sum_{b \in B} \P(X = b)$$</p>
-        <p>En particuliers les valeurs $\P(X = e)$ doivent se sommer à $1$ au total :</p>
+        <p>En particulier les valeurs $\P(X = e)$ doivent avoir $1$ pour somme :</p>
         <p>$$\sum_{e \in E} \P(X = e) = \P(\Omega) = 1$$</p>
         <h3>Variable discrète et probabilités totales</h3>
-        <p>Remarquons que si $X : \Omega \to E$ est une variable aléatoire sur l'espace probabilisé $(\Omega, \mathcal{A}, \P)$, alors la famille d'événements $(\set{X = e})_{e \in E}$ forme une <a href="chap1#partition">partition</a> de $\Omega$. Alors d'après la <a href="chap1#probas_totales">formule des probabilités totales</a>, pour tout événement $A \in \mathcal{A}$, on a</p>
+        <p>Remarquons que si $X : \Omega \to E$ est une variable aléatoire sur l'espace probabilisé $(\Omega, \mathcal{A}, \P)$, alors la famille d'événements $(X = e)_{e \in E}$ forme une <a href="chap1#partition">partition</a> de $\Omega$. Alors d'après la <a href="chap1#probas_totales">formule des probabilités totales</a>, pour tout événement $A \in \mathcal{A}$, on a</p>
         <p>$$\P(A) = \sum_{e \in E, \ \P(X = e) \ne 0} \P(A | X = e) \cdot \P(X = e)$$</p>
-        <p>Par exemple, on peut réinterpréter le calcul fait dans <a href="td1#proba_conditionelle">cet exercice</a> en termes de variables aléatoires. On lance un dé dix fois de suite. Si on note $N$ l'indice du premier lancer auquel on obtient un $6$, en prenant $N = 11$ si on ne fait jamais 6 (notons d'ailleurs que si la variable aléatoire $X_i$ désigne le résultat du $i^{\text{ème}}$ lancer de dé, alors $N = \min \set{i \in \ints{1,10}, X_i = 6}$). Alors les événements $(\set{N = n})_{1 \le n \le 11}$ forment une partition de l'univers $\Omega$. Si $B$ désigne l'événement "faire au moins un 6", d'après la formule des probabilités totales, on a</p>
+        <p>Par exemple, on peut réinterpréter le calcul fait dans <a href="td1#proba_conditionelle">cet exercice</a> en termes de variables aléatoires. On lance un dé dix fois de suite. Si on note $N$ l'indice du premier lancer auquel on obtient un $6$, en prenant $N = 11$ si on ne fait jamais 6 (notons d'ailleurs que si la variable aléatoire $X_i$ désigne le résultat du $i$-ième lancer de dé, alors $N = \min \set{i \in \ints{1,10}, X_i = 6}$). Alors les événements $(N = n)_{1 \le n \le 11}$ forment une partition de l'univers $\Omega$. Si $B$ désigne l'événement "faire au moins un 6", d'après la formule des probabilités totales, on a</p>
         <p>$$\P(B) = \sum_{n = 1}^{11} \P(B | N = n) \cdot \P(N = n) = \sum_{n = 1}^{10} \pars{\frac{5}{6}}^{n-1} \cdot \frac{1}{6} = 1 - \pars{\frac{5}{6}}^{10}$$</p>
         <article class="exemple" id="monopoly"><strong>Les déplacements au Monopoly</strong>
             <p>On joue (sans tricher) au Monopoly. On lance deux dés, on note $S$ la variable aléatoire qui représente la somme des valeurs des dés. Au chapitre précédent, on a calculé $\P(S = 7) = \frac{1}{6}$ et $\P(S = 5) = \frac{1}{9}$. Pour dénombrer combien de fois on tombe sur chaque valeur de la somme, on peut représenter toutes les possibilités dans un tableau croisé :
@@ -157,7 +155,7 @@ hidden : True
 			</table>
 			En comptant le nombre de fois que chaque somme apparaît (1 fois pour $S=2$, 2 fois pour $S=3$ et ainsi de suite), on obtient toutes les valeurs des probabilités $\P(S=k)$. On peut d'ailleurs calculer que pour $2 \le k \le 12$, on a</p>
             <p>$$\P(S = k) = \frac{6 - |k-7|}{36}$$</p>
-            <p>On peut mettre résumer dans un tableau</p>
+            <p>On peut résumer dans un tableau</p>
             <table class="dist">
                 <tr>
                     <th>$k$</th>
@@ -196,7 +194,7 @@ hidden : True
             
         </article>
         <article class="exemple"><strong>Score au Scrabble</strong>
-            <p>On reprend l'exemple du jeu de Scrabble et du tirage d'une lettre dans le sachet. On considère la variable aléatoire $V$ qui désigne sa valeur en points. On a $\set{V = 0} = \set{\text{joker}}$, donc $\P(V = 0) = \frac{1}{27}$. On a $\set{V = 1} = \set{A, E, I, L, N, O, R, S, T, U}$, donc $\P(V = 1) = \frac{10}{27}$ … $\P(V = 10) = \frac{5}{27}$</p>
+            <p>On reprend l'exemple du jeu de Scrabble et on considère le tirage d'une lettre dans un sachet où on aurait mis une lettre de chaque type. On considère la variable aléatoire $V$ qui désigne sa valeur en points. On a $(V = 0) = \set{\text{joker}}$, donc $\P(V = 0) = \frac{1}{27}$. On a $(V = 1) = \set{A, E, I, L, N, O, R, S, T, U}$, donc $\P(V = 1) = \frac{10}{27}$ … $\P(V = 10) = \frac{5}{27}$</p>
             <table class="dist">
                 <tr>
                     <th>$k$</th>
@@ -227,45 +225,42 @@ hidden : True
                     <td>$\frac{5}{27}$</td>
                 </tr>
             </table>
-            <p>Ce qui ne semble suivre aucune règle claire, il y a fort à parier que les concepteurs du jeu ont choisi ces scores de manière un peu arbitraire.</p>
+            <p>Pour trouver la loi de $V$ dans un vrai sachet de Scrabble on devrait tenir compte du nombre de lettres de chaque type présentes dans le sachet. On pourrait se demander à quel point le nombre de lettres de chaque type et leur valeur reflètent leur fréquences dans la langue française.</p>
         </article>
         <article class="exemple"><strong>Temps nécessaire pour faire un 6</strong>
         <p>On lance un dé. Tant qu'on ne fait pas 6, on recommence. On considère la variable aléatoire $N$ qui désigne le nombre de lancers qu'on fait (et on considère que $N = +\infty$ si on ne fait jamais $6$). On calcule alors pour tout $k \in \N$,</p>
         $$\P(N = k) = \pars{\frac{5}{6}}^{k-1} \cdot \frac{1}{6}$$
         <p>ce qui décroit géométriquement vers 0 (il est de de plus improbable de faire des longues séquences sans 6), et on a $\P(N = +\infty) = 0$.</p>
         </article>
-        <p>Pour d'autres exemples de calculs de lois, voir <a href="td2#min_max">la feuille d'exercies 2</a>.</p>
-        
-        
+        <p>Pour d'autres exemples de calculs de lois, voir <a href="td2#min_max">la feuille d'exercices 2</a>.</p>
+
         <h3>Loi d'une variable réelle</h3>
         <p>Dans le cas d'une variable aléatoire réelle $X$, la loi de $X$ peut être caractérisée par la fonction $F_X : x \mapsto \P(X \le x)$, qu'on appelle la <strong class="new">fonction de répartition</strong> de $X$.</p>
-     <article class="definition"><strong>Fonction de répartition, densité</strong>
+        <article class="definition"><strong>Fonction de répartition, densité</strong>
             <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé et $X : \Omega \to \R$ une variable aléatoire réelle. On appelle <strong class="new">fonction de répartition</strong> de $X$, la fonction réelle $F_X : \R \to [0,1]$ définie pour $x \in \R$ par</p>
             $$F_X(x) = \P(X \le x)$$
             <p>Si la fonction $F_X$ est $\mathcal{C}^1$, on dit que la variable $X$ admet une densité. On appelle alors <strong>densité de probabilité</strong> la fonction $p_x : \R \to \R$ dérivée de $F_X$ :</p>
             $$p_X = F_X'$$
-            
         </article>
-        
         <p>Si $X$ admet une densité $p_X$, alors on a</p>
         <p>$$\P(a \le X \le b) = \int_a^b p_X(u) \, du$$</p>
     </section>
     <section>
         <h2>Indépendance de variables aléatoires</h2>
-        <p>On dira que deux variables aléatoires $X$ et $Y$ sont indépendantes si les événements $\set{X \in B}$ $\set{Y \in C}$ sont <a href="chap1#independant">indépdendants</a> pour tous événements $B$ et $C$, ce qui revient à demander que la loi jointe de la variable $(X,Y)$ soit le produit des lois de $X$ et $Y$.</p>
+        <p>On dira que deux variables aléatoires $X$ et $Y$ sont indépendantes si les événements $(X \in B)$ et $(Y \in C)$ sont <a href="chap1#independant">indépendants</a> pour tous événements $B$ et $C$, ce qui revient à demander que la loi jointe de la variable $(X,Y)$ soit le produit des lois de $X$ et $Y$.</p>
         <article class="definition" id="independance_variables"><strong>Indépendance de variables aléatoires</strong>
             <p>Soit $(\Omega, \mathcal{A}, \P)$ un espace probabilisé et $(X_i)_{i \in I}$ une famille de variables aléatoires toute définies sur $\Omega$. On dira que les $X_i$ sont <strong class="new">indépendantes</strong> si pour toute partie finie $J \subset I$ on a</p>
             <p>$$\P \pars{\forall j \in J, X_j \in A_j} = \prod_{j \in J} \P(A_j)$$</p>
             <p>En particulier, deux variables aléatoires discrètes $X : \Omega \to E_1$ et $Y : \Omega \to E_2$ sont indépendantes si pour tout $(x,y) \in E_1 \times E_2$, on a</p>
-            <p>$$\P(X = x, Y = y) = \P(X = x) \times \P(Y = y)$$</p>
+            <p>$$\P(X = x, Y = y) = \P(X = x) \cdot \P(Y = y)$$</p>
         </article>
-        <p>Remarquons que l'indépendance des variables aléatoire revient à demander l'indépendance mutuelle des événements $(\set{X_i = x_i})_{i \in I}$ pour toutes valeurs $(x_i) \in \prod_{i \in I} E_i$ (et pas seulement l'indépendance 2 à 2).</p>
+        <p>Remarquons que l'indépendance des variables aléatoires revient à demander l'indépendance mutuelle des événements $(X_i = x_i)_{i \in I}$ pour toutes valeurs $(x_i) \in \prod_{i \in I} E_i$ (et pas seulement l'indépendance 2 à 2).</p>
         <p>L'indépendance des variables aléatoires correspond à la notion intuitive que la valeur de l'une des variables ne dépend pas des autres.</p>
         <article class="exemple" id="lancers_successifs"><strong>Lancers successifs de dés</strong>
-            <p>On lance un dés deux fois de suite. Soit $X_1$ la valeur obtenue au premier lancer, et $X_2$ la valeur obtenue second lancer. On comprend intuitivement que $X_1$ et $X_2$ sont indépendants : la valeur du premier lancer n'a a priori aucune influence sur celle du second lancer. Mais pour se familiariser avec la définition, donnons la preuve formelle. Alors pour $i \in \ints{1,6}$ fixé, on a</p>
-            <p>$$\set{X_1 = i} = \set{(i, y), y \in \ints{1,6}}$$</p>
+            <p>On lance un dé deux fois de suite. Soit $X_1$ la valeur obtenue au premier lancer, et $X_2$ la valeur obtenue second lancer. On comprend intuitivement que $X_1$ et $X_2$ sont indépendants : la valeur du premier lancer n'a a priori aucune influence sur celle du second lancer. Mais pour se familiariser avec la définition, donnons la preuve formelle. Alors pour $i \in \ints{1,6}$ fixé, on a</p>
+            <p>$$(X_1 = i) = \set{(i, y), y \in \ints{1,6}}$$</p>
             <p>et de même, pour $j \in \ints{1,6}$ fixé, on a</p>
-            <p>$$\set{X_1 = j} = \set{(x, j), x \in \ints{1,6}}$$</p>
+            <p>$$(X_1 = j) = \set{(x, j), x \in \ints{1,6}}$$</p>
             <p>Donc pour tous $i, j \in \ints{1,6}$, on a</p>
             <p>$$\P(X_1 = i) = \P(X_2 = j) = \frac{6}{36} = \frac{1}{6}$$</p>
             <p>et par ailleurs</p>
@@ -273,55 +268,51 @@ hidden : True
                 \begin{align*}
                     \P(X_1 = i, X_2 = j) &= \P(\set{(i,j)})\\
                     &= \frac{1}{36}\\
-                    &= \P(X_1 = i) \times \P(X_2 = j)
+                    &= \P(X_1 = i) \cdot \P(X_2 = j)
                 \end{align*}
                 $$</p>
-                donc les variables $X_1$ et $X_2$ sont indépendantes. Plus généralement, si on lance un dé successivement $n$ fois et qu'on note $X_i$ le résultat du $i^{\text{ème}}$ lancer, alors les variables $(X_{i})_{1 \le i \le n}$ sont idépendantes.
+                donc les variables $X_1$ et $X_2$ sont indépendantes. Plus généralement, si on lance un dé successivement $n$ fois et qu'on note $X_i$ le résultat du $i$-ième lancer, alors les variables $(X_{i})_{1 \le i \le n}$ sont indépendantes.
         </article>
     </section>
     <section>
-        <h2>Loi usuelles</h2>
-        <p>Dans cette partie, on établit une liste une série non exhaustive de loi de variables aléatoires discrètes que l'on rencontre fréquemment.</p>
-        
+        <h2>Lois usuelles</h2>
+        <p>Dans cette partie, on dresse une liste non exhaustive de lois de variables aléatoires discrètes que l'on rencontre fréquemment.</p>
 
-        
         <h3>Loi uniforme</h3>
         <p>Pour $X$ une variable aléatoire à valeurs dans un ensemble fini $E$, on dit que la variable aléatoire $X$ suit une <strong class="new">loi uniforme sur $E$</strong> si toutes les valeurs sont équiprobables. On a alors pour tout $x \in E$ la probabilité $\P(X = x) = \frac{1}{|E|}$.</p>
-        <p>En particulier, si $X$ suit loi uniforme sur $\ints{a,b}$ on a $\P(X = k) = \frac{1}{b-a+1}$ pour tout $a \le k \le b$.</p>
+        <p>En particulier si $X$ suit la loi uniforme sur $\ints{a,b}$ on a $\P(X = k) = \frac{1}{b-a+1}$ pour tout $a \le k \le b$.</p>
         <article class="exemple">
-            On lance un dé cubique à 6 face. On note $D$ la variable aléatoire qui représente le résultat du lancer. Alors la variable $D$ suit une loi uniforme sur $\ints{1,6}$.
+            On lance un dé cubique homogène à 6 faces numérotées de 1 à 6. On note $D$ la variable aléatoire qui représente le résultat du lancer. Alors la variable $D$ suit une loi uniforme sur $\ints{1,6}$.
         </article>
-        
-        
-        <h3>Loi de Bernouilli</h3>
-        <p>On dit que la variable aléatoire $X$ suit une <strong class="new">loi de Bernouilli</strong> si la variable est à valeurs dans $\set{0,1}$. La valeur $p = \P(X = 1)$ est appelée le <strong class="new">paramètre</strong> de la loi (ou on dit encore que $X$ suit une loi de Bernouilli de paramètre $p$). On a $\P(X = 0) = 1-p$.</p>
+
+        <h3>Loi de Bernoulli</h3>
+        <p>On dit que la variable aléatoire $X$ suit une <strong class="new">loi de Bernoulli</strong> si la variable est à valeurs dans $\set{0,1}$. La valeur $p = \P(X = 1)$ est appelée le <strong class="new">paramètre</strong> de la loi (ou on dit encore que $X$ suit une loi de Bernoulli de paramètre $p$). On a $\P(X = 0) = 1-p$.</p>
         <p>Si $X$ est une variable aléatoire à valeurs dans $\set{-1,1}$, on dira qu'elle suit une <strong class="new">loi de Rademacher</strong> de paramètre $p = \P(X = 1)$. On a alors $\P(X = -1) = 1 -p$.</p>   
-        <p>Les deux loi sont réliées. En effet on remarque que $X$ suit une loi de Bernouilli de paramètre $p$ si et seulement si $2X-1$ suit une loi de Rademacher de paramètre $p$.</p>
-        <article class="exemple">On tire une carte au hasard dans un paquet de 52 cartes, on note $X$ la variable aléatoire qui vaut $1$ si la carte tirée est un roi, et $0$ sinon. Alors $X$ suit une loi de Bernouilli de paramètre $\P(X=1) = \P(\text{"tirer un roi"})= \frac{4}{52} = \frac{1}{13}$.</article>
-        <article class="exemple">Une urne contient 99 boules noires, et une boule blanche. On tire une boule au hasard dans l'urne et on note $B$ la variable aléatoire qui vaut $1$ si la boule est blanche, et $0$ sinon. Alors la variable $B$ suit une loi de Bernouilli de paramètre $\frac{1}{100}$.</article>
-        <article class="exemple">On joue à deux à un jeu de pile ou face avec pièce de monnaie équilibrée. Chacun mise 1€, et si la pièce tombe sur pile, je gagne 1€, sinon je perds 1€. Alors la variable $G$ qui représente mon gain (négatif si je perds) suit une loi de Rademacher de paramètre $\frac{1}{2}$.</article>
-        
+        <p>Les deux lois sont reliées. En effet on remarque que $X$ suit une loi de Bernoulli de paramètre $p$ si et seulement si $2X-1$ suit une loi de Rademacher de paramètre $p$.</p>
+        <article class="exemple">On tire une carte au hasard dans un paquet de 52 cartes, on note $X$ la variable aléatoire qui vaut $1$ si la carte tirée est un roi, et $0$ sinon. Alors $X$ suit une loi de Bernoulli de paramètre $\P(X=1) = \P(\text{"tirer un roi"})= \frac{4}{52} = \frac{1}{13}$.</article>
+        <article class="exemple">Une urne contient 99 boules noires et une boule blanche. On tire une boule au hasard dans l'urne et on note $B$ la variable aléatoire qui vaut $1$ si la boule est blanche, et $0$ sinon. Alors la variable $B$ suit une loi de Bernoulli de paramètre $\frac{1}{100}$.</article>
+        <article class="exemple">On joue à deux à un jeu de pile ou face avec une pièce de monnaie équilibrée. Chacun mise 1€, et si la pièce tombe sur pile, je remporte les mises, sinon l'autre joueur les remporte. Alors la variable $G$ qui représente mon gain (négatif si je perds) suit une loi de Rademacher de paramètre $\frac{1}{2}$.</article>
+ 
         <h3>Loi binomiale</h3>
-        <p>C'est la loi que suit une somme de variables de Bernouilli indépendantes. Précisément, si les $(X_i)_{1 \le i \le n}$ sont $n$ variables de Bernouilli indépendantes de même paramètre $p \in [0,1]$, on dira que la variable</p>
+        <p>C'est la loi que suit une somme de variables de Bernoulli indépendantes. Précisément, si $(X_i)_{1 \le i \le n}$ est une famille de $n$ variables de Bernoulli indépendantes de même paramètre $p \in [0,1]$, on dira que la variable</p>
         $$Y = \sum_{i = 1}^n X_i$$
         <p>suit une <strong class="new">loi binomiale</strong> de paramètres $(n,p)$. La variable $Y$ prend ses valeurs dans $\ints{0,n}$, et pour tout $k \in \ints{0,n}$, on a</p>
         $$\P(Y = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
-        <p>où le nombre $\binom{n}{k}$, est appelé <strong class="new">coefficient binomial</strong> "k parmi n", est donné par la formule</p>
+        <p>où le nombre $\binom{n}{k}$, appelé <strong class="new">coefficient binomial</strong> "k parmi n", est donné par la formule</p>
         $$\binom{n}{k} = \frac{n (n-1) \cdots (n-k+1)}{k (k-1) \cdots 1} = \frac{\overbrace{n (n-1) \cdots (n-k+1) \color{red}{(n-k) \cdots 1}}^{n!} }{k! \cdot \underbrace{\color{red}{(n-k) \cdots 1} }_{(n-k)!}} = \frac{n!}{k! \cdot (n-k)!}$$
-        <p>La loi binomiale apparaît comme le nombre de succès lorsqu’on répète une même expérience aléatoire dont la probabilité de succès est $p$.</p>
+        <p>La loi binomiale apparaît pour le nombre de succès lorsqu’on répète une même expérience aléatoire dont la probabilité de succès est $p$.</p>
         <article class="exemple">
-            On lance une pièce équilibrée $10$ fois et on note $N$ la variable aléatoire qui représente le nombre de fois que l'on est tombé sur face. Alors $F$ suit une loi binomiale de paramètres $(10, 1/2)$ : en effet, si on note $X_i$ la variable aléatoire qui vaut $1$ si on fait face au $i^{\text{ème}}$ lancer et $0$ sinon, alors les variables $(X_i)_{1 \le i \le 10}$ suivent des lois de Bernouilli de paramètre $\frac{1}{2}$, sont indépendantes, et on a
+            On lance une pièce équilibrée $10$ fois et on note $N$ la variable aléatoire qui représente le nombre de lancers tombés sur face. Alors $F$ suit une loi binomiale de paramètres $(10, 1/2)$ : en effet, si on note $X_i$ la variable aléatoire qui vaut $1$ si on fait face au $i$-ième lancer et $0$ sinon, alors chaque $X_i$ suit une lois de Bernoulli de paramètre $\frac{1}{2}$, les $X_i$ sont indépendantes, et on a
             $$F = \sum_{i = 1}^{10} X_i$$
             Si $k \le n$, la probabilité d'avoir obtenu $k$ fois face est donnée par
             $$\P(F = k) = \binom{10}{k} \left(\frac{1}{2}\right)^k \cdot \left(1-\frac{1}{2} \right)^{10-k} = \frac{1}{2^{10}}\binom{10}{k}$$
-            Car il faut faire $k$ lancers avec face, $10-k$ lancer avec pile, et il y a $\binom{10}{k}$ façon de choisir l'ordre des piles et faces obtenus.
+            car il faut faire $k$ lancers avec face, $10-k$ lancers avec pile, et il y a $\binom{10}{k}$ façons de choisir les $k$ lancers parmi $10$ qui ont donné face.
         </article>
-        
-        
+
         <h3>Loi géométrique</h3>
         <p>On dit que la variable $X$ suit une <strong class="new">loi géométrique</strong> de paramètre $p \in [0,1]$ si $X$ est à valeurs dans $\N^*$ et si pour tout $n \in \N^*$, on a</p>
         <p>$$\P(X = n) = p (1-p)^{n-1}$$</p>
-        <p>La loi géométrique apparaît comme le temps nécessaire pour obtenir un premier succès lorsqu’on répète une même expérience aléatoire dont la probabilité de succès est $p$. Formellement, si $(X_n)_{n \in \N}$ est une suite de variables aléatoires de Bernouilli de paramètre $p$ et indépendantes, alors la variable aléatoire</p>
+        <p>La loi géométrique apparaît comme le temps nécessaire pour obtenir un premier succès lorsqu’on répète une même expérience aléatoire dont la probabilité de succès est $p$. Formellement, si $(X_n)_{n \in \N}$ est une suite de variables aléatoires de Bernoulli de paramètre $p$ et indépendantes, alors la variable aléatoire</p>
         <p>$$N = \min \set{n \in \N, X_n = 1}$$</p>
         <p>suit une loi géométrique de paramètre $p$. On remarque que la somme des probabilités $\P(X = n)$ pour $n$ variant dans $\N$ fait bien à $1$ au total :</p>
         <p>$$
@@ -332,14 +323,13 @@ hidden : True
              &= 1
             \end{align*}$$</p>
         <article class="exemple">
-            On lance le dé de manière répétée jusqu'à ce qu'on fasse un $6$. Si on fait $6$ on s'arrête de lancer le dé, sinon on continue. On note $N$ la variable aléatoire qui représente le nombre de lancer qu'on a fait au total. On vérifie que pour $n \in \N$, on a
+            On lance un dé de manière répétée jusqu'à ce qu'on fasse un $6$. Si on fait $6$ on s'arrête de lancer le dé, sinon on continue. On note $N$ la variable aléatoire qui représente le nombre de lancers qu'il a fallu. On vérifie que pour $n \in \N$, on a
             $$\P(N = n) = \pars{\frac{5}{6}}^{n-1} \frac{1}{6}$$
-            car si on doit faire $n$ lancer pour atteindre 6, c'est qu'on a fait un 6 sur le dernier lancer (probabilité $1/6$) et autre chose qu'un 6 sur les $n-1$ premiers lancers (probabilité $5/6$ pour chacun). Donc la variable $N$ suit une loi géométrique de paramètre $\frac{1}{6}$.
+            car si on doit faire $n$ lancers pour atteindre 6, c'est qu'on a fait un 6 sur le dernier lancer (probabilité $1/6$) et autre chose qu'un 6 sur les $n-1$ premiers lancers (probabilité $5/6$ pour chacun). Donc la variable $N$ suit une loi géométrique de paramètre $\frac{1}{6}$.
         </article>
-        
-        
+
         <h3>Loi de Poisson</h3>
-        <p>On dit qu'une variable aléatoire suit une loi de Poisson de paramètre $\lambda > 0$, si $X$ est à valeurs dans $\N$ et pour tout $k \in \N$ on a</p>
+        <p>On dit qu'une variable aléatoire suit une loi de Poisson de paramètre $\lambda > 0$ si $X$ est à valeurs dans $\N$ et pour tout $k \in \N$ on a</p>
         <p>$$\P(X = k) = e^{-\lambda} \frac{\lambda^k}{k!}$$</p>
         <p>On vérifie que la somme des probabilités $\P(X = k)$ vaut bien $1$ au total :</p>
         <p>$$
@@ -350,15 +340,15 @@ hidden : True
             \end{align*}$$
         </p>
         <p>Une utilité de la loi de Poisson est qu'elle permet d'approximer la loi binomiale. Précisément, si $n$ est très grand et $p$ petit, la loi binomiale de paramètre $(n, p)$ est proche de la loi de Poisson de paramètre $\lambda = np$. En conséquence, la loi de Poisson permet notamment de modéliser le nombre d'occurence d'un phénomènes rare ($p$ petit) dans une grande population ($n$ grand).</p>
-        <p>Initialement cantonnée à modéliser des événements rares comme les arrivées de bateaux dans un port ou les accidents dus aux coups de pied de cheval dans les armées (source <a href="https://fr.wikipedia.org/wiki/Loi_de_Poisson#Domaines_d'application" target="new">Wikipédia</a>). Son champs d'applications s'est considérablement élargi depuis, et on l'utilise désormais pour modéliser de nombreux phénomènes comme la charge d'un réseau de télécommunication (nombre de personnes connectées à un moment donnée), la durée de vie de composant électroniques, le temps de vie d'une particule radioactive, le taux de mutations aléatoires, la demande de passagers pour un avion, la probabilité de défaut d'un crédit (probabilité qu'une personne ne puisse pas rembourser son crédit), etc.</p>
+        <p>Initialement cantonnée à modéliser des événements rares comme les arrivées de bateaux dans un port ou les accidents dus aux coups de pied de cheval dans les armées (source <a href="https://fr.wikipedia.org/wiki/Loi_de_Poisson#Domaines_d'application" target="new">Wikipédia</a>), son champ d'applications s'est considérablement élargi depuis, et on l'utilise désormais pour modéliser de nombreux phénomènes comme la charge d'un réseau de télécommunication (nombre de personnes connectées à un moment donnée), la durée de vie de composant électroniques, le temps de vie d'une particule radioactive, le taux de mutations aléatoires, la demande de passagers pour un avion, la probabilité de défaut d'un crédit (probabilité qu'une personne ne puisse pas rembourser son crédit), etc.</p>
     </section>
     
     <section>
         <h2>Moments d'une variable aléatoire</h2>
         <h3>Espérance</h3>
-        <article class="definition" id="esperance">Soit $X : \Omega \to E$ une variable aléatoire discrète dont les valeurs sont des nombres (c'est-à-dire que l'ensemble $E$ des valeurs de $X$ est un sous-ensemble discret de $\R$). Alors l'<strong class="new">éspérance</strong> de la variable $X$ est la quantité
+        <article class="definition" id="esperance">Soit $X : \Omega \to E$ une variable aléatoire discrète dont les valeurs sont des nombres (c'est-à-dire que l'ensemble $E$ des valeurs de $X$ est un sous-ensemble discret de $\R$). Alors l'<strong class="new">espérance</strong> de la variable $X$ est la quantité
         $$\E(X) = \sum_{x \in E} x \cdot \P(X = x)$$
-        <p>Si l'ensemble $E$, cette somme est potentiellement infinie. Si la somme est finie, ou infinie mais convergente, on dit que $X$ <strong class="new">admet une espérance</strong>.</p>
+        <p>Si l'ensemble $E$ est infini, cette somme comprend potentiellement une infinité de termes. Si la somme comprend un nombre fini de termes non nuls, ou bien en comprend une infinité mais converge, on dit que $X$ <strong class="new">admet une espérance</strong>.</p>
         </article>
         L'espérance représente la valeur moyenne prise par une variable aléatoire. Une variable aléatoire d'espérance nulle est dite <strong class="new">centrée</strong>. Étant donnée une variable aléatoire $X$ admettant une espérance, on peut se ramener à une variable centrée en considérant la variable décalée $X - \E(X)$.
         <article class="exemple" id="esperance_de">
@@ -377,10 +367,10 @@ hidden : True
             <p onclick="toggle_visibility('espdespoly');">Pouvez-vous de la même manière calculer l'espérance de la valeur prise par un dé à 4 faces ? 12 faces ? À 20 faces ?</p>
             <span id="espdespoly" class="sol"><p>On calcule que l'espérance de la valeur obtenue est de $\frac{5}{2} = 2,5$ pour un dé à $4$ faces, $\frac{13}{2} = 6,5$ pour un dé à $12$ faces, et $\frac{21}{2} = 6,5$ pour un dé à $20$ faces.</p></span>
         </article>
-        
+
         <p>Il peut être utile de remarquer que l'espérance est linéaire</p>
-        $$\E(\lambda \cdot X + \mu \cdot Y) = \lambda \E(X) + \mu \E(Y)$$
-        Ainsi l'espérance d'une somme de variables aléatoires se calculer facilement en calculant l'espérance de chacune des variables.
+        $$\E(\lambda \cdot X + \mu \cdot Y) = \lambda \cdot \E(X) + \mu \cdot \E(Y)$$
+        Ainsi l'espérance d'une somme de variables aléatoires se calcule facilement en calculant l'espérance de chacune des variables.
         <article class="exemple"> <strong>Retour sur le monopoly</strong>
             <p>On lance deux dés à 6 faces, et on note $S$ la variable aléatoire qui représente la somme des valeurs de deux dés. On peut calculer l'espérance de $S$ de deux manières : soit en utilisant la loi de la variable aléatoire (qui a été calculée <a href="#monopoly">précédemment</a>), soit en utilisant la linéarité de l'espérance. Commençons par la première méthode. La loi de la variable $S$  est donnée dans le tableau suivant.</p>
             <table class="dist">
@@ -427,7 +417,7 @@ hidden : True
             où le calcul de l'espérance de $D_1$ et $D_2$ a été fait <a href="#esperance_de">précédemment</a>.
         </article>
         <h3>Variance et écart type</h3>
-        <p>La variance d'une variable aléatoire est une mesure de l'éparpillement des valeurs de la variable autour de la moyenne. Précisément, c'est la moyenne des carrés de ces écarts à la moyenne.</p>
+        <p>La variance d'une variable aléatoire est une mesure de l'éparpillement des valeurs de la variable autour de la moyenne. Précisément, c'est la moyenne des carrés de ses écarts à la moyenne.</p>
         <article class="definition">
             Soit $X : \Omega \to \E$ une variable aléatoire discrète à valeurs numériques. On suppose que $X$ admet une espérance. Alors la <strong class="new">variance</strong> de $X$ est définie par
             $$\V(X) = \E\left((X-\E(X))^2\right) = \sum_{x \in E} (x-\E(x))^2 \cdot \P(X = x)$$
@@ -455,4 +445,4 @@ hidden : True
     <nav>
         <a href="chap1"><< Chapitre précédent : Événements</a>
     </nav>
-</div>   
+</div>
