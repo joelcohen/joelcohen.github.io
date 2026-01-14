@@ -26,5 +26,10 @@ github_username:  joelcohen
 
 # Build settings
 markdown: kramdown
-highlighter : rouge
+kramdown:
+  input: GFM
+highlighter: rouge
 theme: minima
+
+kramdown:
+  input: GFM

@@ -4,20 +4,24 @@ title: Enseignement
 permalink: /ens/
 ---
 
+
+
 # Année 2025 - 2026
 
-* [DU3R - projet math](../ens/du3R/projet/)
-* [Soutien Math S2](../ens/mpi/)
-* [Cryptographie](../ens/L3/crypto/)
+## Semestre 2
 
+<!-- * [DU3R - projet math](../ens/DU3R/) -->
+* [Cryptographie](../ens/L3/crypto/)
+* [Soutien Math S2](../ens/mpi/soutien/S2.html)
 
 # Année 2019 - 2020
+
 
 ## Semestre 2
 
 * [Remédiation S2](../ens/mpi/remediation/)
 * [Math 103 : Algèbre linéaire](../ens/mpi/m103/)
-* [Cryptographie](../ens/L3/crypto/)
+* [Cryptographie](../ens/L3/crypto/archive/)
 
 ## Semestre 1
 
@@ -35,7 +39,7 @@ permalink: /ens/
 * [Remédiation S2](../ens/mpi/remediation/)
 * [Math 103 : Algèbre linéaire](../ens/mpi/m103/2019/)
 * [Math 104 : Analyse](../ens/mpi/m104/)
-* [Cryptographie](../ens/L3/crypto/)
+* [Cryptographie](../ens/L3/crypto/archive/)
 
 ## Semestre 1
 
@@ -81,12 +85,12 @@ permalink: /ens/
 
 ### Cryptographie
 
-* [Message 1](../ens/L3/crypto/message1.txt)
-* [Message 2](../ens/L3/crypto/message2.txt)
-* [Message 3](../ens/L3/crypto/message3.txt)
-* [Message 4](../ens/L3/crypto/message4.txt)
-* [Message 5](../ens/L3/crypto/message5.txt)
-* [Message 6](../ens/L3/crypto/message6.txt)
+* [Message 1](../ens/L3/crypto/archive/message1.txt)
+* [Message 2](../ens/L3/crypto/archive/message2.txt)
+* [Message 3](../ens/L3/crypto/archive/message3.txt)
+* [Message 4](../ens/L3/crypto/archive/message4.txt)
+* [Message 5](../ens/L3/crypto/archive/message5.txt)
+* [Message 6](../ens/L3/crypto/archive/message6.txt)
 
 ### Sciences en tête
 
