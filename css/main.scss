@@ -90,6 +90,17 @@ h6 {
 	font-size: $ratio * 1em;;
 }
 
+// left aligned images
+.img-left {
+    width : 15em;
+    max-width: 90%;
+    float:left;
+    margin-right: 1em;
+    margin-bottom : .5em;
+    margin-top : .5em;
+    border-radius : .5em;
+}
+
 .exobox {
     //border : 1px solid #ccc;
     //font-family : $serif;
