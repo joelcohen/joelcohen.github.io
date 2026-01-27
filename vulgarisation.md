@@ -10,7 +10,7 @@ Avec quelques amis totalement transcendants (dont Emilie Delnieppe, [Annamaria I
 
 ## Imaginary France
 
-Avec [Samuel Lelièvre](https://www.math.u-psud.fr/~lelievre/) et [Alba Málaga](https://albamath.com), je contribue à la branche française d'[Imaginary](https://imaginary.org). Vous pouvez notamment nous retrouver chaque année au [salon culture & jeux mathématiques](https://www.cijm.org/salon).
+Avec [Samuel Lelièvre](https://lelievre.perso.math.cnrs.fr/) et [Alba Málaga](https://albamath.com), je contribue à la branche française d'[Imaginary](https://imaginary.org). Vous pouvez notamment nous retrouver chaque année au [salon culture & jeux mathématiques](https://www.cijm.org/salon).
 
 ## Polymath
 
