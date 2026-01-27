@@ -18,6 +18,6 @@ Venez redécouvrir les mathématiques autrement à l'Institut de Mathématiques 
 
 # Salon Culture & Jeux Mathématiques
 
-<img src="img/scjm26.jpg" alt="Salon Culture & Jeux Mathématiques" class="img-left" id="SCJM"/>
+<img src="../img/scjm26.jpg" alt="Salon Culture & Jeux Mathématiques" class="img-left" id="SCJM"/>
 
 Rendez-vous incontournable chaque année, le [Salon Culture & Jeux Mathématiques](https://salon-math.fr/) se déroulera sur 21 au 24 mai 2026 pour sa 27e édition, sur la place Saint-Sulpice à Paris ! En accès libre et gratuit, venez déambuler au fil des stands en plein air, sur des thèmes aussi divers et variés que les jeux de sociétés, puzzles et casses têtes, l'art, en passant par la cuisine ou les codes secrets. Il y a pour tous les âges (des plus jeunes enfants aux adultes qui n'ont pas voulu grandir!), et tous les publics.
