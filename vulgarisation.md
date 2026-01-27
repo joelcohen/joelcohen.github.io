@@ -14,6 +14,8 @@ Avec [Samuel Lelièvre](https://www.math.u-psud.fr/~lelievre/) et [Alba Málaga]
 
 # Polymath
 
+<img src="../img/polymath_logo.jpg" alt="Salon Culture & Jeux Mathématiques" class="img-left" id="SCJM"/>
+
 Venez redécouvrir les mathématiques autrement à l'Institut de Mathématiques d'Orsay à travers ce cycle d'événements ! Prochain rendez-vous le 19 février 2026 avec la présentation du [grand Almanach des mathématiques](https://www.fondation-hadamard.fr/fr/articles/2026/01/20/poly-math-l-le-grand-almanach-math%C3%A9matique/) par Roger Mansuy.
 
 # Salon Culture & Jeux Mathématiques
