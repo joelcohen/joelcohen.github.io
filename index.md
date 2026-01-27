@@ -3,7 +3,7 @@ layout: page
 ---
 
 
-<img src="img/imo_small.jpg" alt="L'Institut de Mathématiques d'Orsay, vu en automne" style="width : 15em; max-width: 90%; float:left; margin-right: 1em; margin-bottom : .5em; margin-top : .5em; border-radius : .5em;"/>
+<img src="img/imo_small.jpg" alt="L'Institut de Mathématiques d'Orsay, vu en automne" class="img-left"/>
 
 Je suis enseignant de mathématiques au [département de Mathématiques d'Orsay](https://www.math.u-psud.fr). Dans la section [enseignement](/ens/) de ce site, j'ai entreposé en vrac divers supports d'enseignement. Pour me contacter, vous pouvez m'écrire à prenom.nom@universite-paris-saclay.fr
 
