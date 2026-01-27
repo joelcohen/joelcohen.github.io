@@ -4,21 +4,21 @@ title: Diffusion
 permalink: /diffusion/
 ---
 
-# Association Pi Day
+## Association Pi Day
 
 Avec quelques amis totalement transcendants (dont Emilie Delnieppe, [Annamaria Iezzi](http://www.aiezzi.it) et [Guillaume Geoffroy](https://geoffroy.re)), nous avons fondé l'[Association Pi Day](https://www.piday.fr), pour la diffusion des mathématiques auprès du grand public, avec l'ambition de mêler arts et sciences, éducation et divertissement (et aussi l'envie de manger des tartes). Notre irrationnelle entreprise mathématico-culinaire a connu un succès que je n'aurais jamais imaginé, et qui m'a fait découvrir entre autres le monde du spectacle et de la comédie musicale, les coulisses de grands théâtres, ou encore comment [tricher aux cartes](https://vimeo.com/167115341). Pour son action, l'assocation a reçu en 2016 du [prix d'Alembert](https://smf.emath.fr/VieSociete/PrixAlembert/Laureats.html) de la [Société Mathématique de France](http://smf.emath.fr).
 
-# Imaginary France
+## Imaginary France
 
 Avec [Samuel Lelièvre](https://www.math.u-psud.fr/~lelievre/) et [Alba Málaga](https://albamath.com), je contribue à la branche française d'[Imaginary](https://imaginary.org). Vous pouvez notamment nous retrouver chaque année au [salon culture & jeux mathématiques](https://www.cijm.org/salon).
 
-# Polymath
+## Polymath
 
 <img src="../img/polymath_logo.jpg" alt="Salon Culture & Jeux Mathématiques" class="img-left" id="SCJM"/>
 
-Venez redécouvrir les mathématiques autrement à l'Institut de Mathématiques d'Orsay à travers ce cycle d'événements ! Prochain rendez-vous le 19 février 2026 avec la présentation du [grand Almanach des mathématiques](https://www.fondation-hadamard.fr/fr/articles/2026/01/20/poly-math-l-le-grand-almanach-math%C3%A9matique/) par Roger Mansuy.
+Venez redécouvrir les mathématiques autrement à l'Institut de Mathématiques d'Orsay à travers ce cycle d'événements ! Prochain rendez-vous le 19 février 2026 avec la présentation du [Grand Almanach Mathématique](https://www.fondation-hadamard.fr/fr/articles/2026/01/20/poly-math-l-le-grand-almanach-math%C3%A9matique/) par Roger Mansuy.
 
-# Salon Culture & Jeux Mathématiques
+## Salon Culture & Jeux Mathématiques
 
 <img src="../img/scjm26.jpg" alt="Salon Culture & Jeux Mathématiques" class="img-left" id="SCJM"/>
 
