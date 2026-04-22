@@ -11,6 +11,7 @@ permalink: /ens/
 ## Semestre 2
 
 <!-- * [DU3R - projet math](../ens/DU3R/) -->
+* [Algèbre linéaire : Daily challenge](../ens/mpi/linalg/)
 * [Cryptographie](../ens/L3/crypto/)
 * [Soutien Math S2](../ens/mpi/soutien/S2.html)
 
