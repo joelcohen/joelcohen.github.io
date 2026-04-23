@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Algèbre linéaire
+title: Daily Challenge
 permalink: /ens/mpi/linalg/
 hidden : True
 ---
