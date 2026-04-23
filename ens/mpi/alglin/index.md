@@ -18,9 +18,18 @@ hidden : True
 
 
 # Algèbre linéaire
-## Daily challenge
 
-Chaque jour un petit exercice court, pour vous entrainer, pour reviser ou approfondir votre maîtrise.
+<article style="display:block; clear: both;">
+	<h2>Daily challenge</h2>
+	<div id="name">
+		<img src="/img/add2homescreen.png" alt="Ajoute cette page à l'écran d'acceuil de ton téléphone !" style="float:left; max-height:200px">
+		<p>A l'approche de l'examen, je vous propose le challenge suivant : <strong>chaque jour</strong> un petit exercice court d'algèbre linéaire. Pour vous <strong>entrainer</strong>, pour <strong>reviser</strong> pour <strong>progresser</strong>. Prenez 5 à 10 minutes dans votre journée pour essayer de le résoudre, puis lire le corrigé. Promis, cette habitude devrait payer (non seulement sur votre note à l'examen mais aussi et surtout, je l'espère, sur votre maitrise à long terme de l'algèbre linéaire !). Pour y penser tous les jours, pensez à <strong>ajouter cette page sur l'écran d'accueil de votre téléphone</strong>.</p>
+		<p>Si vous avez des questions, ou que vous pensez avoir trouvé une erreur, n'hésitez pas à me contacter !</p>
+	</div>
+</article>
+
+
+
 
 
 <!-- <span class="date">26/03/2026 : **Supplémentaires**</span>
@@ -63,12 +72,10 @@ Chaque jour un petit exercice court, pour vous entrainer, pour reviser ou approf
 
 <img src="/img/daily/exo0.png" style="border-radius : 1em;"/>
 
-
-**Solution :** <a onclick="toggle_visibility('exo0');"> *(afficher/masquer la solution)*</a>
-<div id="exo0" class="sol">
-	<img src="/img/daily/exo0sol.png" style="border-radius : 1em;"/>
-</div>
-
+<details>
+  <summary>Solution</summary>
+  <img src="/img/daily/exo0sol.png" style="border-radius : 1em;"/>
+</details>
 <!-- On note $\mathcal{B}_0$ la base canonique de $\R^2$. Et soient
 
 $$u_1 = \begin{pmatrix}5 \\ 0\end{pmatrix} \qquad u_2 = \begin{pmatrix}2 \\ -1\end{pmatrix} \qquad \mathcal{B} = (u_1 , u_2)$$.

@@ -3,17 +3,30 @@ layout: page
 title: Enseignement
 permalink: /ens/
 ---
-
-
-
+<style>
+	.circled-highlight {
+		padding : .1em .3em;
+		border : .2em solid #f00;
+		border-radius : .8em;
+	}
+	.circled-highlight:hover {
+		color : #f00;
+		text-decoration: none;
+	}
+</style>
 # Année 2025 - 2026
+
 
 ## Semestre 2
 
 <!-- * [DU3R - projet math](../ens/DU3R/) -->
-* [Algèbre linéaire : Daily challenge](../ens/mpi/linalg/)
-* [Cryptographie](../ens/L3/crypto/)
-* [Soutien Math S2](../ens/mpi/soutien/S2.html)
+<ul class="current">
+	<li>
+		<a href="../ens/mpi/linalg/" class="circled-highlight">Algèbre linéaire : Daily challenge</a>
+	</li>
+	<li><a href="../ens/L3/crypto/">Cryptographie</a></li>
+	<li><a href="../ens/mpi/soutien/S2.html">Soutien Math S2</a></li>
+</ul>
 
 # Année 2019 - 2020
 

@@ -189,11 +189,25 @@ li a::before {
     background-color : #f9f9f9;
     border : 1px solid #f0f0f0;
     border-radius: .5em;
-    padding : 1.5em 2em;
+    padding : 1em 1.5em;
     margin : 1em 0;
     //color: $sol-color;
 }
 
+// collapsible panels
+summary {
+	font-weight: bold;
+}
+details::details-content {
+  opacity: 0;
+  transition:
+    opacity 600ms,
+    content-visibility 600ms allow-discrete;
+}
+
+details[open]::details-content {
+  opacity: 1;
+}
 
 .new {
     color : $brand-color;
