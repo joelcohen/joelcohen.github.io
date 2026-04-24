@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <article data-date="2026-05-03">
 	<h4 class="date">3/05/2026 : Formule de changement de base</h4>
 	<p><img src="/img/daily/exo9.png" style="border-radius : 1em;"/></p>
+	<p>Bonus :</p>
 	<p><img src="/img/daily/exo9_2.png" style="border-radius : 1em;"/></p>
 
 
