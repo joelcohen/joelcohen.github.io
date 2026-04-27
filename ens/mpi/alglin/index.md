@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	<img src="/img/daily/exo4.jpg" style="border-radius : 1em;"/>
 	<details>
 		<summary>Solution</summary>
-		<img src="/img/daily/exo4sol.jpg" style="border-radius : 1em;"/>
+		<img src="/img/daily/exo4sol.pdf" style="border-radius : 1em;"/>
 	</details>
 </article>
 
