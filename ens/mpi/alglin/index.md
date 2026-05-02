@@ -48,6 +48,36 @@ document.addEventListener("DOMContentLoaded", () => {
 </article>
  -->
 
+<article data-date="2026-05-05">
+	<h4 class="date">5/05/2026 : De paramétrique à cartésien</h4>
+	<p><img src="/img/daily/exo11.jpg" style="border-radius : 1em;"/></p>
+
+
+	<details>
+		<summary>Question 1</summary>
+		<img src="/img/daily/exo11sol1.jpg" style="border-radius : 1em;"/>
+	</details>
+	<details>
+		<summary>Question 2</summary>
+		<img src="/img/daily/exo11sol2.jpg" style="border-radius : 1em;"/>
+	</details>
+</article>
+
+<article data-date="2026-05-04">
+	<h4 class="date">4/05/2026 : Formule de changement de base (2)</h4>
+	<p><img src="/img/daily/exo10.jpg" style="border-radius : 1em;"/></p>
+
+
+	<details>
+		<summary>Question 1</summary>
+		<img src="/img/daily/exo10sol1.jpg" style="border-radius : 1em;"/>
+	</details>
+	<details>
+		<summary>Question 2</summary>
+		<img src="/img/daily/exo10sol2.jpg" style="border-radius : 1em;"/>
+	</details>
+</article>
+
 <article data-date="2026-05-03">
 	<h4 class="date">3/05/2026 : Formule de changement de base</h4>
 	<p><img src="/img/daily/exo9.png" style="border-radius : 1em;"/></p>
