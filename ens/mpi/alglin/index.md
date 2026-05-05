@@ -48,6 +48,177 @@ document.addEventListener("DOMContentLoaded", () => {
 </article>
  -->
 
+<article data-date="2026-05-10">
+	<h4 class="date">10/05/2026 : Théorème du rang</h4>
+	<p>Soient $E$ et $F$ des espaces vectoriels de dimension finie et $f : E \to F$.</p>
+	<ol>
+		<li>
+			<p>Justifier que</p>
+			$$0 \le \dim(\im f) \le \dim(F), \qquad \qquad 0 \le \dim(\ker f) \le \dim(E)$$
+		</li>
+		<li>Enoncer le théorème du rang.</li>
+		<li>
+			<p>En déduire que</p>
+			$$\dim(F) - \dim(\im f) \ge \dim(F)-\dim(E), \qquad \qquad \dim(\ker f) \ge \dim(E)-\dim(F)$$
+		</li>
+	</ol>
+
+	<details>
+		<summary>Solution</summary>
+		<ol>
+			<li><p>On a les inclusions $\set{0_E} \subset \ker f \subset E$ et $\set{0_F} \subset \im f \subset F$ donc en prenant les dimension</p>
+			$$0 \le \dim(\im f) \le \dim(F), \qquad \qquad 0 \le \dim(\ker f) \le \dim(E)$$
+			</li>
+			<li>
+				<p>Le théorème du rang donne la relation :</p>
+				$$\dim(E) = \dim(\im(f)) + \dim(\ker(f))$$
+			</li>
+			<li>
+				<p>On a donc</p>
+				$$\begin{align*}
+				\dim(F) - \dim(\im f) &= \dim(F) - \dim(E) + \dim(\ker f) \\
+				&\ge \dim(F) - \dim(E)
+				\end{align*}$$
+				<p>et</p>
+				$$\begin{align*}
+				\dim(\ker f) &= \dim(E) - \dim(\im f) \\
+				&\ge \dim(E) - \dim(F)
+				\end{align*}$$
+			</li>
+		</ol>
+	</details>
+</article>
+
+<article data-date="2026-05-09">
+	<h4 class="date">9/05/2026 : Majoration de la dimension de l'image</h4>
+	<p>Soit $f : \R^2 \to \R^6$ linéaire.</p>
+	<ol>
+		<li>Enoncer le théorème du rang.</li>
+		<li>
+			<p>Montrer que</p>
+			$$\dim(\im f) \le 2$$
+		</li>
+	</ol>
+
+	<details>
+		<summary>Question 1</summary>
+		<p>D'après le théorème du rang :</p>
+		$$\dim(\R^2) = 2 = \dim(\im f) + \dim(\ker f)$$
+	</details>
+	<details>
+		<summary>Question 2</summary>
+		<p>On a donc :</p>
+		$$\begin{align*}
+			\dim(\im(f)) &= 2 - \dim(\ker f) \\
+			&\le 2 \\
+		\end{align*}$$
+	</details>
+</article>
+
+<article data-date="2026-05-08">
+	<h4 class="date">8/05/2026 : Minoration de la dimension du noyau</h4>
+	<p>Soit $f : \R^8 \to \R^5$ linéaire.</p>
+	<ol>
+		<li>
+			<p>Montrer que</p>
+			$$\dim(\im f) \le 5$$
+		</li>
+		<li>Enoncer le théorème du rang.</li>
+		<li>
+			<p>En déduire que</p>
+			$$\dim(\ker f) \ge 3$$
+		</li>
+	</ol>
+
+	<details>
+		<summary>Question 1</summary>
+		
+		<p>On a l'inclusion $\im f \subset \R^5$, donc en prenant les dimensions :</p>
+		$$\dim(\im f) \le 5$$
+	</details>
+	<details>
+		<summary>Question 2</summary>
+			<p>Le théorème du rang donne la relation :</p>
+			$$\dim(\R^8) = 8 = \dim(\im(f)) + \dim(\ker(f))$$
+	</details>
+	<details>
+		<summary>Question 3</summary>
+		<p>On a donc</p>
+		$$\begin{align*}
+			\dim(\ker(f)) &= 8 - \dim(\im f) \\
+			&\ge 8 - 5 \\
+			&\ge 3
+		\end{align*}$$
+	</details>
+</article>
+
+<article data-date="2026-05-07">
+	<h4 class="date">7/05/2026 : Un projecteur</h4>
+	<p>On note $\mathcal{B}_0$ la base canonique de $\R^3$, et on pose</p>
+	$$u_1 = (1,0,0), \qquad u_2 = (2,1,0), u_3 = (0,0,1), \mathcal{B} = (u_1,u_2,u_3)$$
+	<p>Soit $E = \Vect(u_1, u_2)$ et $F = \Vect(u_3)$. Soit $p$ le projecteur sur $E$ parallèlement à $F$.</p>
+	<ul>
+		<li>Exprimer $A = \mat_{\mathcal{B}}(p)$ la matrice de $p$ dans la base $\mathcal{B}$.</li>
+		<li>Exprimer $P := P(\mathcal{B}_0 \leftarrow \mathcal{B})$ la matrice de passage de $\mathcal{B}_0$ à $\mathcal{B}$</li>
+		<li>Exprimer $\mat_{\mathcal{B}_0}(p)$ en fonction de $A$ et $P$.</li>
+	</ul>
+	
+	<details>
+		<summary>Solution</summary>
+		<ul>
+			<li>
+				<p>Comme $p$ le projecteur sur $\Vect(u_1, u_2)$ parallèlement à $\Vect(u_3)$ alors</p>
+				$$A = \mat_{\mathcal{B}}(p) = \begin{pmatrix}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0\end{pmatrix}$$
+			</li>
+			<li>
+				<p>On a</p>
+				$$P = P(\mathcal{B}_0 \leftarrow \mathcal{B}) = \begin{pmatrix}1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix}$$
+			</li>
+			<li>
+				<p>On a</p>
+				\begin{align*}
+				\mat_{\mathcal{B}_0}(p) &= P(\mathcal{B}_0 \times \leftarrow \mathcal{B}) \times \mat_{\mathcal{B}}(p) P(\mathcal{B} \leftarrow \mathcal{B}_0) \\
+				&= P  A P^-1
+				\end{align*}
+			</li>
+		</ul>
+	</details>
+</article>
+
+<article data-date="2026-05-06">
+	<h4 class="date">6/05/2026 : De cartésien à paramétrique</h4>
+	<p>Soit $E = \set{(x,y,z,t) \in \R^4 | x + 2y - z = t = 0}$ trouver la dimension et une base de $E$.</p>
+
+
+	<details>
+		<summary>Dimension</summary>
+		<p>Soit $(x,y,z,t) \in \R^4$, on a</p>
+		$$\begin{align*}(x,y,z,t) \in E
+		&\iff
+		(S)\left\{\begin{array}{llllc}
+			x &+ 2y &- z & &= 0 \\
+			&&&t &= 0
+		\end{array}\right.
+		\end{align*}$$
+		<p>Le système $(S)$ est échelonné avec $2$ paramètres ($y$, $z$), donc $\dim(E) = 2$.</p>
+	</details>
+	<details>
+		<summary>Base</summary>
+		<p>Le système $(S)$ est déjà réduit, on paramètre ses solutions :</p>
+		$$\begin{align*}(S)
+		&\iff
+		\left\{\begin{array}{rlrr}
+			x &=& -2y &+ z \\
+			y &=& y \\
+			z &=& & z \\
+			t &=& 0
+		\end{array}\right. \\
+		&\iff (x,y,z,t) = y . (-2,1,0,0) + z . (1,0,1,0)
+		\end{align*}$$
+		<p>Donc la famille $((-2,1,0,0),(1,0,1,0))$ est génératrice de $E$ et par dimension c'est une base de $E$.</p>
+	</details>
+</article>
+
 <article data-date="2026-05-05">
 	<h4 class="date">5/05/2026 : De paramétrique à cartésien</h4>
 	<p><img src="/img/daily/exo11.jpg" style="border-radius : 1em;"/></p>
