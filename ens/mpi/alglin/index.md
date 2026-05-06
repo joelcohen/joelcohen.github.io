@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
 </article>
  -->
 
-<article data-date="2026-05-10">
-	<h4 class="date">10/05/2026 : Théorème du rang</h4>
+<article data-date="2026-05-11">
+	<h4 class="date">11/05/2026 : Théorème du rang</h4>
 	<p>Soient $E$ et $F$ des espaces vectoriels de dimension finie et $f : E \to F$.</p>
 	<ol>
 		<li>
@@ -89,8 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	</details>
 </article>
 
-<article data-date="2026-05-09">
-	<h4 class="date">9/05/2026 : Majoration de la dimension de l'image</h4>
+<article data-date="2026-05-10">
+	<h4 class="date">10/05/2026 : Majoration de la dimension de l'image</h4>
 	<p>Soit $f : \R^2 \to \R^6$ linéaire.</p>
 	<ol>
 		<li>Enoncer le théorème du rang.</li>
@@ -115,8 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	</details>
 </article>
 
-<article data-date="2026-05-08">
-	<h4 class="date">8/05/2026 : Minoration de la dimension du noyau</h4>
+<article data-date="2026-05-09">
+	<h4 class="date">9/05/2026 : Minoration de la dimension du noyau</h4>
 	<p>Soit $f : \R^8 \to \R^5$ linéaire.</p>
 	<ol>
 		<li>
@@ -152,36 +152,83 @@ document.addEventListener("DOMContentLoaded", () => {
 	</details>
 </article>
 
-<article data-date="2026-05-07">
-	<h4 class="date">7/05/2026 : Un projecteur</h4>
-	<p>On note $\mathcal{B}_0$ la base canonique de $\R^3$, et on pose</p>
-	$$u_1 = (1,0,0), \qquad u_2 = (2,1,0), u_3 = (0,0,1), \mathcal{B} = (u_1,u_2,u_3)$$
+<article data-date="2026-05-08">
+	<h4 class="date">8/05/2026 : Un projecteur</h4>
+	<p>On note $\mathcal{B}_0 = (e_1, e_2, e_3)$ la base canonique de $\R^3$, et on pose</p>
+	$$u_1 = (1,0,0), \quad u_2 = (2,1,0), \quad u_3 = (0,0,1), \quad \mathcal{B} = (u_1,u_2,u_3)$$
 	<p>Soit $E = \Vect(u_1, u_2)$ et $F = \Vect(u_3)$. Soit $p$ le projecteur sur $E$ parallèlement à $F$.</p>
-	<ul>
-		<li>Exprimer $A = \mat_{\mathcal{B}}(p)$ la matrice de $p$ dans la base $\mathcal{B}$.</li>
+	<ol>
+		<li>Exprimer $A := \mat_{\mathcal{B}}(p)$ la matrice de $p$ dans la base $\mathcal{B}$.</li>
 		<li>Exprimer $P := P(\mathcal{B}_0 \leftarrow \mathcal{B})$ la matrice de passage de $\mathcal{B}_0$ à $\mathcal{B}$</li>
-		<li>Exprimer $\mat_{\mathcal{B}_0}(p)$ en fonction de $A$ et $P$.</li>
-	</ul>
+		<li>Exprimer $B := \mat_{\mathcal{B}_0}(p)$ en fonction de $A$ et $P$.</li>
+	</ol>
+	<details>
+		<summary>1. Matrice dans $\mathcal{B}$</summary>
+		<p>Comme $p$ est le projecteur sur $\Vect(u_1, u_2)$ parallèlement à $\Vect(u_3)$ alors $p(u_1) = u_1$, $p(u_2) = u_2$ et $p(u_3) = 0$. On a donc</p>
+		$$A = \mat_{\mathcal{B}}(p) = \begin{pmatrix}1 & \color{lightgray}{0} & \color{lightgray}{0} \\ \color{lightgray}{0} & 1 & \color{lightgray}{0} \\ \color{lightgray}{0} & \color{lightgray}{0} & 0\end{pmatrix}$$
+	</details>
+	<details>
+		<summary>2. Matrice de passage</summary>
+		<p>La matrice de passage de $\mathcal{B}_0$ à $\mathcal{B} est</p>
+				$$P = P(\mathcal{B}_0 \leftarrow \mathcal{B}) = \begin{pmatrix}1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix}$$
+	</details>
+	<details>
+		<summary>3. Matrice dans la base canonique</summary>
+		<p>La formule de changement de base nous donne</p>
+		$$\begin{align*}
+			B &= \mat_{\mathcal{B}_0}(p) \\
+			&= P(\mathcal{B}_0 \times \leftarrow \mathcal{B}) \times \mat_{\mathcal{B}}(p) \times P(\mathcal{B} \leftarrow \mathcal{B}_0) \\
+			&= P  \, A \, P^{-1} \\
+		\end{align*}$$
+		<h6>Remarque :</h6>
+		<p>Ici, le calcul donnerait :</p>
+		$$\begin{align*}
+		B &= \begin{pmatrix}1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix}
+		\begin{pmatrix}1 & \color{lightgray}{0} & \color{lightgray}{0} \\ \color{lightgray}{0} & 1 & \color{lightgray}{0} \\ \color{lightgray}{0} & \color{lightgray}{0} & 0\end{pmatrix}
+		\begin{pmatrix}1 & -2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix} \\
+		&=
+		\begin{pmatrix}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0\end{pmatrix}
+		\end{align*}$$
+		<p>La simplicité du résultat s'explique par le fait que $(e_1,e_2, e_3)$ est aussi une base adaptée à $p$ (au sens où $E = \Vect(e_1,e_2)$ et $F = \Vect(e_3)$).</p>
+	</details>
+</article>
+
+<article data-date="2026-05-07">
+	<h4 class="date">7/05/2026 : Une symétrie</h4>
+	<p>On note $\mathcal{B}_0 = (e_1, e_2)$ la base canonique de $\R^2$, et on pose</p>
+	$$u_1 = (1,1), \qquad u_2 = (1,-1), \mathcal{B} = (u_1,u_2)$$
+	<p>Soit $D_1 = \Vect(u_1, u_2)$ et $D_2 = \Vect(u_2)$. Soit $s$ la symétrie par rapport à $D_1$ parallèlement à $D_2$.</p>
+	<ol>
+		<li>Faire un dessin des droites $D_1$, $D_2$, et pour un vecteur quelconque $u \in \R^2$, de son symétrique $s(u)$</li>
+		<li>Exprimer $A := \mat_{\mathcal{B}}(s)$ la matrice de $s$ dans la base $\mathcal{B}$.</li>
+		<li>Exprimer $P := P(\mathcal{B}_0 \leftarrow \mathcal{B})$ la matrice de passage de $\mathcal{B}_0$ à $\mathcal{B}$</li>
+		<li>Exprimer $B := \mat_{\mathcal{B}_0}(s)$ en fonction de $A$ et $P$.</li>
+	</ol>
+	
 	
 	<details>
-		<summary>Solution</summary>
-		<ul>
-			<li>
-				<p>Comme $p$ le projecteur sur $\Vect(u_1, u_2)$ parallèlement à $\Vect(u_3)$ alors</p>
-				$$A = \mat_{\mathcal{B}}(p) = \begin{pmatrix}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0\end{pmatrix}$$
-			</li>
-			<li>
-				<p>On a</p>
-				$$P = P(\mathcal{B}_0 \leftarrow \mathcal{B}) = \begin{pmatrix}1 & 2 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix}$$
-			</li>
-			<li>
-				<p>On a</p>
-				\begin{align*}
-				\mat_{\mathcal{B}_0}(p) &= P(\mathcal{B}_0 \times \leftarrow \mathcal{B}) \times \mat_{\mathcal{B}}(p) P(\mathcal{B} \leftarrow \mathcal{B}_0) \\
-				&= P  A P^-1
-				\end{align*}
-			</li>
-		</ul>
+		<summary>1. Dessin</summary>
+		<img src="/img/daily/symetrie.png" alt="Symetrie" style="border-radius : 1em;">
+	</details>
+	<details>
+		<summary>2. Matrice dans $\mathcal{B}$</summary>
+		<p>Comme $s$ le projecteur sur $\Vect(u_1)$ parallèlement à $\Vect(u_2)$ alors $s(u_1) = u_1$ et $s(u_2) = -u_2$, donc</p>
+		$$A = \mat_{\mathcal{B}}(s) = \begin{pmatrix}1 & \color{lightgray}{0} \\ \color{lightgray}{0} & -1\end{pmatrix}$$
+	</details>
+	<details>
+		<summary>3. Matrice de passage</summary>
+		<p>On a</p>
+		$$P = P(\mathcal{B}_0 \leftarrow \mathcal{B}) = \begin{pmatrix}1 & 1 \\ 1 & -1\end{pmatrix}$$
+	</details>
+	<details>
+		<summary>4. Matrice dans $\mathcal{B}_0$</summary>
+		<p>La formule de changement de base nous donne</p>
+		$$\begin{align*}
+			B
+			&= \mat_{\mathcal{B}_0}(s) \\
+			&= P(\mathcal{B}_0 \times \leftarrow \mathcal{B}) \times \mat_{\mathcal{B}}(s) P(\mathcal{B} \leftarrow \mathcal{B}_0) \\
+			&= P \, A \, P^{-1}
+		\end{align*}$$
 	</details>
 </article>
 
