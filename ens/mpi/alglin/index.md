@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <article data-date="2026-05-07">
 	<h4 class="date">7/05/2026 : Une symétrie</h4>
 	<p>On note $\mathcal{B}_0 = (e_1, e_2)$ la base canonique de $\R^2$, et on pose</p>
-	$$u_1 = (1,1), \qquad u_2 = (1,-1), \mathcal{B} = (u_1,u_2)$$
+	$$u_1 = (1,1), \quad u_2 = (1,-1), \quad \mathcal{B} = (u_1,u_2)$$
 	<p>Soit $D_1 = \Vect(u_1, u_2)$ et $D_2 = \Vect(u_2)$. Soit $s$ la symétrie par rapport à $D_1$ parallèlement à $D_2$.</p>
 	<ol>
 		<li>Faire un dessin des droites $D_1$, $D_2$, et pour un vecteur quelconque $u \in \R^2$, de son symétrique $s(u)$</li>
