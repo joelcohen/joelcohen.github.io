@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		$$\begin{align*}
 			B
 			&= \mat_{\mathcal{B}_0}(s) \\
-			&= P(\mathcal{B}_0 \times \leftarrow \mathcal{B}) \times \mat_{\mathcal{B}}(s) P(\mathcal{B} \leftarrow \mathcal{B}_0) \\
+			&= P(\mathcal{B}_0 \times \leftarrow \mathcal{B}) \times \mat_{\mathcal{B}}(s) \times P(\mathcal{B} \leftarrow \mathcal{B}_0) \\
 			&= P \, A \, P^{-1}
 		\end{align*}$$
 	</details>
