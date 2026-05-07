@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	<h4 class="date">7/05/2026 : Une symétrie</h4>
 	<p>On note $\mathcal{B}_0 = (e_1, e_2)$ la base canonique de $\R^2$, et on pose</p>
 	$$u_1 = (1,1), \quad u_2 = (1,-1), \quad \mathcal{B} = (u_1,u_2)$$
-	<p>Soit $D_1 = \Vect(u_1, u_2)$ et $D_2 = \Vect(u_2)$. Soit $s$ la symétrie par rapport à $D_1$ parallèlement à $D_2$.</p>
+	<p>Soit $D_1 = \Vect(u_1)$ et $D_2 = \Vect(u_2)$. Soit $s$ la symétrie par rapport à $D_1$ parallèlement à $D_2$.</p>
 	<ol>
 		<li>Faire un dessin des droites $D_1$, $D_2$, et pour un vecteur quelconque $u \in \R^2$, de son symétrique $s(u)$</li>
 		<li>Exprimer $A := \mat_{\mathcal{B}}(s)$ la matrice de $s$ dans la base $\mathcal{B}$.</li>
@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	</details>
 	<details>
 		<summary>2. Matrice dans $\mathcal{B}$</summary>
-		<p>Comme $s$ le projecteur sur $\Vect(u_1)$ parallèlement à $\Vect(u_2)$ alors $s(u_1) = u_1$ et $s(u_2) = -u_2$, donc</p>
+		<p>Comme $s$ la symétrie sur $\Vect(u_1)$ parallèlement à $\Vect(u_2)$ alors $s(u_1) = u_1$ et $s(u_2) = -u_2$, donc</p>
 		$$A = \mat_{\mathcal{B}}(s) = \begin{pmatrix}1 & \color{lightgray}{0} \\ \color{lightgray}{0} & -1\end{pmatrix}$$
 	</details>
 	<details>
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		$$\begin{align*}
 			B
 			&= \mat_{\mathcal{B}_0}(s) \\
-			&= P(\mathcal{B}_0 \times \leftarrow \mathcal{B}) \times \mat_{\mathcal{B}}(s) \times P(\mathcal{B} \leftarrow \mathcal{B}_0) \\
+			&= P(\mathcal{B}_0 \leftarrow \mathcal{B}) \times \mat_{\mathcal{B}}(s) \times P(\mathcal{B} \leftarrow \mathcal{B}_0) \\
 			&= P \, A \, P^{-1}
 		\end{align*}$$
 	</details>
