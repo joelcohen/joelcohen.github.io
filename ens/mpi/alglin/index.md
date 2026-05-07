@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	</details>
 	<details>
 		<summary>2. Matrice dans $\mathcal{B}$</summary>
-		<p>Comme $s$ la symétrie sur $\Vect(u_1)$ parallèlement à $\Vect(u_2)$ alors $s(u_1) = u_1$ et $s(u_2) = -u_2$, donc</p>
+		<p>Comme $s$ est la symétrie sur $\Vect(u_1)$ parallèlement à $\Vect(u_2)$ alors $s(u_1) = u_1$ et $s(u_2) = -u_2$, donc</p>
 		$$A = \mat_{\mathcal{B}}(s) = \begin{pmatrix}1 & \color{lightgray}{0} \\ \color{lightgray}{0} & -1\end{pmatrix}$$
 	</details>
 	<details>
