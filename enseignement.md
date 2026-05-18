@@ -22,7 +22,7 @@ permalink: /ens/
 <!-- * [DU3R - projet math](../ens/DU3R/) -->
 <ul class="current">
 	<li>
-		<a href="../ens/mpi/linalg/" class="circled-highlight">Algèbre linéaire : Daily challenge</a>
+		<a href="../ens/mpi/linalg/">Algèbre linéaire : Daily challenge</a>
 	</li>
 	<li><a href="../ens/L3/crypto/">Cryptographie</a></li>
 	<li><a href="../ens/mpi/soutien/S2.html">Soutien Math S2</a></li>
